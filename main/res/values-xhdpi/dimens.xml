@@ -1,0 +1,95 @@
+<resources>
+    <dimen name="dimension">4px</dimen>
+    <dimen name="margen_pequeño">8dp</dimen>
+    <dimen name="margen_mediano">16dp</dimen>
+    <dimen name="padding_contenido_cardview">10dp</dimen>
+    <dimen name="corners_button">20dp</dimen>
+    <dimen name="padding_et_especial">5dp</dimen>
+    <dimen name= "margin_exit_fragment">12dp</dimen>
+    <dimen name="curvatura_standar">10dp</dimen>
+
+    <!-- Tamaños Card View -->
+    <dimen name="curvatura_mediana_cv">15dp</dimen>
+    <dimen name="elevacion_pequeña_cv">4dp</dimen>
+    <dimen name="elevacion_media_cv">6dp</dimen>
+
+    <!--Tamaños alerta con progreso-->
+    <dimen name="gen_dimen_txt_14">14sp</dimen>
+    <dimen name="gen_dimen_txt_12">12sp</dimen>
+    <dimen name="gen_dimen_txt_16">16sp</dimen>
+    <dimen name="gen_dimen_txt_18">18sp</dimen>
+    <dimen name="gen_dimen_txt_20">20sp</dimen>
+    <dimen name="gen_dimen_txt_24">24sp</dimen>
+    <dimen name="gen_dimen_txt_28">28sp</dimen>
+    <dimen name="gen_dimen_txt_30">30sp</dimen>
+    <dimen name="gen_dimen_txt_32">32sp</dimen>
+    <dimen name="tam_txt_login">20sp</dimen>
+    <dimen name="tam_txt_grande">19sp</dimen>
+    <dimen name="text_size_normal">14sp</dimen>
+    <dimen name="text_size_normal_menu">13sp</dimen>
+    <dimen name="text_size_menu_tabs">16sp</dimen>
+    <dimen name="tam_txt_pequeno">10sp</dimen>
+    <dimen name="ancho_dialogo">360dp</dimen>
+
+    <!-- Tamaños para menu de configuraciones -->
+    <dimen name="gen_dimen_cardview_altura">141dp</dimen>
+    <dimen name="gen_dimen_img_cardview_altura">80dp</dimen>
+    <dimen name="gen_dimen_img_cardview_ancho">90dp</dimen>
+    <dimen name="altura_toolbar">40dp</dimen>
+
+    <!--Dimens Login -->
+    <dimen name= "tam_logo">150dp</dimen>
+    <dimen name="altura_boton">50dp</dimen>
+
+    <!-- Dimens Mi Cuenta -->
+    <dimen name="tamaño_img_perfil">107dp</dimen>
+    <dimen name="tamaño_bg_opcion">100dp</dimen>
+    <dimen name="tamaño_ic_opcion">30dp</dimen>
+    <dimen name="elevacion_img_perfil">5dp</dimen>
+
+    <!--Dimens Registro-->
+    <dimen name="ancho_campos_registro">-1px</dimen>
+    <!-- Escaneo carrito-->
+    <dimen name="altura_items_carro_adapter">30dp</dimen>
+    <!-- Modal-->
+    <!-- StatusBar-->
+    <dimen name="status_bar_altura">25dp</dimen>
+    <!--Cierre de Turno-->
+    <!--Tamaños letra-->
+    <dimen name="tamaño_texto_standar">14dp</dimen>
+
+    <dimen name="tamaño_texto_botton">18dp</dimen>
+
+    <!--Botones -->
+    <dimen name="tamaño_ancho_boton_standar">200dp</dimen>
+
+    <dimen name="titulo_parametro_dialogo_confirmacion">10dp</dimen>
+    <dimen name="valor_parametro_dialogo_confirmacion">14dp</dimen>
+
+    <dimen name="registro_externo_item_margin_start">24dp</dimen>
+    <dimen name="registro_externo_item_margin_end">24dp</dimen>
+    <dimen name="registro_externo_item_margin_top">34dp</dimen>
+    <dimen name="registro_externo_item_margin_bottom">34dp</dimen>
+
+    <dimen name="field_margin">4dp</dimen>
+    <dimen name="field_height">60dp</dimen>
+    <dimen name="field_big_font">18sp</dimen>
+    <dimen name="field_small_font">14sp</dimen>
+
+    <dimen name="flat_button_height">30dp</dimen>
+    <dimen name="flat_button_text_size">12dp</dimen>
+
+    <dimen name="settings_dialog_margin">16dp</dimen>
+
+    <!-- Espacios genericos -->
+    <dimen name="espacio_pequeño">6dp</dimen>
+    <dimen name="espacio_mediano">12dp</dimen>
+    <dimen name="espacio_largo">18dp</dimen>
+    <dimen name="espacio_xlargo">24dp</dimen>
+    <dimen name="espacio_xxlargo">36dp</dimen>
+    <dimen name="espacio_xxxlargo">50dp</dimen>
+    <dimen name="tamaño_logo_ya_login">55dp</dimen>
+    <dimen name="tamaño_ic_opcion_producto_menu">40dp</dimen>
+    <dimen name="margen_edit_contraseña">100dp</dimen>
+    <dimen name="ancho_division_asterisco_contraseña">1dp</dimen>
+</resources>

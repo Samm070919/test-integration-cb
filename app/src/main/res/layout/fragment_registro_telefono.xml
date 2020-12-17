@@ -1,0 +1,103 @@
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_app"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/imageViewAna"
+            android:layout_width="287dp"
+            android:layout_height="192dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ilustracion_comencemos"
+            android:layout_marginStart="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.AutoResizeTextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/espacio_largo"
+            android:fontFamily="sans-serif-medium"
+            android:maxLines="1"
+            android:text="@string/registro_header_numero_celular"
+            android:textColor="@color/colorSaldoAzul"
+            android:textSize="26sp"
+            app:layout_constraintTop_toBottomOf="@id/imageViewAna"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Número Celular"
+            android:textColor="@color/disabledFlatButtonTextColor"
+            android:textSize="12sp"
+            android:layout_marginStart="4dp"
+            app:layout_constraintBottom_toTopOf="@id/et_numero_celular"
+            app:layout_constraintStart_toStartOf="@id/et_numero_celular"/>
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/countryCodePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:focusable="false"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="90dp"
+            app:ccpDialog_searchEditTextTint="@color/colorPrimary"
+            app:ccpDialog_textColor="@color/colorSaldoAzul"
+            app:ccp_defaultLanguage="SPANISH"
+            app:ccp_showNameCode="false"
+            app:ccp_autoDetectCountry="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <!--
+        <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.EditTextDatosUsuarios
+            android:id="@+id/et_numero_celular"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:inputType="phone"
+            app:imeOption="actionDone"
+            app:hint="@string/registro_hint_numero_celular"
+            app:layout_constraintBottom_toBottomOf="@+id/countryCodePicker"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/countryCodePicker"
+            app:layout_constraintTop_toTopOf="@+id/countryCodePicker" />
+            -->
+
+        <com.santalu.maskedittext.MaskEditText
+                android:id="@+id/et_numero_celular"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            app:imeOption="actionDone"
+            app:hint="@string/registro_hint_numero_celular"
+            app:met_mask="##  |  ####  |  ####"
+            app:layout_constraintBottom_toBottomOf="@+id/countryCodePicker"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/countryCodePicker"
+            app:layout_constraintTop_toTopOf="@+id/countryCodePicker"/>
+
+        <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.BotonClickUnico
+            android:id="@+id/btn_registrar_telefono"
+            style="@style/ButtonContinueStyle"
+            android:layout_marginBottom="16dp"
+            android:text="@string/comenzar"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

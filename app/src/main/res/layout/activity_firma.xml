@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/container_firma"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhiteBackground"
+        android:gravity="center_horizontal"
+        tools:context=".secciones.firma.FirmaActivity">
+
+        <RelativeLayout
+            android:id="@+id/rl_text_firma"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentTop="true">
+
+            <TextView
+                android:id="@+id/tv_firma_aqui"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/firma_aqui"
+                android:textColor="@color/colorSaldoAzul"
+                android:textSize="@dimen/gen_dimen_txt_20"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/firma_panel_firma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/view_guideline"
+            >
+
+        </RelativeLayout>
+
+
+        <View
+            android:id="@+id/view_guideline"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/colorGrey"
+            android:layout_above="@id/tvNombreFirma"
+            android:layout_marginBottom="5dp"
+            android:layout_height="2dp"/>
+
+        <TextView
+            android:id="@+id/tvNombreFirma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/rl_footer"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/colorGreyFormulario"
+            tools:text="Nombre"
+            android:textSize="@dimen/gen_dimen_txt_16"
+            android:layout_centerHorizontal="true"/>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/transparent"
+            android:padding="15dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true">
+
+                <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.BotonClickUnico
+                    android:id="@+id/btn_limpiar_firma"
+                    style="@style/ButtonActionStyleWhite"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="@string/limpiar" />
+
+                <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.BotonClickUnico
+                    android:id="@+id/btn_finalizar"
+                    style="@style/ButtonContinueStylePercentage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="@string/titulo_autorizar" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</layout>

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_root"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/espacio_pequeño"
+    android:animateLayoutChanges="true"
+    android:focusableInTouchMode="true">
+
+    <EditText
+        android:id="@+id/edit_contenido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:maxLength="10"
+        android:textColor="@android:color/transparent"
+        android:textColorHint="@color/texto_simple_modal"
+        android:textIsSelectable="false"
+        android:textSize="@dimen/gen_dimen_txt_16"
+        android:theme="@style/EditTextPassword"
+        android:backgroundTint="@color/grey_lines"/>
+
+    <LinearLayout
+        android:id="@+id/layout_asteriscos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/edit_contenido"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:visibility="invisible"
+        android:weightSum="10">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.AutoResizeTextView
+                android:id="@+id/txt_digit_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:gravity="end"
+                android:textColor="@color/coloproducttext"
+                android:textSize="@dimen/gen_dimen_txt_28"
+                android:textStyle="bold"
+                tools:text="1" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.AutoResizeTextView
+                android:id="@+id/txt_digit_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toStartOf="@+id/division2"
+                android:gravity="start"
+                android:textColor="@color/coloproducttext"
+                android:textSize="@dimen/gen_dimen_txt_28"
+                android:textStyle="bold"
+                tools:text="2" />
+
+            <View
+                android:id="@+id/division2"
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:background="@color/colorGreyDark"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.AutoResizeTextView
+                android:id="@+id/txt_digit_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="end"
+                android:textColor="@color/coloproducttext"
+                android:textSize="@dimen/gen_dimen_txt_28"
+                android:textStyle="bold"
+                tools:text="1" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.AutoResizeTextView
+                android:id="@+id/txt_digit_4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/coloproducttext"
+                android:textSize="@dimen/gen_dimen_txt_28"
+                android:textStyle="bold"
+                tools:text="2" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.AutoResizeTextView
+                android:id="@+id/txt_digit_5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/coloproducttext"
+                android:textSize="@dimen/gen_dimen_txt_28"
+                android:textStyle="bold"
+                tools:text="3" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.AutoResizeTextView
+                android:id="@+id/txt_digit_6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toStartOf="@+id/division6"
+                android:gravity="start"
+                android:textColor="@color/coloproducttext"
+                android:textSize="@dimen/gen_dimen_txt_28"
+                android:textStyle="bold"
+                tools:text="4" />
+
+            <View
+                android:id="@+id/division6"
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:background="@color/colorGreyDark"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.AutoResizeTextView
+                android:id="@+id/txt_digit_7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="end"
+                android:textColor="@color/coloproducttext"
+                android:textSize="@dimen/gen_dimen_txt_28"
+                android:textStyle="bold"
+                tools:text="1" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.AutoResizeTextView
+                android:id="@+id/txt_digit_8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/coloproducttext"
+                android:textSize="@dimen/gen_dimen_txt_28"
+                android:textStyle="bold"
+                tools:text="2" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.AutoResizeTextView
+                android:id="@+id/txt_digit_9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/coloproducttext"
+                android:textSize="@dimen/gen_dimen_txt_28"
+                android:textStyle="bold"
+                tools:text="3" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.AutoResizeTextView
+                android:id="@+id/txt_digit_10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="start"
+                android:textColor="@color/coloproducttext"
+                android:textSize="@dimen/gen_dimen_txt_28"
+                android:textStyle="bold"
+                tools:text="4" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

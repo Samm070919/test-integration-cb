@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/activityLoginRoot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_app"
+        android:focusableInTouchMode="true"
+        android:fitsSystemWindows="true">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_logo_login"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="24dp"
+            android:contentDescription="@string/gen_desc"
+            tools:src="@drawable/ya_icon_logo"
+            android:scaleType="centerCrop"
+            android:transitionName="logo"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.64" />
+
+        <ProgressBar
+            android:id="@+id/progress_circular_bar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="100dp"
+            android:visibility="gone"
+            android:indeterminateDrawable="@drawable/progress"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_logo_login"/>
+
+        <TextView
+            android:id="@+id/bienvenido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/bienvenido_login"
+            android:textColor="@color/titulo_dialogos_color"
+            android:textSize="28sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_logo_login" />
+
+        <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.EditTextDatosUsuarios
+            android:id="@+id/ed_correo_electronico"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/espacio_xlargo"
+            android:layout_marginEnd="24dp"
+            android:inputType="textEmailAddress"
+            android:textSize="@dimen/gen_dimen_txt_16"
+            android:visibility="gone"
+            app:hint="@string/ingrese_correo_electronico"
+            app:iscontrasena="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bienvenido" />
+
+
+<!--        <TextView
+            android:id="@+id/txt_bienvenida"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espacio_largo"
+            android:textColor="@color/texto_simple_modal"
+            android:textSize="@dimen/gen_dimen_txt_16"
+            android:text="@string/ingresa_contrasenia"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bienvenido"
+            android:visibility="gone" />-->
+
+
+        <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.EditTextPassword
+            android:id="@+id/ed_contrasena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:inputType="numberPassword"
+            android:maxLength="6"
+            android:textSize="@dimen/gen_dimen_txt_16"
+            app:hint_psd="@string/contrasenia_2"
+            app:iscontrasena="true"
+            app:layout_constraintTop_toBottomOf="@+id/ed_correo_electronico"
+            app:ime_psd="actionDone"/>
+
+
+        <TextView
+            android:id="@+id/tv_olvido_contrasena"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/olvido_contraseña"
+            android:textColor="@color/coloproducttext"
+            android:textSize="@dimen/gen_dimen_txt_14"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ed_contrasena"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="32dp"/>
+
+        <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.BotonClickUnico
+            android:id="@+id/btn_login"
+            style="@style/ButtonStyle"
+            android:layout_marginBottom="32dp"
+            android:fontFamily="sans-serif-medium"
+            android:paddingRight="45dp"
+            android:text="@string/iniciar_sesion"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_nocuenta"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_olvido_contrasena"
+            app:layout_constraintVertical_bias="1.0" />
+
+
+        <TextView
+            android:id="@+id/tv_nocuenta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/sin_cuenta"
+            android:textColor="@color/color_cancelar_botton"
+            android:textSize="@dimen/gen_dimen_txt_14"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Switch
+            android:id="@+id/pedir_pci"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:visibility="gone"
+            android:thumbTint="@color/colorDefaultButtonBackGround"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+        <TextView
+            android:id="@+id/tv_switch_pci"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PCI"
+            android:visibility="gone"
+            android:textColor="@color/colorWhite"
+            app:layout_constraintLeft_toRightOf="@id/pedir_pci"
+            app:layout_constraintBottom_toBottomOf="@id/pedir_pci"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

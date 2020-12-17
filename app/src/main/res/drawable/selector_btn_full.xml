@@ -1,0 +1,8 @@
+    <selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true"
+        android:drawable="@color/colorGreyLigth" />
+    <item android:state_enabled="true"
+        android:drawable="@drawable/green_gradiant" /> <!-- default -->
+    <item android:state_enabled="false"
+        android:drawable="@color/colorGreyLigth" />
+</selector>

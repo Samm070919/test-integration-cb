@@ -1,0 +1,69 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/titulo_bloqueo_inactividad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:background="?attr/blueDark"
+            android:maxLines="2"
+            android:padding="4dp"
+            android:text="@string/cierre_turno_title"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="18dp" />
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="6dp"
+            android:scrollbars="vertical">
+
+            <TextView
+                android:id="@+id/txt_shift_turn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="@dimen/text_size_menu_tabs"
+                android:textStyle="normal" />
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.BotonClickUnico
+                android:id="@+id/btn_send_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_bg_modal_btn_positivo"
+                android:text="@string/dialog_text_send_email"
+                android:textColor="@android:color/white"
+                android:textSize="12dp" />
+
+            <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.BotonClickUnico
+                android:id="@+id/btn_shift_turn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_bg_modal_btn_positivo"
+                android:text="@string/menu_item_cierre_turno"
+                android:textColor="@android:color/white"
+                android:textSize="12dp" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

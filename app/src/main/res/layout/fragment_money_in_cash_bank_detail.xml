@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:id="@+id/fl_codebar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/background_app"
+        tools:context=".secciones.money_in.MoneyInMenuFragment">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rlToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/espacio_mediano"
+                android:layout_marginEnd="@dimen/espacio_mediano"
+                android:layout_marginTop="@dimen/espacio_xlargo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/ivOnBack"
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/ic_icono_back" />
+
+                <TextView
+                    android:id="@+id/tv_title_form"
+                    style="@style/TextStyleDialog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/rellena_saldo_efectivo"
+                    android:singleLine="true"
+                    android:maxLength="22"
+                    android:ellipsize="end"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/tam_txt_grande"/>
+
+                <ImageView
+                    android:id="@+id/iv_compartir"
+                    android:layout_width="19dp"
+                    android:layout_height="21dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/ic_compartir"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+
+
+            <ScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_above="@+id/ll_buttons"
+                android:layout_below="@+id/rlToolbar"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="0dp"
+                android:fillViewport="true"
+                android:overScrollMode="ifContentScrolls">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="top|center"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_row1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/espacio_mediano"
+                        android:layout_marginTop="@dimen/espacio_xxlargo"
+                        android:layout_marginEnd="@dimen/espacio_mediano"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_title_instructions"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="Roboto-Regular"
+                            android:text="@string/rellena_efectivo_saldo_titulo"
+                            android:textColor="@color/coloproducttext"
+                            android:textSize="@dimen/gen_dimen_txt_16"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_instructions"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/espacio_mediano"
+                            android:fontFamily="Roboto-Regular"
+                            android:text="@string/rellena_efectivo_saldo_detalle"
+                            android:textColor="@color/coloproducttext"
+                            android:textSize="@dimen/gen_dimen_txt_16" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_renglon2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/espacio_mediano"
+                        android:layout_marginTop="@dimen/espacio_largo"
+                        android:layout_marginEnd="@dimen/espacio_mediano"
+                        android:weightSum="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_label2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.6"
+                            android:fontFamily="Roboto-Regular"
+                            android:text="@string/numeroAgente_rellena_saldo"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/gen_dimen_txt_18" />
+
+                        <TextView
+                            android:id="@+id/tv_field2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_weight="0.4"
+                            android:fontFamily="Roboto-Regular"
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/colorGreyFormulario"
+                            android:textSize="@dimen/gen_dimen_txt_18" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/espacio_mediano"
+                        android:layout_marginTop="@dimen/espacio_largo"
+                        android:layout_marginEnd="@dimen/espacio_mediano">
+                        <View
+                            android:id="@+id/view2"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="@dimen/margen_mediano"
+                            android:background="#CABBBBBB" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_extra_fields_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top|center"
+                        android:layout_marginStart="@dimen/espacio_mediano"
+                        android:layout_marginEnd="@dimen/espacio_mediano"
+                        android:layout_marginTop="@dimen/espacio_largo"
+                        android:weightSum="1"
+                        android:orientation="vertical"></LinearLayout>
+
+
+                    <ImageView
+                        android:id="@+id/iv_codebar_ean128"
+                        android:layout_width="300dp"
+                        android:layout_height="100dp"
+                        android:layout_marginStart="@dimen/espacio_largo"
+                        android:layout_marginTop="@dimen/espacio_largo"
+                        android:layout_marginEnd="@dimen/espacio_largo" />
+
+                    <TextView
+                        android:id="@+id/tv_codebar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/espacio_pequeño" />
+
+                    <TextView
+                        android:id="@+id/tv_ver_sucursales"
+                        style="@style/TextStyleDialog"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/scrollView"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/espacio_xlargo"
+                        android:layout_marginTop="@dimen/espacio_xlargo"
+                        android:layout_marginEnd="@dimen/espacio_xlargo"
+                        android:text="@string/rellena_saldo_efectivo_deposito_autom"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorGreyFormulario"
+                        android:textSize="@dimen/gen_dimen_txt_16" />
+
+                </LinearLayout>
+
+
+            </ScrollView>
+
+            <LinearLayout
+                android:id="@+id/ll_buttons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="@dimen/margen_pequeño"
+                android:layout_marginBottom="25dp"
+                android:gravity="bottom"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.BotonClickUnico
+                    android:id="@+id/btn_guardarimagen"
+                    style="@style/NewFlatButtonStyle"
+                    android:layout_width="163dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/espacio_xlargo"
+                    android:layout_marginEnd="@dimen/espacio_xlargo"
+                    android:layout_weight="1"
+                    android:text="@string/btn_guardar_imagen"
+                    android:textSize="@dimen/gen_dimen_txt_16" />
+
+                <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.BotonClickUnico
+                    android:id="@+id/btnVerMapa"
+                    style="@style/NewFlatButtonStyle"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/espacio_xlargo"
+                    android:layout_marginEnd="@dimen/espacio_xlargo"
+                    android:layout_weight="1"
+                    android:text="@string/btn_ver_mapa"
+                    android:textSize="@dimen/gen_dimen_txt_16" />
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+        <!--</ScrollView>-->
+    </FrameLayout>
+</layout>

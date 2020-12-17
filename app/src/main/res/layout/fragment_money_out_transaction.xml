@@ -1,0 +1,228 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:id="@+id/fl_codebar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/colorWhiteBackground"
+        tools:context=".secciones.money_out.MoneyOutTransactionFragment">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rlToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/espacio_mediano"
+                android:layout_marginEnd="@dimen/espacio_mediano"
+                android:layout_marginTop="@dimen/espacio_xlargo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <ImageView
+                    android:id="@+id/iv_compartir"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:src="@drawable/ic_compartir"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+
+
+            <ImageView
+                android:id="@+id/iv_icono"
+                android:layout_below="@+id/rlToolbar"
+                android:layout_centerHorizontal="true"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:src="@drawable/ic_successful"/>
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/TextStyleDialog"
+                android:layout_below="@+id/iv_icono"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/money_out_trans_title"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/tam_txt_grande"/>
+
+
+            <include
+                android:id="@+id/l_importe"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/tv_title"
+                layout="@layout/layout_importe" />
+
+
+
+            <ScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true"
+                android:layout_marginTop="20dp"
+                android:overScrollMode="ifContentScrolls"
+                android:layout_below="@+id/l_importe">
+
+                <LinearLayout
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <TextView
+                            android:id="@+id/tv_destinatario_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Destinatario"
+                            android:textSize="@dimen/gen_dimen_txt_16"
+                            android:textColor="@color/colorPrimary"/>
+
+
+                        <TextView
+                            android:id="@+id/tv_destinatario_result"
+                            android:layout_width="220dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:text="Resultado"
+                            android:textSize="@dimen/gen_dimen_txt_16"
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/colorGreyFormulario"/>
+
+                    </RelativeLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.4dp"
+                        android:layout_marginTop="9dp"
+                        android:background="#90909090" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="9dp">
+
+
+                        <TextView
+                            android:id="@+id/tv_cta_corriente_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cuenta Corriente"
+                            android:textSize="@dimen/gen_dimen_txt_16"
+                            android:textColor="@color/colorPrimary"/>
+
+
+                        <TextView
+                            android:id="@+id/tv_cta_corriente_result"
+                            android:layout_width="220dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:text="*5809"
+                            android:textSize="@dimen/gen_dimen_txt_16"
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/colorGreyFormulario"/>
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.4dp"
+                        android:layout_marginTop="9dp"
+                        android:background="#90909090" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="9dp">
+
+
+                        <TextView
+                            android:id="@+id/tv_ref_local_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ref. Local"
+                            android:textSize="@dimen/gen_dimen_txt_16"
+                            android:textColor="@color/colorPrimary"/>
+
+
+                        <TextView
+                            android:id="@+id/tv_ref_local_result"
+                            android:layout_width="220dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:text="123 456"
+                            android:textSize="@dimen/gen_dimen_txt_16"
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/colorGreyFormulario"/>
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.4dp"
+                        android:layout_marginTop="9dp"
+                        android:background="#90909090" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="9dp">
+
+
+                        <TextView
+                            android:id="@+id/tv_fecha_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Fecha"
+                            android:textSize="@dimen/gen_dimen_txt_16"
+                            android:textColor="@color/colorPrimary"/>
+
+
+                        <TextView
+                            android:id="@+id/tv_fecha_result"
+                            android:layout_width="220dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:text="24 Oct 2019"
+                            android:textSize="@dimen/gen_dimen_txt_16"
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/colorGreyFormulario"/>
+
+                    </RelativeLayout>
+
+                    <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.BotonClickUnico
+                        android:id="@+id/btn_aceptar"
+                        style="@style/ButtonContinueStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:layout_gravity="center"
+                        android:text="@string/aceptar"/>
+
+                </LinearLayout>
+            </ScrollView>
+
+        </RelativeLayout>
+    </FrameLayout>
+</layout>

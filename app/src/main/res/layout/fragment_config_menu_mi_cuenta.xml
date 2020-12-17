@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/fragment_cuenta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhiteBackground"
+        tools:context=".secciones.menuconfiguraciones.menu_mi_cuenta.ConfigMenuMiCuentaFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/fragment_cuenta_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/rlToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageButton
+                    android:id="@+id/ivClose"
+                    style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="@dimen/espacio_mediano"
+                    android:src="@drawable/ic_icono_back"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    style="@style/TextStyleDialog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_mi_cuenta"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/tam_txt_login"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.cardview.widget.CardView
+                style="@style/CardViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="@dimen/espacio_mediano"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="6dp"
+                android:elevation="8dp"
+                app:contentPadding="@dimen/gen_dimen_txt_12"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rlToolbar">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/TextViewNameProfile"
+                        style="@style/TextStyleDialog"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/roboto_medium"
+                        android:singleLine="true"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20sp"
+                        app:layout_constraintBottom_toTopOf="@id/TextViewAgent"
+                        app:layout_constraintEnd_toStartOf="@id/profile_image"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:text="@tools:sample/full_names" />
+
+                    <TextView
+                        android:id="@+id/TextViewAgent"
+                        style="@style/TextStyleDialog"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:fontFamily="@font/roboto"
+                        android:textColor="@color/colorGreyFormulario"
+                        android:textSize="@dimen/gen_dimen_txt_14"
+                        app:layout_constraintEnd_toEndOf="@+id/TextViewNameProfile"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/TextViewNameProfile"
+                        tools:text="No Cliente" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profile_image"
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:src="@drawable/ic_agregar_foto"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="TPV code"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/profile_image"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/TextViewAgent"
+                        android:fontFamily="@font/roboto"
+                        android:textColor="@color/colorGreyFormulario"
+                        android:textSize="@dimen/gen_dimen_txt_14"
+                        android:id="@+id/tv_cuenta_tpv_code">
+
+                    </TextView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ScrollView
+            android:id="@+id/scrollViewProfile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/fragment_cuenta_header"
+            android:fillViewport="true"
+            android:overScrollMode="ifContentScrolls"
+            android:paddingTop="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btn_mis_datos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhiteBackground"
+                    android:drawableStart="@drawable/ic_icon_mis_datos_user"
+                    android:drawableEnd="@drawable/ic_right_arrow"
+                    android:drawablePadding="20dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="start|center_vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="@string/mi_perfil"
+                    android:textAllCaps="false"
+                    android:textColor="#46606a"
+                    android:textSize="17sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.4dp"
+                    android:background="#90909090" />
+
+                <Button
+                    android:id="@+id/btn_info_bancaria"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhiteBackground"
+                    android:drawableStart="@drawable/icono_banco"
+                    android:drawableEnd="@drawable/ic_right_arrow"
+                    android:drawablePadding="13dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="start|center_vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="@string/menu_item_info_bancaria"
+                    android:textAllCaps="false"
+                    android:textColor="#46606a"
+                    android:textSize="17sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.4dp"
+                    android:background="#90909090" />
+
+                <Button
+                    android:id="@+id/btn_yaganaste_cards"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhiteBackground"
+                    android:drawableStart="@drawable/ic_tarjeta_yaganaste"
+                    android:drawableEnd="@drawable/ic_right_arrow"
+                    android:drawablePadding="20dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="start|center_vertical"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="20dp"
+                    android:text="@string/tarjetas_yaganaste"
+                    android:textAllCaps="false"
+                    android:textColor="#46606a"
+                    android:textSize="17sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.4dp"
+                    android:background="#90909090" />
+
+                <Button
+                    android:id="@+id/btn_buy_device"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhiteBackground"
+                    android:drawableStart="@drawable/ic_icono_compar_dispositivo"
+                    android:drawableEnd="@drawable/ic_right_arrow"
+                    android:drawablePadding="20dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="start|center_vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="@string/kit_title_solicitar"
+                    android:textAllCaps="false"
+                    android:textColor="#46606a"
+                    android:textSize="17sp"
+                    android:visibility="gone" />
+
+                <View
+                    android:id="@+id/view_comprar"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.4dp"
+                    android:background="#90909090"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btn_comprar_dispositivo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhiteBackground"
+                    android:drawableStart="@drawable/ic_icono_compar_dispositivo"
+                    android:drawableEnd="@drawable/ic_right_arrow"
+                    android:drawablePadding="20dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="start|center_vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="@string/compra_dispositivo"
+                    android:textAllCaps="false"
+                    android:textColor="#46606a"
+                    android:textSize="17sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.4dp"
+                    android:background="#90909090" />
+
+                <Button
+                    android:id="@+id/btn_configuracion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhiteBackground"
+                    android:drawableStart="@drawable/ic_icono_configuracion"
+                    android:drawableEnd="@drawable/ic_right_arrow"
+                    android:drawablePadding="15dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="start|center_vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="@string/menu_item_configuracion"
+                    android:textAllCaps="false"
+                    android:textColor="#46606a"
+                    android:textSize="17sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.4dp"
+                    android:background="#90909090" />
+
+                <Button
+                    android:id="@+id/btn_ayuda"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhiteBackground"
+                    android:drawableStart="@drawable/icono_ayuda"
+                    android:drawableEnd="@drawable/ic_right_arrow"
+                    android:drawablePadding="20dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="start|center_vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="@string/menu_item_ayuda"
+                    android:textAllCaps="false"
+                    android:textColor="#46606a"
+                    android:textSize="17sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.4dp"
+                    android:background="#90909090" />
+
+                <Button
+                    android:id="@+id/btn_cerrar_sesion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhiteBackground"
+                    android:drawableStart="@drawable/icono_cerrar"
+                    android:drawableEnd="@drawable/ic_right_arrow"
+                    android:drawablePadding="20dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="start|center_vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="@string/menu_item_cierre_sesion"
+                    android:textAllCaps="false"
+                    android:textColor="#46606a"
+                    android:textSize="17sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.4dp"
+                    android:background="#90909090" />
+
+                <!--<TextView
+                    android:id="@+id/tv_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="bottom"
+                    android:layout_marginTop="@dimen/espacio_mediano"
+                    android:layout_marginBottom="@dimen/espacio_pequeño"
+                    android:text="Versión V0.0.0"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/gen_dimen_txt_14"
+                    android:fontFamily="sans-serif"/>-->
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</layout>

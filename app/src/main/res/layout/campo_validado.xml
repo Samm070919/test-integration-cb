@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:background="@color/transparent">
+
+    <ImageView
+        android:id="@+id/iv_icono_campo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+
+    <EditText
+        android:id="@+id/et_hint_campo"
+        android:theme="@style/EditTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:fontFamily="sans-serif"
+        android:textColor="@color/colorGreyFormulario"
+        android:textColorHint="@color/texto_simple_modal"
+        android:inputType="textCapWords"
+        android:layout_marginBottom="@dimen/espacio_pequeño"
+        android:layout_marginTop="@dimen/espacio_pequeño"
+        android:imeOptions="actionNext"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+
+
+    <CheckBox
+        android:id="@+id/iv_icono_visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/espacio_pequeño"
+        android:visibility="gone"
+        android:button="@drawable/eye_selector"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/text_hint"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center_vertical"
+        android:textColor="@color/texto_simple_modal"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/et_hint_campo"
+        app:layout_constraintEnd_toEndOf="@+id/et_hint_campo"
+        app:layout_constraintStart_toStartOf="@+id/et_hint_campo"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/contrasena" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:id="@+id/fragment_datos_negocio"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/transparent"
+        tools:context="com.pagatodoholdings.posandroid.secciones.menuconfiguraciones.menu_mis_datos.ConfigMenuMisDatosNegocioFragment">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="ifContentScrolls"
+            android:background="@color/transparent">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/espacio_pequeño"
+                android:layout_marginRight="@dimen/espacio_pequeño"
+                android:paddingStart="@dimen/espacio_pequeño"
+                android:paddingTop="16dp"
+                android:paddingEnd="@dimen/espacio_pequeño"
+                android:paddingBottom="@dimen/espacio_largo"
+                android:background="@color/transparent">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    style="@style/CardViewStyle"
+                    app:cardCornerRadius="40dp"
+                    android:layout_gravity="center_horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profile_image_business"
+                        android:layout_width="76dp"
+                        android:layout_height="76dp"
+                        android:src="@drawable/ic_agregar_foto"
+                        android:layout_gravity="center">
+                    </de.hdodenhof.circleimageview.CircleImageView>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtInpHint1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/textHintField"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:boxBackgroundColor="@color/transparent">
+
+                    <EditText
+                        android:id="@+id/etd_nombre_negocio"
+                        android:theme="@style/EditTextPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/gen_dimen_txt_16"
+                        android:fontFamily="@font/roboto"
+                        android:textColor="@color/coloproducttext"
+                        android:textColorHint="@color/texto_simple_modal"
+                        android:hint="@string/title_mi_cuenta_nombre_negocio"
+                        android:inputType="textCapWords"
+                        android:background="@color/transparent"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtInpHint2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/textHintField"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:boxBackgroundColor="@color/transparent">
+
+                    <EditText
+                        android:id="@+id/etd_actividad"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparent"
+                        android:fontFamily="@font/roboto"
+                        android:hint="@string/title_mi_cuenta_actividad"
+                        android:inputType="textCapWords"
+                        android:textColor="@color/coloproducttext"
+                        android:textColorHint="@color/texto_simple_modal"
+                        android:textSize="@dimen/gen_dimen_txt_16"
+                        android:theme="@style/EditTextPassword" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtInpHint4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/textHintField"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:boxBackgroundColor="@color/transparent">
+
+                    <EditText
+                        android:id="@+id/etd_direccion_negocio"
+                        android:theme="@style/EditTextPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/gen_dimen_txt_16"
+                        android:fontFamily="@font/roboto"
+                        android:textColor="@color/coloproducttext"
+                        android:textColorHint="@color/texto_simple_modal"
+                        android:hint="@string/title_mi_cuenta_direccion"
+                        android:inputType="textCapWords"
+                        android:background="@color/transparent"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_negocio_doc_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_mi_cuenta_ruc"
+                    android:paddingLeft="3dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/textHintField"
+                    android:textSize="@dimen/gen_dimen_txt_14"
+                    android:fontFamily="@font/roboto"/>
+
+                <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.InputNumberFormat
+                    android:id="@+id/inputNumberFormat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/coloproducttext"
+                    android:fontFamily="sans-serif"
+                    android:textSize="16sp"
+                    />
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+
+    </FrameLayout>
+</layout>

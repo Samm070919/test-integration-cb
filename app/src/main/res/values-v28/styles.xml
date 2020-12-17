@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppThemeBlue" parent="AppTheme">
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="primary">@color/colorPrimary</item>
+        <item name="primaryDark">@color/colorPrimaryDark</item>
+        <item name="blueDark">@color/colorBlueDark</item>
+        <item name="accent">@color/colorAccent</item>
+        <item name="defaultButtonBackGround">@color/colorPrimaryDark</item>
+        <item name="defaultButtonBackGroundPress">@color/colorPrimary</item>
+        <item name="wifi_gift">@raw/wifi_blue</item>
+
+        <item name="totem_not_found_gif">@raw/totem_not_found_blue</item>
+        <item name="totem_connecting_gif">@raw/totem_connecting_blue</item>
+        <item name="conectar_totem_gif">@raw/conectar_totem_blue</item>
+
+        <item name="fullcarga">@drawable/logo</item>
+        <item name="fullcarga_flat">@drawable/ic_img_yaganaste_blue</item>
+        <item name="menu_button_background">@drawable/shadow_blue</item>
+        <item name="ic_logo">@drawable/ic_logo_azul</item>
+
+        <item name="drawerArrowStyle">@style/DrawerHamburgerStyle</item>
+
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+    </style>
+</resources>

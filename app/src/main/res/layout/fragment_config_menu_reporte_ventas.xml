@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/contenedor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhiteBackground"
+        android:minWidth="1000dp"
+        android:minHeight="1000dp"
+        android:orientation="vertical"
+        tools:context=".secciones.menuconfiguraciones.ConfigMenuReporteVentasFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <ImageButton
+                android:id="@+id/ivClose"
+                style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="@dimen/espacio_mediano"
+                android:src="@drawable/ic_back"
+                android:tint="@color/blue_ya_ganaste"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.AutoResizeTextView
+                android:id="@+id/title_toolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="none"
+                android:fontFamily="Roboto-Regular"
+                android:maxLines="3"
+                android:textAlignment="center"
+                android:textColor="@color/colorSaldoAzul"
+                android:textSize="@dimen/gen_dimen_txt_20"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Mis Ventas" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@+id/llFecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhiteBackground"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/image_tiporeporte"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:scaleType="fitXY"
+                tools:src="@drawable/ic_bolsa_azul" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.MontoViewController
+                    android:id="@+id/tv_saldo_movimientos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:visibility="visible"
+                    app:TextoInferior="Saldo Disponible"
+                    app:colorTexto="@color/colorAzulImporte"
+                    app:mostrarTextoInferior="false" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:text="Saldo Disponible"
+                    android:textColor="@color/coloproducttext"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhiteBackground"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginStart="@dimen/espacio_mediano"
+                android:layout_marginTop="@dimen/espacio_mediano"
+                android:layout_marginEnd="@dimen/espacio_mediano"
+                android:layout_marginBottom="@dimen/espacio_mediano"
+                style="@style/CardViewStyle">
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tab_layout"
+                    style="@style/TabparecenStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"/>
+            </androidx.cardview.widget.CardView>
+
+            <!-- A ViewPager2 element -->
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/pager"
+                android:overScrollMode="never"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

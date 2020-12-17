@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_contenedor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="center_horizontal"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <FrameLayout
+            android:id="@+id/frame_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/linea_inferior"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.MontoViewController
+                android:id="@+id/monto_importe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:colorTexto="@color/colorSaldoAzul"
+                app:mostrarTextoInferior="false"
+                android:layout_gravity="center" />
+
+            <EditText
+                android:id="@+id/inner_ed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/transparent"
+                android:background="@null"
+                android:textSize="40sp"
+                android:inputType="numberDecimal"
+                android:digits="0,1,2,3,4,5,6,7,8,9"
+                android:maxLines="1"
+                android:singleLine="true"
+                app:layout_constraintBottom_toTopOf="@id/viewGraund"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/linea_inferior"
+            android:layout_width="200dp"
+            android:layout_height="1dp"
+            android:background="@color/colorGrey"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/frame_layout"
+            app:layout_constraintBottom_toTopOf="@id/text_input"
+            app:layout_constraintStart_toStartOf="@+id/frame_layout"
+            app:layout_constraintEnd_toEndOf="@id/frame_layout" />
+
+        <TextView
+            android:id="@+id/text_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="General"
+            android:gravity="center"
+            android:textSize="@dimen/gen_dimen_txt_18"
+            android:textColor="@color/coloproducttext2"
+            app:layout_constraintTop_toBottomOf="@id/linea_inferior"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textStyle="bold"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

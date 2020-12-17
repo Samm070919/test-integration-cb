@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/ll_contenedor_productos"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_home_menu_productos_categoria"
+        android:layout_width="match_parent"
+        android:overScrollMode="never"
+        android:layout_height="wrap_content"/>
+
+    <include
+        layout="@layout/promocional_profesionista"
+        android:id="@+id/promocional_profesionista"
+        android:visibility="gone"
+        tools:visibility="visible"/>
+
+
+</LinearLayout>

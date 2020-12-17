@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/espacio_mediano"
+    android:layout_marginBottom="@dimen/espacio_mediano">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_promos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_marginStart="@dimen/espacio_mediano"
+        android:layout_marginTop="@dimen/espacio_pequeño"
+        android:layout_marginBottom="@dimen/espacio_pequeño"
+        app:cardCornerRadius="8dp">
+
+        <ImageView
+            android:id="@+id/iv_promos"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_mensajes"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:visibility="gone"
+        android:layout_marginStart="@dimen/espacio_mediano"
+        android:layout_marginTop="@dimen/espacio_pequeño"
+        android:layout_marginBottom="@dimen/espacio_pequeño"
+        app:cardCornerRadius="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_mensajes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_message_icon"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="@dimen/espacio_mediano"
+        android:layout_marginRight="@dimen/espacio_mediano"
+        android:paddingRight="@dimen/espacio_mediano">
+
+    <TextView
+        android:id="@+id/tv_promocion_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:text="Prueba de Promoción"/>
+
+
+        <TextView
+            android:id="@+id/tv_promocion_body"
+            android:layout_below="@+id/tv_promocion_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="14sp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:text="Prueba de Promoción en la que se va a validar que el texto sea a dos lineas y no mas ya que podria generar un desajuste." />
+
+    </RelativeLayout>
+</LinearLayout>

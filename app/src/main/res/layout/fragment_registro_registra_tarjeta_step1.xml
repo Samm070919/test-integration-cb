@@ -1,0 +1,93 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        tools:context="com.pagatodoholdings.posandroid.secciones.registro.registro4l.RegistroRegistraTarjetaStep1">
+
+
+
+        <LinearLayout
+            android:id="@+id/llImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/espacio_mediano"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:src="@drawable/registra_tarjeta" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/txtPagaServicios"
+            style="@style/TitulosRegistro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:paddingLeft="@dimen/espacio_largo"
+            android:paddingRight="@dimen/espacio_largo"
+            android:paddingTop="@dimen/espacio_largo"
+            android:singleLine="false"
+            android:text="@string/paga_todos_tus_servicios"
+            android:textAlignment="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/llImage" />
+
+        <TextView
+            android:id="@+id/txtRegistraTarjeta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="@dimen/espacio_mediano"
+            android:paddingLeft="@dimen/espacio_largo"
+            android:paddingRight="@dimen/espacio_largo"
+            android:singleLine="false"
+            android:text="@string/registra_tu_tarjeta"
+            android:textAlignment="center"
+            android:textColor="@color/mdtp_light_gray"
+            android:textSize="@dimen/gen_dimen_txt_16"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtPagaServicios" />
+
+        <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.BotonClickUnico
+            android:id="@+id/btn_continuar_registro"
+            style="@style/ButtonStyle"
+            android:layout_marginBottom="@dimen/espacio_xxlargo"
+            android:fontFamily="sans-serif-medium"
+            android:paddingRight="45dp"
+            android:text="@string/registra_tarjeta_btn"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@id/tvNoTarjeta"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtRegistraTarjeta"/>
+
+
+        <TextView
+            android:id="@+id/tvNoTarjeta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/no_tengo_tarjeta"
+            android:textColor="@color/color_cancelar_botton"
+            android:textSize="@dimen/gen_dimen_txt_14"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

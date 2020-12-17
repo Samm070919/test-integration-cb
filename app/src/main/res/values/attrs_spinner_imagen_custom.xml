@@ -1,0 +1,8 @@
+<resources>
+    <declare-styleable name="SpinnerImagenCustom">
+        <attr name="hint_x" format="string" />
+        <attr name="fondo" format="reference" />
+        <attr name="hintColor" format="color" />
+        <attr name="arrowImage" format="reference" />
+    </declare-styleable>
+</resources>

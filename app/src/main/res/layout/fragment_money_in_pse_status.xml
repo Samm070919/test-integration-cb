@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/background_app"
+        tools:context=".secciones.money_in.MoneyInPseStatusFragment">
+
+    <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/background_app">
+
+        <ImageView
+            android:id="@+id/money_in_pse_image"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/espacio_largo"
+            android:layout_marginTop="@dimen/espacio_mediano"
+            android:layout_marginEnd="@dimen/espacio_largo"
+            android:src="@drawable/ic_successful" />
+
+        <TextView
+            android:id="@+id/tv_transaction_result_title"
+            style="@style/TextStyleDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/money_in_pse_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/espacio_mediano"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/tam_txt_grande"
+            android:text="Transacción " />
+
+
+        <include
+            android:id="@+id/l_importe"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/tv_transaction_result_title"
+            android:layout_centerHorizontal="true"
+            layout="@layout/layout_importe" />
+
+        <LinearLayout
+            android:id="@+id/ll_data1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/espacio_mediano"
+            android:layout_marginTop="@dimen/espacio_pequeño"
+            android:layout_marginEnd="@dimen/espacio_mediano"
+            android:layout_marginBottom="@dimen/espacio_pequeño"
+            android:orientation="horizontal"
+            android:layout_below="@+id/l_importe">
+
+            <TextView
+                android:id="@+id/tv_lbl_data1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|bottom"
+                android:layout_weight="0.35"
+                android:text="ID Pago PSE"
+                android:textColor="@color/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/tv_field1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|bottom"
+                android:layout_weight="0.65"
+                android:text=""
+                android:gravity="right"/>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/v_line1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginEnd="@dimen/espacio_mediano"
+            android:layout_marginStart="@dimen/espacio_mediano"
+            android:background="#CABBBBBB"
+            android:layout_below="@+id/ll_data1"/>
+
+
+
+        <LinearLayout
+            android:id="@+id/ll_data3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/espacio_mediano"
+            android:layout_marginTop="@dimen/espacio_pequeño"
+            android:layout_marginEnd="@dimen/espacio_mediano"
+            android:layout_marginBottom="@dimen/espacio_pequeño"
+            android:orientation="horizontal"
+            android:layout_below="@+id/v_line1">
+
+
+            <TextView
+                android:id="@+id/tv_lbl_data3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|bottom"
+                android:layout_weight="0.35"
+                android:text="Terminal"
+                android:textColor="@color/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/tv_field3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|bottom"
+                android:layout_weight="0.65"
+                android:text=""
+                android:gravity="right"/>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/v_line3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginEnd="@dimen/espacio_mediano"
+            android:layout_marginStart="@dimen/espacio_mediano"
+            android:background="#CABBBBBB"
+            android:layout_below="@+id/ll_data3"/>
+
+        <LinearLayout
+            android:id="@+id/ll_data4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/v_line3"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/espacio_mediano"
+            android:layout_marginTop="@dimen/espacio_pequeño"
+            android:layout_marginEnd="@dimen/espacio_mediano"
+            android:layout_marginBottom="@dimen/espacio_pequeño"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/tv_lbl_data4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.35"
+                android:text="Estatus"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/tv_field4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|bottom"
+                android:layout_weight="0.65"
+                android:gravity="right"
+                android:text="" />
+
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/v_line4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginEnd="@dimen/espacio_mediano"
+            android:layout_marginStart="@dimen/espacio_mediano"
+            android:background="#CABBBBBB"
+            android:layout_below="@+id/ll_data4"/>
+
+        <LinearLayout
+            android:id="@+id/ll_data5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/v_line4"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/espacio_mediano"
+            android:layout_marginTop="@dimen/espacio_pequeño"
+            android:layout_marginEnd="@dimen/espacio_mediano"
+            android:layout_marginBottom="@dimen/espacio_pequeño"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/tv_lbl_data5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.35"
+                android:text="Fecha"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/tv_field5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|bottom"
+                android:layout_weight="0.65"
+                android:gravity="right"
+                android:text="" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espacio_pequeño"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_below="@+id/ll_data5">
+
+            <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.BotonClickUnico
+                    android:id="@+id/btn_terminar"
+                    style="@style/ButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/espacio_largo"
+                    android:layout_marginTop="@dimen/espacio_largo"
+                    android:layout_marginEnd="@dimen/espacio_largo"
+                    android:layout_marginBottom="@dimen/espacio_largo"
+                android:paddingRight="40dp"
+
+                    android:text="Terminar"
+                    android:textSize="@dimen/gen_dimen_txt_16" />
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+    </FrameLayout>
+
+</layout>

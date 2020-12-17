@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".secciones.menuconfiguraciones.menu_info_bancaria.ConfigMenuInfoBancariaFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhiteBackground"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:id="@+id/ivClose"
+                style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="@dimen/espacio_mediano"
+                android:src="@drawable/ic_icono_back"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/TextViewHeader"
+                style="@style/TextStyleDialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_info_bancaria"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/tam_txt_ext"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/ivDeleteIcon"
+                style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginEnd="@dimen/espacio_mediano"
+                android:src="@drawable/ic_delete_red"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:visibility="visible" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/icono_banco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/espacio_xxlargo"
+            android:src="@drawable/ic_icono_banco"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout1" />
+
+        <LinearLayout
+            android:id="@+id/layoutLinearNotEditable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible"
+            app:layout_constraintTop_toBottomOf="@+id/icono_banco">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilBanco"
+                style="@style/EditTextInputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/espacio_mediano"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="@dimen/espacio_mediano"
+                android:textColorHint="@color/disable_color"
+                app:boxBackgroundColor="@color/transparent">
+
+                <EditText
+                    android:id="@+id/etd_banco"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:hint="@string/title_banco"
+                    android:inputType="text"
+                    android:textColor="@color/coloproducttext"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textSize="@dimen/gen_dimen_txt_16"
+                    android:theme="@style/EditTextPassword"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilTipoCuenta"
+                style="@style/EditTextInputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/espacio_mediano"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="@dimen/espacio_mediano"
+                android:textColorHint="@color/disable_color"
+                app:boxBackgroundColor="@color/transparent">
+
+                <EditText
+                    android:id="@+id/etd_tipo_cuenta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:hint="@string/title_tipo_cuenta"
+                    android:inputType="text"
+                    android:textColor="@color/coloproducttext"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textSize="@dimen/gen_dimen_txt_16"
+                    android:theme="@style/EditTextPassword" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:id="@+id/tilNumeroCuenta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/espacio_mediano"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="@dimen/espacio_mediano"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="3dp"
+                    android:text="@string/title_numero_cuenta"
+                    android:textColor="@color/colorGreyLigth"
+                    android:textSize="@dimen/gen_dimen_txt_12" />
+
+                <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.InputNumberFormat
+                    android:id="@+id/inputNumberFormat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/coloproducttext"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/espacio_mediano"
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:id="@+id/iv_info_no_cuenta"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginEnd="@dimen/espacio_pequeño"
+                    android:src="@drawable/icono_informacion"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tv_cta_verificada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="@dimen/espacio_mediano"
+                    android:paddingLeft="3dp"
+                    android:textSize="@dimen/gen_dimen_txt_14"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tilNumeroCuenta"
+                    tools:text="@tools:sample/lorem" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutLinearEditable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@+id/icono_banco"
+            tools:visibility="visible">
+
+            <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.SpinnerConTitulo
+                android:id="@+id/tipo_documento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                app:cabecera="Banco"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.SpinnerConTitulo
+                android:id="@+id/tipo_Cuenta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                app:cabecera="Tipo de Cuenta"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tipo_documento" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputLayoutCuentaBancaria"
+                style="@style/EditTextInputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tipo_Cuenta">
+
+                <EditText
+                    android:id="@+id/textViewNumeroCuenta"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/numero_de_cuenta"
+                    android:inputType="number"
+                    android:maxLength="20" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/espacio_mediano"
+            android:paddingRight="@dimen/espacio_mediano"
+            android:weightSum="10"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.BotonClickUnico
+                android:id="@+id/botonUnicoRegresar"
+                style="@style/NewFlatButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/espacio_xxxlargo"
+                android:layout_marginRight="@dimen/espacio_mediano"
+                android:layout_marginBottom="@dimen/espacio_largo"
+                android:layout_weight="5"
+                android:text="@string/regresar"
+                android:textSize="@dimen/gen_dimen_txt_16" />
+
+            <Button
+                android:id="@+id/btnEditarBancaria"
+                android:layout_width="0dp"
+                android:layout_height="96dp"
+                android:layout_marginTop="@dimen/espacio_xxxlargo"
+                android:layout_marginBottom="@dimen/espacio_largo"
+                android:layout_weight="5"
+                android:background="@drawable/bg_button_wallet"
+                android:paddingStart="40dp"
+                android:text="Editar"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/gen_dimen_txt_16"
+                android:visibility="visible" />
+
+            <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.BotonClickUnico
+                android:id="@+id/botonUnicoContinuar"
+                style="@style/ButtonContinueStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/espacio_largo"
+                android:layout_marginTop="@dimen/espacio_xxxlargo"
+                android:layout_marginBottom="@dimen/espacio_largo"
+                android:layout_weight="5"
+                android:text="@string/guardar"
+                android:textSize="@dimen/gen_dimen_txt_16"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:visibility="visible" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageViewAna"
+            android:layout_width="0dp"
+            android:layout_height="183dp"
+            android:layout_margin="@dimen/espacio_xlargo"
+            android:scaleType="fitCenter"
+            android:src="@drawable/verifica_cuenta"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewCuentaBancaria"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/espacio_xlargo"
+            android:text="¡Felicidades! Tu Cuenta ha Sido Validada"
+            android:textAlignment="center"
+            android:textColor="@color/colorSaldoAzul"
+            android:textSize="20sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageViewAna" />
+
+        <TextView
+            android:id="@+id/textViewContenido"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/espacio_xxlargo"
+            android:gravity="center"
+            android:text="Ya Puedes Hacer Retiros de tu Saldo"
+            android:textSize="16sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewCuentaBancaria"
+            tools:visibility="visible" />
+
+        <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.BotonClickUnico
+            android:id="@+id/botonAceptar"
+            style="@style/ButtonContinueStyle"
+            android:layout_marginBottom="16dp"
+            android:text="@android:string/yes"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:visibility="visible"
+            android:textAllCaps="false"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

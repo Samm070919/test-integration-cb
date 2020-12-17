@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/item1">
+        <item
+            android:id="@+id/nav_Saldo"
+            android:icon="@drawable/ic_img_cons_saldo"
+            android:title="@string/menu_item_consultar_saldo"/>
+    </group>
+
+    <group
+        android:id="@+id/item2">
+        <item
+            android:id="@+id/nav_actualizar"
+            android:icon="@drawable/ic_img_actualizar"
+            android:title="@string/menu_item_actualizar_productos"/>
+    </group>
+
+    <group
+        android:id="@+id/item3">
+        <item
+            android:id="@+id/nav_reporte"
+            android:icon="@drawable/ic_img_reporte"
+            android:title="@string/menu_item_reporte_ventas"/>
+    </group>
+
+    <group
+        android:id="@+id/item4">
+        <item
+            android:id="@+id/nav_cierre"
+            android:icon="@drawable/ic_img_cierre_turno"
+            android:title="@string/menu_item_cierre_turno"/>
+    </group>
+
+    <group
+        android:id="@+id/item5">
+        <item
+            android:id="@+id/nav_contactanos"
+            android:icon="@drawable/ic_img_contactanos"
+            android:title="@string/menu_item_contactanos"/>
+    </group>
+
+    <group
+        android:id="@+id/item6">
+        <item
+            android:id="@+id/nav_ayuda"
+            android:icon="@drawable/ic_img_ayuda"
+            android:title="@string/menu_item_ayuda"/>
+    </group>
+
+    <group
+        android:id="@+id/item7">
+        <item
+            android:id="@+id/nav_conexion"
+            android:icon="@drawable/ic_img_conexion"
+            android:title="@string/menu_item_conexion"/>
+    </group>
+
+    <group
+        android:id="@+id/item8">
+        <item
+            android:id="@+id/nav_inactividad"
+            android:icon="@drawable/ic_img_inact"
+            android:title="@string/menu_inactividad"/>
+    </group>
+
+    <group
+        android:id="@+id/item9">
+        <item
+            android:id="@+id/nav_cierre_sesion"
+            android:icon="@drawable/ic_img_salir"
+            android:title="@string/menu_item_cierre_sesion"/>
+    </group>
+
+</menu>

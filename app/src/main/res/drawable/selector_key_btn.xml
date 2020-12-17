@@ -1,0 +1,7 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true"
+        android:drawable="@color/colorWhiteBackground" />
+    <item android:state_enabled="true" android:drawable="@drawable/strocker_blue" /> <!-- default -->
+    <item android:state_enabled="false"
+        android:drawable="@color/colorWhiteBackground"/>
+</selector>

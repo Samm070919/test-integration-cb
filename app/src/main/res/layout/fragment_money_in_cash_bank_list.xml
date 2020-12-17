@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:id="@+id/fl_bank_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/background_app"
+        tools:context=".secciones.money_in.MoneyInMenuFragment">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rlToolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/espacio_mediano"
+                    android:layout_marginEnd="@dimen/espacio_mediano"
+                    android:layout_marginTop="@dimen/espacio_xlargo"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/ivOnBack"
+                        android:layout_width="21dp"
+                        android:layout_height="21dp"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/ic_icono_back" />
+
+                    <TextView
+                        android:id="@+id/tvTitle"
+                        style="@style/TextStyleDialog"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/rellena_saldo_efectivo"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/tam_txt_grande"/>
+
+                </RelativeLayout>
+
+
+
+
+                <ScrollView
+                    android:id="@+id/scrollView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:layout_below="@+id/rlToolbar"
+                    android:layout_marginTop="0dp"
+                    android:fillViewport="true"
+                    android:overScrollMode="ifContentScrolls">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="top|center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_subtitulo"
+                            style="@style/TextStyleDialog"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/money_in_image"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/espacio_mediano"
+                            android:layout_marginBottom="@dimen/espacio_largo"
+                            android:layout_marginStart="@dimen/espacio_mediano"
+                            android:layout_marginEnd="@dimen/espacio_mediano"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorGreyFormulario"
+                            android:textSize="@dimen/gen_dimen_txt_18"
+                            android:text="@string/subtitulo_efectivo" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rv_bank_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/margen_mediano"
+                            android:layout_marginTop="@dimen/margen_mediano"
+                            android:layout_marginStart="@dimen/espacio_mediano"
+                            android:layout_marginEnd="@dimen/espacio_mediano" />
+
+                    </LinearLayout>
+
+                </ScrollView>
+
+            </RelativeLayout>
+
+    </FrameLayout>
+</layout>

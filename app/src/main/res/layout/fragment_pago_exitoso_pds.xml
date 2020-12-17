@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fafafc"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_successful"
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintRight_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <ImageView
+            android:id="@+id/iv_share_ticket"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_share_ticket"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_margin="20dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_pago_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/txt_pago_exitoso"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintRight_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_logo"/>
+
+        <LinearLayout
+            android:id="@+id/ll_monto_servicio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/tv_pago_txt">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="5dp"
+                android:layout_margin="5dp">
+
+                <ImageView
+                    android:id="@+id/icono_pago_exitoso"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:orientation="vertical"
+                android:layout_margin="5dp">
+
+                <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.MontoViewController
+                    android:id="@+id/tv_monto_pagado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:gravity="center"
+                    app:colorTexto="@color/coloproducttext"
+                    app:mostrarTextoInferior="false"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_monto_pagado"
+                    android:textColor="#00a1e1"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_fecha_pago"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@id/ll_botones"
+            app:layout_constraintTop_toBottomOf="@id/ll_monto_servicio">
+
+            <LinearLayout
+                android:id="@+id/ll_referencia_unica"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/txt_referencia_nica"
+                    android:textColor="#00a1e1"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_referencia_unica"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:layout_margin="20dp"
+                android:background="@color/grey_lines" />
+
+            <LinearLayout
+                android:id="@+id/ll_autorizacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/txt_autorizaci_emisor"
+                    android:textColor="#00a1e1"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_autorizacion_numero"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_folio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/txt_folio_ya_ganaste"
+                    android:textColor="#00a1e1"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_folio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_botones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintRight_toLeftOf="parent"
+            android:gravity="center"
+            android:layout_marginBottom="20dp">
+
+            <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.BotonClickUnico
+                android:id="@+id/btn_cerrar_pago"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/altura_boton"
+                android:background="@drawable/bg_button_cancel"
+                android:text="@string/txt_close"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                tools:visibility="visible"
+                android:textColor="@color/blue_dialog"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:visibility="gone"/>
+
+            <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.BotonClickUnico
+                android:id="@+id/btn_terminar"
+                style="@style/ButtonStyle"
+                android:layout_width="@dimen/tamaño_ancho_boton_standar"
+                android:layout_height="@dimen/altura_boton"
+                android:paddingEnd="30dp"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:layout_marginEnd="20dp"
+                />
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

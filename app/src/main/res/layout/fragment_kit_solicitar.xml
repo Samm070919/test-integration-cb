@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/fragment_kit_solicitar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhiteBackground"
+        android:paddingLeft="@dimen/espacio_mediano"
+        android:paddingRight="@dimen/espacio_mediano"
+        tools:context="com.pagatodoholdings.posandroid.secciones.kit.KitSolicitarFragment">
+
+        <RelativeLayout
+            android:id="@+id/rl_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/container2"
+            android:layout_marginStart="@dimen/espacio_mediano"
+            android:layout_marginEnd="@dimen/espacio_mediano">
+
+            <ImageView
+                android:id="@+id/ivClose"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icono_arrow_back" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                style="@style/TextStyleDialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/kit_pay_title"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/nav_header_text" />
+
+        </RelativeLayout>
+
+
+
+        <ScrollView
+
+            android:id="@+id/container2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espacio_largo"
+            android:background="@color/colorWhiteBackground"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rl_toolbar">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_kit_title_body"
+                        style="@style/TextStyleDialog"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/kit_title_body"
+                        android:textAlignment="center"
+                        android:textColor="@color/coloproducttext"
+                        android:textSize="@dimen/gen_dimen_txt_18"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/iv_dispositivo"
+                        android:layout_width="182dp"
+                        android:layout_height="182dp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="@dimen/espacio_mediano"
+                        android:src="@drawable/chip_pin_v"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tv_kit_title_body" />
+
+                    <TextView
+                        android:id="@+id/tv_costo"
+                        style="@style/TextStyleDialog"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/iv_dispositivo"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/espacio_mediano"
+                        android:text="Precio"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/gen_dimen_txt_16"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/iv_dispositivo" />
+
+                    <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.MontoViewController
+                        android:id="@+id/tv_costo_dispositivo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/iv_dispositivo"
+                        app:showLineOver="false"
+                        app:size="normal"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/espacio_mediano"
+                        android:textAlignment="center"
+                        app:colorTexto="@color/colorGrey"
+                        app:mostrarTextoInferior="false"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintBottom_toBottomOf="@id/tv_costo" />
+
+                    <View
+                        android:id="@+id/vLineOverMonto"
+                        android:layout_width="20dp"
+                        android:layout_height="3dp"
+                        app:layout_constraintLeft_toLeftOf="@id/tv_costo_dispositivo"
+                        app:layout_constraintRight_toRightOf="@id/tv_costo_dispositivo"
+                        app:layout_constraintTop_toTopOf="@id/tv_costo_dispositivo"
+                        android:background="@color/grey_lines"
+                        android:visibility="visible"
+                        app:layout_constraintBottom_toBottomOf="@id/tv_costo_dispositivo"/>
+
+
+                    <View
+                        android:id="@+id/iv1"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/grey_lines"
+                        app:layout_constraintTop_toBottomOf="@id/tv_costo"
+                        android:paddingTop="@dimen/espacio_largo"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/tv_promo"
+                        style="@style/TextStyleDialog"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/iv_dispositivo"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/espacio_mediano"
+                        android:text="Promo-Code"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/gen_dimen_txt_16"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/iv1" />
+
+
+                    <TextView
+                        android:id="@+id/tvParentesisDerecho"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/iv_dispositivo"
+                        android:text="("
+                        android:textSize="@dimen/gen_dimen_txt_24"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorSoftRed"
+                        app:layout_constraintTop_toTopOf="@id/tv_promo_envio"
+                        app:layout_constraintRight_toLeftOf="@id/tv_promo_envio"
+                        app:layout_constraintBottom_toBottomOf="@id/tv_promo_envio" />
+
+                    <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.MontoViewController
+                        android:id="@+id/tv_promo_envio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/iv_dispositivo"
+                        android:layout_centerHorizontal="true"
+                        app:mostrarTextoInferior="false"
+                        app:size="normal"
+                        android:textAlignment="center"
+                        app:colorTexto="@color/colorSoftRed"
+                        app:layout_constraintRight_toLeftOf="@id/tvParentesisIzquierdo"
+                        app:layout_constraintBottom_toBottomOf="@id/tv_promo" />
+
+                    <TextView
+                        android:id="@+id/tvParentesisIzquierdo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/iv_dispositivo"
+                        android:text=")"
+                        android:textSize="@dimen/gen_dimen_txt_24"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorSoftRed"
+                        app:layout_constraintTop_toTopOf="@id/tv_promo_envio"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintBottom_toBottomOf="@id/tv_promo_envio" />
+
+
+                    <View
+                        android:id="@+id/iv2"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/grey_lines"
+                        app:layout_constraintTop_toBottomOf="@id/tv_promo" />
+
+                    <TextView
+                        android:id="@+id/tv_nuevo"
+                        style="@style/TextStyleDialog"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/iv_dispositivo"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/espacio_mediano"
+                        android:text="Nuevo Precio"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/gen_dimen_txt_16"
+                        android:visibility="gone"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/iv2" />
+
+                    <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.MontoViewController
+                        android:id="@+id/tv_nuevo_dispositivo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/iv_dispositivo"
+                        android:layout_centerHorizontal="true"
+                        android:text="Costo"
+                        app:showLineOver="true"
+                        android:visibility="gone"
+                        android:textAlignment="center"
+                        app:colorTexto="@color/colorGreyDark"
+                        app:mostrarTextoInferior="false"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintBottom_toBottomOf="@id/tv_nuevo" />
+
+                    <View
+                        android:id="@+id/iv3"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/grey_lines"
+                        app:layout_constraintTop_toBottomOf="@id/tv_nuevo" />
+
+                    <TextView
+                        android:id="@+id/tv_envio"
+                        style="@style/TextStyleDialog"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/espacio_mediano"
+                        android:text="Costo de Envío"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/gen_dimen_txt_16"
+                        android:visibility="gone"
+                        app:layout_constraintRight_toLeftOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/iv3" />
+
+                    <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.MontoViewController
+                        android:id="@+id/tv_envio_dispositivo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="Costo"
+                        app:mostrarTextoInferior="false"
+                        android:visibility="gone"
+                        android:textAlignment="center"
+                        app:colorTexto="@color/colorGreyDark"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintBottom_toBottomOf="@id/tv_envio" />
+
+                    <View
+                        android:id="@+id/iv4"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:visibility="gone"
+                        android:background="@color/grey_lines"
+                        app:layout_constraintTop_toBottomOf="@id/tv_envio" />
+
+                    <TextView
+                        android:id="@+id/tv_total"
+                        style="@style/TextStyleDialog"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/espacio_mediano"
+                        android:text="Total a Pagar"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/gen_dimen_txt_16"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/iv4" />
+
+                    <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.MontoViewController
+                        android:id="@+id/tv_total_dispositivo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        app:size="minimal"
+                        android:textAlignment="center"
+                        app:colorTexto="@color/colorAzulImporte"
+                        app:mostrarTextoInferior="false"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintBottom_toBottomOf="@id/tv_total" />
+
+                    <View
+                        android:id="@+id/iv5"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/grey_lines"
+                        app:layout_constraintTop_toBottomOf="@id/tv_total" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+        </ScrollView>
+        
+        <TextView
+            android:id="@+id/tv_despues"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/ll_pago"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="@string/en_otro_momento"
+            android:textColor="@color/colorSaldoAzul"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="@dimen/margen_grande"
+            />
+
+
+
+        <LinearLayout
+            android:id="@+id/ll_pago"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/espacio_xlargo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+        <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.BotonClickUnico
+            android:id="@+id/btnMediox"
+            style="@style/ButtonStyle"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_bg_modal_btn_negativo"
+            android:text="@string/other_way"
+            android:textColor="@color/colorSaldoAzul"
+            android:layout_marginRight="@dimen/espacio_pequeño"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.BotonClickUnico
+            android:id="@+id/btn_comprarkit"
+            style="@style/ButtonStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_bg_modal_btn_negativo"
+            android:text="@string/tarjeta"
+            android:textColor="@color/colorSaldoAzul"
+            android:layout_marginLeft="@dimen/espacio_pequeño"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

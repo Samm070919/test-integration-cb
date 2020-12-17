@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tamaño_logo_ya_login">55dp</dimen>
+
+    <!--Dimensiones Adquirencia-->
+    <dimen name="item_prod_h">50dp</dimen>
+    <dimen name="item_prod_w">65dp</dimen>
+    <dimen name="font_amount_size">42sp</dimen>
+    <dimen name="font_sum_size">16sp</dimen>
+    <dimen name="item_font_size">16sp</dimen>
+    <dimen name="key_height">80dp</dimen>
+
+    <dimen name="card_w">350dp</dimen>
+    <dimen name="card_h">180dp</dimen>
+    <dimen name="con_h">200dp</dimen>
+</resources>

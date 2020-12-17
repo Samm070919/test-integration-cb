@@ -1,0 +1,48 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context="com.pagatodoholdings.posandroid.secciones.registro.registro4l.cardfragment.CCNameFragment">
+
+        <androidx.cardview.widget.CardView
+            style="@style/CardStyle"
+            android:elevation="0dp"
+            android:background="@color/transparent"
+            card_view:cardCornerRadius="0dp"
+            card_view:cardBackgroundColor="@android:color/transparent"
+            card_view:cardElevation="0dp">
+
+
+            <LinearLayout
+                android:background="@color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/CardLabel"
+                    android:text="@string/card_holders_name" />
+
+                <com.pagatodoholdings.posandroid.utils.cardutils.CreditCardEditText
+                    android:id="@+id/et_name"
+                    style="@style/CardInput"
+                    android:textColor="@color/colorWhite"
+                    android:hint="Nombre y Apellido"
+                    android:inputType="text|textNoSuggestions"
+                    android:textAllCaps="true"
+                    android:maxLength="22"
+                    android:privateImeOptions="nm"
+                    android:textColorHint="@color/colorWhite"
+                    android:backgroundTint="@android:color/white" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </FrameLayout>
+</layout>

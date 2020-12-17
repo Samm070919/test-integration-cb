@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:id="@+id/fragment_cambio_contrasena"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/colorWhite"
+        tools:context=".secciones.menuconfiguraciones.ConfigMenuCambioContrasenaFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rlToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/espacio_mediano"
+                android:layout_marginTop="@dimen/espacio_xlargo"
+                android:layout_marginEnd="@dimen/espacio_mediano"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/TextViewRegistroInfo"
+                    style="@style/TextStyleDialog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/menu_title_ajustes_cambio_contraseña"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/tam_txt_grande" />
+
+            </RelativeLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="16dp">
+
+                <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.EditTextDatosUsuarios
+                    android:id="@+id/et_contrase_a_actual"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:foreground="@android:color/transparent"
+                    android:inputType="numberPassword"
+                    android:maxLength="6"
+                    app:hint="@string/codigo_recibido"
+                    app:iscontrasena="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/TextViewFooterCodigoRecibido"
+                    style="@style/TextStyleDialog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="16dp"
+                    android:gravity="end"
+                    android:text="@string/codigo_recibido_foot"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/tam_txt_pequeno"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/et_contrase_a_actual"
+                    app:layout_constraintTop_toBottomOf="@+id/et_contrase_a_actual" />
+
+                <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.EditTextPassword
+                    android:id="@+id/et_nueva_contrase_a"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:inputType="numberPassword"
+                    android:maxLength="6"
+                    android:textSize="@dimen/gen_dimen_txt_16"
+                    app:hint_psd="@string/nueva_contrase_a"
+                    app:ime_psd="actionDone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/TextViewFooterCodigoRecibido" />
+
+                <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.EditTextPassword
+                    android:id="@+id/et_conf_nueva_contrase_a"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:inputType="numberPassword"
+                    android:maxLength="6"
+                    android:textSize="@dimen/gen_dimen_txt_16"
+                    app:hint_psd="@string/conf_nueva_contrase_a"
+                    app:ime_psd="actionDone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/et_nueva_contrase_a" />
+
+
+                <TextView
+                    android:id="@+id/TextViewFooterIntentarDeNuevo"
+                    style="@style/TextStyleDialog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:gravity="center|bottom"
+                    android:text="Enviar Código"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size_normal"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.BotonClickUnico
+                    android:id="@+id/btn_aceptar"
+                    style="@style/ButtonStyle"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|bottom"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="32dp"
+                    android:text="@string/aceptar"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

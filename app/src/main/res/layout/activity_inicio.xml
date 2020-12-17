@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/abg_azul_degradado"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margen_mediano"
+            android:layout_marginBottom="@dimen/margen_mediano">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="35sp"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:text="@string/title_inicio2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:text="@string/subtitle_inicio"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="100">
+
+            <LinearLayout
+                android:layout_weight="65"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center">
+                <ImageView
+                    android:id="@+id/iv_logo"
+                    android:transitionName="logo"
+                    android:layout_width="match_parent"
+                    android:contentDescription="@string/gen_desc"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_ana_calendar" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="35"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.BotonClickUnico
+                    android:id="@+id/btn_crear_cuenta"
+                    style="@style/FlatButtonStyle_white"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_bg_btn_blue_dark"
+                    android:layout_marginTop="@dimen/margin_exit_fragment"
+                    android:layout_marginBottom="@dimen/margin_exit_fragment"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:text="@string/bienvenida_inicio_registrate"
+                    android:textSize="@dimen/gen_dimen_txt_16" />
+
+                <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.BotonClickUnico
+                    android:id="@+id/btn_iniciar_sesion"
+                    style="@style/FlatButtonStyle_white"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_exit_fragment"
+                    android:layout_marginBottom="@dimen/margin_exit_fragment"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:text="@string/bienvenida_inicio_sesion"
+                    android:textSize="@dimen/gen_dimen_txt_16"
+                    android:background="@null" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</layout>

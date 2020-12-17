@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_by_day"
+        android:title="Ventas Día"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_by_week"
+        android:title="Ventas Semana"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_by_date_range"
+        android:title="Personalizado"
+        app:showAsAction="never" />
+
+</menu>

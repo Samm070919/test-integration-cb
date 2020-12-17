@@ -1,0 +1,215 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/fragmentVincularTarjeta"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_app"
+        tools:context="com.pagatodoholdings.posandroid.secciones.menuconfiguraciones.ConfigMenuDongleConectarFragment">
+
+        <RelativeLayout
+            android:id="@+id/rlToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/espacio_mediano"
+            android:layout_marginEnd="@dimen/espacio_mediano"
+            android:layout_marginTop="@dimen/espacio_xlargo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/ivClose"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:src="@drawable/cross_draw" />
+
+            <TextView
+                android:id="@+id/tv_titulo"
+                style="@style/TextStyleDialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/config_submenu_dongle_vinculado"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/tam_txt_grande"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rlBody"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/espacio_mediano"
+            android:layout_marginEnd="@dimen/espacio_mediano"
+            android:layout_marginTop="@dimen/espacio_xlargo"
+            android:layout_below="@+id/rlToolbar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TextView
+                android:id="@+id/tv_titulo_conectar_dongle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/espacio_xxxlargo"
+                android:layout_marginStart="@dimen/espacio_mediano"
+                android:layout_marginEnd="@dimen/espacio_mediano"
+                android:fontFamily="sans-serif"
+                android:text="@string/config_submenu_enciende_lector"
+                android:textSize="@dimen/gen_dimen_txt_18"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"/>
+
+            <ImageView
+                android:id="@+id/iv_on_off"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/espacio_mediano"
+                android:src="@drawable/img_onoff"
+                android:layout_below="@+id/tv_titulo_conectar_dongle"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/tv_mantenlo_presionado"
+                android:layout_width="294dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/espacio_mediano"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:text="@string/config_submenu_mantenlo_presionado"
+                android:textSize="@dimen/gen_dimen_txt_18"
+                android:layout_below="@+id/iv_on_off"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlAction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/espacio_mediano"
+            android:layout_marginEnd="@dimen/espacio_mediano"
+            android:layout_marginTop="@dimen/espacio_xlargo"
+            android:layout_below="@+id/rlBody"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.BotonClickUnico
+                android:id="@+id/btn_reintentar_conexion"
+                style="@style/ButtonStyle"
+                android:fontFamily="sans-serif-medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/espacio_mediano"
+                android:background="@drawable/selector_bg_modal_btn_negativo"
+                android:text="Conectar"
+                android:textColor="@color/colorSaldoAzul"
+                android:textSize="@dimen/gen_dimen_txt_16"
+                android:layout_centerHorizontal="true"
+                />
+
+
+
+
+            <LinearLayout
+                android:id="@+id/img_bluetooth_conectando"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <ProgressBar
+                    android:id="@+id/progress_circular_bar"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="@dimen/espacio_mediano"
+                    android:layout_centerHorizontal="true"
+                    android:indeterminateDrawable="@drawable/progress"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ico_bluetooth"
+                        />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:src="@drawable/invalid_name"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlImageFooter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/espacio_mediano"
+            android:layout_marginEnd="@dimen/espacio_mediano"
+            android:layout_marginTop="@dimen/espacio_xlargo"
+            android:layout_below="@+id/rlAction"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/img_tarjeta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="70dp"
+                android:src="@drawable/tarjeta"
+                android:layout_alignParentEnd="true"
+                />
+
+
+            <ImageView
+                android:id="@+id/img_lector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:src="@drawable/dongleconectar"
+                />
+        </RelativeLayout>
+
+
+
+        <ImageView
+            android:id="@+id/img_lector_dongle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espacio_xlargo"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/rlAction"
+            android:src="@drawable/dongleconectar"
+            />
+
+
+
+
+
+
+    </RelativeLayout>
+</layout>
+

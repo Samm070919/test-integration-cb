@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:id="@+id/fl_main_moneyin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/background_app"
+        tools:context=".secciones.money_in.MoneyInMenuFragment">
+
+        <!--<ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rlToolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/espacio_mediano"
+                    android:layout_marginEnd="@dimen/espacio_mediano"
+                    android:layout_marginTop="@dimen/espacio_xlargo"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/ivOnBack"
+                        android:layout_width="21dp"
+                        android:layout_height="21dp"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/ic_icono_back" />
+
+                    <TextView
+                        android:id="@+id/tvTitle"
+                        style="@style/TextStyleDialog"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/rellena_saldo"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/tam_txt_grande"/>
+
+                </RelativeLayout>
+
+
+                <ImageView
+                    android:id="@+id/money_in_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/espacio_mediano"
+                    android:layout_marginBottom="@dimen/espacio_largo"
+                    android:layout_marginStart="@dimen/espacio_largo"
+                    android:layout_marginEnd="@dimen/espacio_largo"
+                    android:src="@drawable/ic_bolsa_dinero"
+                    android:layout_below="@+id/rlToolbar"
+                    android:layout_centerHorizontal="true"/>
+
+                <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.MontoViewController
+                    android:id="@+id/tv_saldo_rellena"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:gravity="center"
+                    app:colorTexto="@color/colorSaldoAzul"
+                    android:layout_below="@+id/money_in_image"
+                    app:mostrarTextoInferior="false"
+                    android:visibility="visible" />
+
+                <ScrollView
+                    android:id="@+id/scrollView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/money_in_image"
+                    android:layout_marginTop="40dp"
+                    android:fillViewport="true"
+                    android:overScrollMode="ifContentScrolls">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="top|center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_saldo"
+                            style="@style/TextStyleDialog"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/money_in_image"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="0dp"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorGreyFormulario"
+                            android:textSize="@dimen/gen_dimen_txt_18"
+                            android:text="@string/saldo_disponible" />
+
+                        <TextView
+                            android:id="@+id/tv_selecciona_monto"
+                            style="@style/TextStyleDialog"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/money_in_image"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/espacio_xxlargo"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorGreyFormulario"
+                            android:textSize="@dimen/gen_dimen_txt_18"
+                            android:text="@string/selecciona_monto_efectivo" />
+
+                        <LinearLayout
+                            android:id="@+id/ll_menu"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/espacio_mediano"
+                            android:layout_marginTop="@dimen/espacio_pequeño"
+                            android:layout_marginEnd="@dimen/espacio_mediano"
+                            android:orientation="horizontal">
+
+                            <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.BotonClickUnico
+                                android:id="@+id/btn_monto1"
+                                style="@style/NewFlatButtonStyle"
+                                android:background="@drawable/selector_bg_transp_buttons"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/espacio_pequeño"
+                                android:layout_marginTop="@dimen/espacio_mediano"
+                                android:layout_marginBottom="@dimen/espacio_mediano"
+                                android:layout_weight="1"
+                                android:text="60,000COP"
+                                android:textSize="@dimen/gen_dimen_txt_14"
+                                android:padding="@dimen/espacio_pequeño"/>
+
+
+                            <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.BotonClickUnico
+                                android:id="@+id/btn_monto2"
+                                style="@style/NewFlatButtonStyle"
+                                android:background="@drawable/selector_bg_transp_buttons"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/espacio_pequeño"
+                                android:layout_marginEnd="@dimen/espacio_pequeño"
+                                android:layout_marginTop="@dimen/espacio_mediano"
+                                android:layout_marginBottom="@dimen/espacio_mediano"
+                                android:layout_weight="1"
+                                android:text="90,000COP"
+                                android:textSize="@dimen/gen_dimen_txt_14"
+                                android:padding="@dimen/espacio_pequeño"/>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_menu2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/espacio_mediano"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginEnd="@dimen/espacio_mediano"
+                            android:orientation="horizontal">
+
+
+                            <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.BotonClickUnico
+                                android:id="@+id/btn_monto3"
+                                style="@style/NewFlatButtonStyle"
+                                android:background="@drawable/selector_bg_transp_buttons"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/espacio_pequeño"
+                                android:layout_marginTop="@dimen/espacio_pequeño"
+                                android:layout_marginBottom="@dimen/espacio_mediano"
+                                android:layout_weight="1"
+                                android:text="150,000COP"
+                                android:textSize="@dimen/gen_dimen_txt_14"
+                                android:padding="@dimen/espacio_pequeño"/>
+
+
+                            <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.BotonClickUnico
+                                android:id="@+id/btn_monto4"
+                                style="@style/NewFlatButtonStyle"
+                                android:background="@drawable/selector_bg_transp_buttons"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/espacio_pequeño"
+                                android:layout_marginEnd="@dimen/espacio_pequeño"
+                                android:layout_marginTop="@dimen/espacio_pequeño"
+                                android:layout_marginBottom="@dimen/espacio_mediano"
+                                android:layout_weight="1"
+                                android:text="225,000COP"
+                                android:textSize="@dimen/gen_dimen_txt_14"
+                                android:padding="@dimen/espacio_pequeño"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_otra_cantidad"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginStart="@dimen/espacio_mediano"
+                            android:layout_marginEnd="@dimen/espacio_mediano"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:id="@+id/tv_otra_cantidad"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:text="@string/otra_cantidad"
+                                />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.MontoViewCustom
+                                    android:id="@+id/mvc_otra_cantidad"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    app:textoInferior=""
+                                    app:fontSize="normal"
+                                    android:padding="@dimen/espacio_mediano"
+                                    app:maxLenght="10"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/llPays"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/espacio_pequeño"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.BotonClickUnico
+                                android:id="@+id/btnPagosEnLinea"
+                                style="@style/NewFlatButtonStyle"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/espacio_largo"
+                                android:layout_marginTop="@dimen/espacio_pequeño"
+                                android:layout_marginBottom="@dimen/espacio_largo"
+                                android:layout_weight="1"
+                                android:text="@string/btn_banca_enlinea"
+                                android:textSize="@dimen/gen_dimen_txt_16" />
+
+                            <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.BotonClickUnico
+                                android:id="@+id/btnEfectivo"
+                                style="@style/NewFlatButtonStyle"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignEnd="@+id/scrollView"
+                                android:layout_alignBottom="@+id/scrollView"
+                                android:layout_marginStart="@dimen/espacio_mediano"
+                                android:layout_marginTop="@dimen/espacio_pequeño"
+                                android:layout_marginBottom="@dimen/espacio_largo"
+                                android:layout_toEndOf="@+id/btnPagosEnLinea"
+                                android:layout_weight="1"
+                                android:text="@string/btn_efectivo"
+                                android:textSize="@dimen/gen_dimen_txt_16" />
+
+                            <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.BotonClickUnico
+                                android:id="@+id/btnTarjeta"
+                                style="@style/NewFlatButtonStyle"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignEnd="@+id/scrollView"
+                                android:layout_alignBottom="@+id/scrollView"
+                                android:layout_marginStart="@dimen/espacio_mediano"
+                                android:layout_marginTop="@dimen/espacio_pequeño"
+                                android:layout_marginEnd="@dimen/espacio_largo"
+                                android:layout_marginBottom="@dimen/espacio_largo"
+                                android:layout_toEndOf="@+id/btnEfectivo"
+                                android:layout_weight="1"
+                                android:text="@string/tarjeta"
+                                android:textSize="@dimen/gen_dimen_txt_16" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </ScrollView>
+
+
+
+
+            </RelativeLayout>
+        <!--</ScrollView>-->
+    </FrameLayout>
+</layout>

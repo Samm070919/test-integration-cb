@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".secciones.menuconfiguraciones.ConfigMenuRestaurarFragment">
+        <LinearLayout
+            android:id="@+id/ll_exit_dialog_fragment_main_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:minWidth="400dp"
+
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:id="@+id/titulo_restaurar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/blueDark"
+                android:maxLines="2"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:padding="4dp"
+                android:gravity="center"
+                android:text="@string/menu_item_restaurar_datos_fabrica"
+                android:textColor="@color/colorWhite"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:id="@+id/iv_exit_dialog_fragment_icon"
+                android:layout_marginTop="20dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_img_cierre_turno"/>
+            <TextView
+                android:id="@+id/tv_restaurar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="@dimen/gen_dimen_txt_18"
+                android:textColor="#e61f11"
+                android:text="@string/menu_item_restaurar_datos_fabrica"/>
+
+            <TextView
+                android:id="@+id/tv_restaurar_question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_exit_fragment"
+                android:layout_marginRight="@dimen/margin_exit_fragment"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:text="@string/string_question_restaurar_fabrica"
+                android:textSize="@dimen/gen_dimen_txt_16" />
+            <LinearLayout
+                android:layout_marginTop="70dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.BotonClickUnico
+                    android:id="@+id/btn_restaurar_cancelar"
+                    android:text="@string/dialog_txt_cancel"
+                    style="@style/ExitFragment_ButtonsStyle"/>
+                <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.BotonClickUnico
+                    android:id="@+id/btn_restaurar_accept"
+                    android:text="@string/dialog_txt_accept"
+                    style="@style/AcceptFragment_ButtonsStyle"/>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

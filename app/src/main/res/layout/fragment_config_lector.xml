@@ -1,0 +1,209 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/fragmentVincularTarjeta"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_app"
+        tools:context="com.pagatodoholdings.posandroid.secciones.menuconfiguraciones.ConfigMenuConfiguracionSubVincular">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/rlToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:layout_marginStart="@dimen/espacio_mediano"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:scaleType="centerInside"
+                style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+                android:id="@+id/ivClose"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_icono_back" />
+
+            <TextView
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:id="@+id/tv_titulo"
+                style="@style/TextStyleDialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/config_submenu_dongle_vinculado"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/tam_txt_grande" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/img_lector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/ic_elementos_adq_chip_pin"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/rlToolbar"
+            android:alpha="0.5"/>
+
+        <TextView
+            android:id="@+id/tv_usuario_lector"
+            style="@style/TextStyleDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/tam_txt_grande"
+            android:textStyle="bold"
+            android:layout_below="@+id/img_lector"/>
+
+        <TextView
+            android:id="@+id/tv_serie_lector"
+            style="@style/TextStyleDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorGreyDark"
+            android:textSize="@dimen/gen_dimen_txt_14"
+            android:layout_below="@+id/tv_usuario_lector"/>
+
+        <TextView
+            android:id="@+id/tv_login_pci"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_pci"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginBottom="@dimen/espacio_largo"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tv_serie_lector"
+            android:visibility="gone"/>
+
+        <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.BotonClickUnico
+            android:id="@+id/btn_reintentar_conexion"
+            style="@style/ButtonStyle"
+            android:fontFamily="sans-serif-medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/espacio_mediano"
+            android:background="@drawable/selector_bg_modal_btn_negativo"
+            android:text="Conectar"
+            android:textColor="@color/colorSaldoAzul"
+            android:textSize="@dimen/gen_dimen_txt_16"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tv_login_pci" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_lector_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espacio_mediano"
+            android:layout_marginBottom="@dimen/espacio_xxlargo"
+            android:layout_marginStart="@dimen/espacio_mediano"
+            android:layout_marginEnd="@dimen/espacio_mediano"
+            android:paddingBottom="@dimen/espacio_pequeño"
+            app:cardCornerRadius="@dimen/curvatura_mediana_cv"
+            app:cardElevation="@dimen/elevacion_pequeña_cv"
+            android:layout_below="@+id/btn_reintentar_conexion">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/espacio_pequeño"
+                android:paddingStart="@dimen/espacio_largo"
+                android:paddingEnd="@dimen/espacio_largo"
+                android:layout_marginBottom="@dimen/espacio_xxlargo">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+                    <Button
+                        android:layout_weight="7"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorWhite"
+                        android:fontFamily="sans-serif"
+                        android:gravity="start|center_vertical"
+                        android:text="@string/bateria_lector"
+                        android:textAllCaps="false"
+                        android:textColor="#46606a"
+                        android:textSize="17sp" />
+
+                    <LinearLayout
+                        android:layout_weight="3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+                        <TextView
+                            android:id="@+id/txt_battery_dongle"
+                            android:layout_weight="3"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:fontFamily="sans-serif"
+                            android:gravity="end|center_vertical"
+                            android:textAllCaps="false"
+                            android:textColor="#46606a"
+                            android:textSize="17sp"/>
+
+                        <LinearLayout
+                            android:layout_weight="2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:padding="12dp">
+                            <ImageView
+                                android:id="@+id/img_battery_dongle"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.4dp"
+                    android:background="#90909090" />
+
+                <Button
+                    android:id="@+id/btn_cambio_lector"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:drawableEnd="@drawable/flecha_azul_derecha"
+                    android:drawablePadding="30dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/cambio_lector"
+                    android:textAllCaps="false"
+                    android:textColor="#46606a"
+                    android:textSize="17sp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.4dp"
+                    android:background="#90909090" />
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/fragment_kit_datos_envio"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhiteBackground"
+        android:orientation="vertical"
+        tools:context="com.pagatodoholdings.posandroid.secciones.kit.KitDatosEnvioFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/rl_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <ImageButton
+                style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+                android:id="@+id/ivClose"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="@dimen/espacio_mediano"
+                android:src="@drawable/icono_arrow_back"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                style="@style/TextStyleDialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kit_title_datos_envio"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/tam_txt_ext"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/tv_direccion_envio_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/espacio_mediano"
+            android:text="@string/kit_title_direccion_envio_empty"
+            android:textAlignment="center"
+            android:textSize="16sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_direccion"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/espacio_largo"
+            android:layout_marginEnd="24dp"
+            android:textColorHint="@color/colorGreyFormulario">
+
+            <EditText
+                android:id="@+id/tv_direccion"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/title_mi_cuenta_direccion"
+                android:inputType="text"
+                android:maxLength="50"
+                android:textColor="@color/colorGreyFormulario"
+                android:textSize="@dimen/gen_dimen_txt_16" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!--Nivel 0 Region(Colombia) -->
+                <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.SpinnerConTitulo
+                    android:id="@+id/spinner_nivel_0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="@dimen/espacio_pequeño"
+                    android:layout_marginEnd="24dp"
+                    app:cabecera="nivel 0" />
+
+                <!--Nivel 1 Departamento(Colombia) -->
+                <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.SpinnerConTitulo
+                    android:id="@+id/spinner_nivel_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="@dimen/espacio_pequeño"
+                    android:layout_marginEnd="24dp"
+                    app:cabecera="nivel 1" />
+
+                <!--Nivel 2 Ciudad(Colombia) -->
+                <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.SpinnerConTitulo
+                    android:id="@+id/spinner_nivel_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+
+                    android:layout_marginTop="@dimen/espacio_pequeño"
+                    android:layout_marginEnd="24dp"
+                    app:cabecera="nivel 2" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tv_title_codigo_postal"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="@dimen/espacio_mediano"
+                    android:layout_marginEnd="24dp"
+                    android:textColorHint="@color/colorGreyFormulario">
+
+                    <EditText
+                        android:id="@+id/ed_cpostal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="@string/title_mi_cuenta_codigoPostal"
+                        android:inputType="text"
+                        android:maxLength="50"
+                        android:textColor="@color/colorGreyFormulario"
+                        android:textSize="@dimen/gen_dimen_txt_16" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.BotonClickUnico
+                    android:id="@+id/btnConfirmar"
+                    style="@style/ButtonContinueStyle"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="2dp"
+                    android:text="@string/confirmar" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

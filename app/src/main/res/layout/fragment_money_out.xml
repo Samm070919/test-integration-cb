@@ -1,0 +1,186 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:id="@+id/fl_codebar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/colorWhiteBackground"
+        tools:context=".secciones.money_out.MoneyOutFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <RelativeLayout
+                android:id="@+id/rlToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/espacio_mediano"
+                android:layout_marginTop="@dimen/espacio_largo"
+                android:layout_marginEnd="@dimen/espacio_mediano"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_weight=".08">
+
+                <ImageView
+                    android:id="@+id/ivOnBack"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:src="@drawable/ic_icono_back" />
+
+                <include
+                    android:id="@+id/l_importe"
+                    layout="@layout/layout_importe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tv_title_section"
+                style="@style/TextStyleDialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlToolbar"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/espacio_pequeño"
+                android:text="@string/money_out_title_section_salida_dinero"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/tam_txt_login"
+
+                android:layout_weight="0.08"/>
+
+
+            <LinearLayout
+                android:id="@+id/ll_container_monto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_title_section"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/espacio_mediano"
+                android:orientation="vertical"
+                android:layout_weight="0.3">
+
+                <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.MontoViewCustom
+                    android:id="@+id/mvc_monto_retiro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorGreyFormulario"
+                    app:fontSize="large"
+                    app:textoInferior="@string/money_out_title_monto_retiro">
+
+
+                </com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.MontoViewCustom>
+
+            </LinearLayout>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view_cta"
+                style="@style/CardViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_container_monto"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/espacio_largo"
+                android:layout_weight="0.3">
+
+                <RelativeLayout
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/espacio_mediano"
+                    android:layout_marginTop="@dimen/espacio_mediano"
+                    android:layout_marginRight="@dimen/espacio_mediano"
+                    android:layout_marginBottom="@dimen/espacio_mediano"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_banco"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Banco"
+                        android:textColor="@color/colorGreyFormulario"
+                        android:textSize="@dimen/gen_dimen_txt_16" />
+
+                    <TextView
+                        android:id="@+id/tv_cta_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_banco"
+                        android:layout_marginTop="@dimen/espacio_mediano"
+                        android:text="@string/money_out_title_cta"
+                        android:textColor="@color/colorGreyLigth"
+                        android:textSize="@dimen/gen_dimen_txt_16" />
+
+
+                    <TextView
+                        android:id="@+id/tv_cta_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_cta_title"
+                        android:text="*5809"
+                        android:textColor="@color/colorGreyFormulario"
+                        android:textSize="@dimen/gen_dimen_txt_18" />
+
+
+                    <ImageView
+                        android:id="@+id/icono_banco"
+                        android:layout_width="25dp"
+                        android:layout_height="21dp"
+                        android:layout_below="@+id/tv_cta_title"
+                        android:layout_alignEnd="@+id/tv_banco"
+                        android:src="@drawable/icono_cuentabanco" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/tv_footer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card_view_cta"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/espacio_mediano"
+                android:text="@string/money_out_title_footer"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/gen_dimen_txt_14"
+                android:layout_weight="0.12"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.11"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/espacio_mediano">
+
+                <Button
+                    android:id="@+id/btn_continuar"
+                    style="@style/ButtonCobrarStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/espacio_mediano"
+                    android:hapticFeedbackEnabled="false"
+                    android:keepScreenOn="false"
+                    android:text="@string/continuar"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/gen_dimen_txt_18"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </FrameLayout>
+</layout>

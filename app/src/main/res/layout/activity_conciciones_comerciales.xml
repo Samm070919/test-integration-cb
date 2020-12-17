@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        android:weightSum="6"
+        tools:context="com.pagatodoholdings.posandroid.secciones.inicio.CondicionesComerciales">
+
+
+        <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.AutoResizeTextView
+            android:id="@+id/tv_continuar_despues"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="none"
+            android:fontFamily="Roboto-Regular"
+            android:maxLines="3"
+            android:paddingStart="8dp"
+            android:text="@string/fragment_nombre_negocio_continuar_despues"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorSaldoAzul"
+            android:textSize="@dimen/gen_dimen_txt_14"
+            app:layout_constraintBottom_toTopOf="@+id/btn_aceptar_condiciones"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline6"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:text="\u2022 "
+            android:textColor="@color/colorPrimary"
+            android:textAlignment="viewEnd"
+            android:textSize="@dimen/gen_dimen_txt_24"
+            app:layout_constraintBottom_toTopOf="@+id/guideline15"
+            app:layout_constraintEnd_toStartOf="@+id/guideline19"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline14"
+            app:layout_constraintVertical_bias="0.25" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:text="\u2022 "
+            android:textColor="@color/colorPrimary"
+            android:textAlignment="viewEnd"
+            android:textSize="@dimen/gen_dimen_txt_24"
+            app:layout_constraintBottom_toTopOf="@+id/guideline13"
+            app:layout_constraintEnd_toStartOf="@+id/guideline19"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline15"
+            app:layout_constraintVertical_bias="0.25" />
+
+        <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.AutoResizeTextView
+            android:id="@+id/autoResizeTextView9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:ellipsize="none"
+            android:fontFamily="Roboto-Regular"
+            android:maxLines="3"
+            android:paddingStart="8dp"
+            android:text="@string/subtitulo2_condiciones"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorGreyFormulario"
+            android:textSize="@dimen/gen_dimen_txt_14"
+            app:layout_constraintBottom_toTopOf="@+id/guideline15"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline19"
+            app:layout_constraintTop_toTopOf="@+id/guideline14"
+            app:layout_constraintVertical_bias="0.3" />
+
+        <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.AutoResizeTextView
+            android:id="@+id/autoResizeTextView10"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:ellipsize="none"
+            android:fontFamily="Roboto-Regular"
+            android:maxLines="3"
+            android:paddingStart="8dp"
+            android:text="@string/subtitulo3_condiciones"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorGreyFormulario"
+            android:textSize="@dimen/gen_dimen_txt_14"
+            app:layout_constraintBottom_toTopOf="@+id/guideline13"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline19"
+            app:layout_constraintTop_toTopOf="@+id/guideline15"
+            app:layout_constraintVertical_bias="0.3" />
+
+        <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.AutoResizeTextView
+            android:id="@+id/autoResizeTextView8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:ellipsize="none"
+            android:fontFamily="Roboto-Regular"
+            android:maxLines="3"
+            android:paddingStart="8dp"
+            android:text="@string/subtitulo1_condiciones"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorGreyFormulario"
+            android:textSize="@dimen/gen_dimen_txt_14"
+            app:layout_constraintBottom_toTopOf="@+id/guideline14"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline19"
+            app:layout_constraintTop_toTopOf="@+id/guideline3"
+            app:layout_constraintVertical_bias="0.25" />
+
+        <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.AutoResizeTextView
+            android:id="@+id/autoResizeTextView7"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="none"
+            android:fontFamily="Roboto-Regular"
+            android:maxLines="3"
+            android:paddingStart="8dp"
+            android:text="@string/contenido2_condiciones"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorGreyFormulario"
+            android:textSize="@dimen/gen_dimen_txt_14"
+            app:layout_constraintBottom_toTopOf="@+id/guideline15"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline19"
+            app:layout_constraintTop_toBottomOf="@+id/autoResizeTextView9" />
+
+        <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.AutoResizeTextView
+            android:id="@+id/autoResizeTextView4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:ellipsize="none"
+            android:fontFamily="Roboto-Regular"
+            android:maxLines="3"
+            android:paddingStart="8dp"
+            android:text="@string/fragment_ubicacion_negocio_terminos_condiciones"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorGreyFormulario"
+            android:textSize="@dimen/gen_dimen_txt_14"
+            app:layout_constraintBottom_toTopOf="@+id/guideline6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline19"
+            app:layout_constraintTop_toTopOf="@+id/guideline18" />
+
+        <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.AutoResizeTextView
+            android:id="@+id/autoResizeTextView3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="none"
+            android:fontFamily="Roboto-Regular"
+            android:maxLines="3"
+            android:paddingStart="8dp"
+            android:text="@string/contenido1_condiciones"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorGreyFormulario"
+            android:textSize="@dimen/gen_dimen_txt_14"
+            app:layout_constraintBottom_toTopOf="@+id/guideline14"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline19"
+            app:layout_constraintTop_toBottomOf="@+id/autoResizeTextView8" />
+
+        <CheckBox
+            android:id="@+id/cb_aceptar_terminos_condiciones"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:paddingStart="8dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline6"
+            app:layout_constraintEnd_toStartOf="@+id/guideline19"
+            app:layout_constraintHorizontal_bias="0.77"
+            app:layout_constraintTop_toTopOf="@+id/guideline18" />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="\u2022 "
+            android:textColor="@color/colorPrimary"
+            android:textAlignment="viewEnd"
+            android:textSize="@dimen/gen_dimen_txt_24"
+            app:layout_constraintBottom_toTopOf="@+id/guideline14"
+            app:layout_constraintEnd_toStartOf="@+id/guideline19"
+            app:layout_constraintHorizontal_bias="0.77"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline3"
+            app:layout_constraintVertical_bias="0.25" />
+
+
+        <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.AutoResizeTextView
+            android:id="@+id/autoResizeTextView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="32dp"
+            android:ellipsize="none"
+            android:fontFamily="Roboto-Regular"
+            android:maxLines="2"
+            android:text="@string/titulo_condiciones"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorSaldoAzul"
+            android:textSize="@dimen/gen_dimen_txt_18"
+            app:layout_constraintBottom_toTopOf="@+id/guideline3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.AutoResizeTextView
+            android:id="@+id/autoResizeTextView5"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:ellipsize="none"
+            android:fontFamily="Roboto-Regular"
+            android:maxLines="3"
+            android:paddingStart="8dp"
+            android:text="@string/contenido3_condiciones"
+            android:textColor="@color/colorGreyFormulario"
+            android:textSize="@dimen/gen_dimen_txt_14"
+            app:layout_constraintBottom_toTopOf="@+id/guideline13"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline19"
+            app:layout_constraintTop_toBottomOf="@+id/autoResizeTextView10" />
+
+        <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.BotonClickUnico
+            android:id="@+id/btn_aceptar_condiciones"
+            style="@style/Aceptar_ButtonStyle"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="@string/aceptar"
+            android:textSize="@dimen/gen_dimen_txt_16"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline6" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.2" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.78" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.59" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.33" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.46" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.68" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="74dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

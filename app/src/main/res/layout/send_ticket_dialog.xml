@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_rounded_bg">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/dialog_rounded_bg">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="256dp"
+            android:layout_gravity="center_horizontal">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="16dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="16dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline36"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="16dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline37"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_end="16dp" />
+
+            <androidx.constraintlayout.widget.Group
+                android:id="@+id/groupForm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:constraint_referenced_ids="imageView22,textView22,textView23,editText3,btn_regresar,sendButton"
+                tools:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/imageView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toStartOf="@+id/guideline35"
+                app:layout_constraintStart_toStartOf="@+id/guideline34"
+                app:layout_constraintTop_toTopOf="@+id/guideline36"
+                app:srcCompat="@drawable/ic_letter" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/enviar_ticket_email"
+                android:textColor="@color/blue_ya_ganaste"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline35"
+                app:layout_constraintStart_toStartOf="@+id/guideline34"
+                app:layout_constraintTop_toBottomOf="@+id/imageView22" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/roboto"
+                android:text="@string/registro_et_correo_electr_nico"
+                android:textColor="@color/textHintField"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/guideline34"
+                app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+            <ProgressBar
+                android:id="@+id/ticketFragmentLoadingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:indeterminateDrawable="@drawable/bg_anim_cargando"
+                android:visibility="gone"
+                app:layout_constraintBottom_toTopOf="@id/editText3"
+                app:layout_constraintEnd_toEndOf="@id/editText3"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/textView23"
+                app:layout_constraintTop_toTopOf="@+id/textView23"
+                tools:visibility="visible" />
+
+            <EditText
+                android:id="@+id/editText3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/hint_correo"
+                android:inputType="textEmailAddress"
+                app:layout_constraintEnd_toStartOf="@+id/guideline35"
+                app:layout_constraintStart_toStartOf="@+id/guideline34"
+                app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+            <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.BotonClickUnico
+                android:id="@+id/btn_regresar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_button_cancel"
+                android:text="@string/cancelar"
+                android:textAllCaps="false"
+                android:textColor="@color/color_cancelar_botton"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toTopOf="@+id/guideline37"
+                app:layout_constraintEnd_toStartOf="@+id/sendButton"
+                app:layout_constraintHorizontal_weight="0.45"
+                app:layout_constraintStart_toStartOf="@+id/guideline34"
+                app:layout_constraintTop_toTopOf="@+id/sendButton" />
+
+            <Button
+                android:id="@+id/sendButton"
+                style="@style/ButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:background="@drawable/bg_button_wallet"
+                android:text="@string/enviar_mail_titulo"
+                android:paddingEnd="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/guideline37"
+                app:layout_constraintEnd_toStartOf="@+id/guideline35"
+                app:layout_constraintHorizontal_weight="0.55"
+                app:layout_constraintStart_toEndOf="@+id/btn_regresar"
+                app:layout_constraintTop_toBottomOf="@+id/editText3" />
+
+            <androidx.constraintlayout.widget.Group
+                android:id="@+id/groupSuccess"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:constraint_referenced_ids="imageViewSuccess,textViewSuccess,btnCerrar"
+                tools:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/imageViewSuccess"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_ana_verde"
+                app:layout_constraintBottom_toTopOf="@id/textViewSuccess"
+                app:layout_constraintEnd_toStartOf="@+id/guideline35"
+                app:layout_constraintStart_toStartOf="@+id/guideline34"
+                app:layout_constraintTop_toTopOf="@+id/guideline36" />
+
+            <TextView
+                android:id="@+id/textViewSuccess"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="32dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/dialog_label_enviar_ticket"
+                android:textAlignment="center"
+                android:textColor="@color/blue_ya_ganaste"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@id/btnCerrar"
+                app:layout_constraintEnd_toStartOf="@+id/guideline35"
+                app:layout_constraintStart_toStartOf="@+id/guideline34"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewSuccess" />
+
+            <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.BotonClickUnico
+                android:id="@+id/btnCerrar"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_button_cancel"
+                android:text="@string/txt_close"
+                android:textAllCaps="false"
+                android:textColor="@color/color_cancelar_botton"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@id/guideline37"
+                app:layout_constraintEnd_toEndOf="@id/guideline35"
+                app:layout_constraintStart_toStartOf="@id/guideline34"
+                app:layout_constraintTop_toBottomOf="@id/textViewSuccess" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

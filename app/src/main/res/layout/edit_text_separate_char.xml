@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_root_char"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:focusableInTouchMode="true"
+    android:animateLayoutChanges="true"
+    android:layout_marginBottom="@dimen/espacio_pequeño"
+    android:layout_marginTop="@dimen/espacio_pequeño"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <EditText
+        android:id="@+id/edit_contenido_char"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/EditTextPassword"
+        android:maxLength="6"
+        android:textIsSelectable="false"
+        android:textSize="@dimen/gen_dimen_txt_14"
+        android:textColorHint="@color/texto_simple_modal"
+        android:textColor="@android:color/transparent"
+        android:fontFamily="sans-serif"/>
+
+    <TextView
+        android:id="@+id/text_hint_char"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:textColor="@color/texto_simple_modal"
+        android:textSize="@dimen/gen_dimen_txt_14"
+        android:fontFamily="sans-serif"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="4dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/edit_contenido_char"
+        tools:text="@string/contrasena"/>
+
+    <CheckBox
+        android:id="@+id/iv_icono_visible_char"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/espacio_pequeño"
+        android:visibility="gone"
+        android:button="@drawable/eye_selector"
+        android:layout_marginEnd="10dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true" />
+
+    <LinearLayout
+        android:id="@+id/layout_asteriscos_char"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="14dp"
+        android:paddingEnd="@dimen/margen_edit_contraseña"
+        android:layout_toStartOf="@+id/iv_icono_visible_char"
+        android:layout_alignBottom="@+id/edit_contenido_char">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.AutoResizeTextView
+                android:id="@+id/txt_digit_1_char"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                tools:text="21211454"
+                android:textSize="@dimen/gen_dimen_txt_16"
+                android:textColor="@color/coloproducttext"
+                android:layout_centerHorizontal="true"
+                android:layout_toStartOf="@+id/division1_char" />
+
+            <View
+                android:id="@+id/division1_char"
+                android:layout_width="@dimen/ancho_division_asterisco_contraseña"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:background="@color/colorGrey" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.AutoResizeTextView
+                android:id="@+id/txt_digit_2_char"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                tools:text="*"
+                android:textSize="@dimen/gen_dimen_txt_16"
+                android:textColor="@color/coloproducttext"
+                android:layout_toStartOf="@+id/division2_char"/>
+
+            <View
+                android:id="@+id/division2_char"
+                android:layout_width="@dimen/ancho_division_asterisco_contraseña"
+                android:layout_height="match_parent"
+                android:background="@color/colorGrey"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.AutoResizeTextView
+                android:id="@+id/txt_digit_3_char"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                tools:text="*"
+                android:textSize="@dimen/gen_dimen_txt_16"
+                android:textColor="@color/coloproducttext"
+                android:layout_toStartOf="@+id/division3_char"/>
+
+            <View
+                android:id="@+id/division3_char"
+                android:layout_width="@dimen/ancho_division_asterisco_contraseña"
+                android:layout_height="match_parent"
+                android:background="@color/colorGrey"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.AutoResizeTextView
+                android:id="@+id/txt_digit_4_char"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                tools:text="*"
+                android:textSize="@dimen/gen_dimen_txt_16"
+                android:textColor="@color/coloproducttext"
+                android:layout_toStartOf="@+id/division4_char"/>
+
+            <View
+                android:id="@+id/division4_char"
+                android:layout_width="@dimen/ancho_division_asterisco_contraseña"
+                android:layout_height="match_parent"
+                android:background="@color/colorGrey"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.AutoResizeTextView
+                android:id="@+id/txt_digit_5_char"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                tools:text="*"
+                android:textSize="@dimen/gen_dimen_txt_16"
+                android:textColor="@color/coloproducttext"
+                android:layout_toStartOf="@+id/division5_char"/>
+
+            <View
+                android:id="@+id/division5_char"
+                android:layout_width="@dimen/ancho_division_asterisco_contraseña"
+                android:layout_height="match_parent"
+                android:background="@color/colorGrey"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.AutoResizeTextView
+                android:id="@+id/txt_digit_6_char"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                tools:text="*"
+                android:textSize="@dimen/gen_dimen_txt_16"
+                android:textColor="@color/coloproducttext"
+                android:layout_toStartOf="@+id/division6_char"/>
+
+            <View
+                android:id="@+id/division6_char"
+                android:layout_width="@dimen/ancho_division_asterisco_contraseña"
+                android:layout_height="match_parent"
+                android:background="@color/colorGrey"
+                android:visibility="invisible"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_contenido_char"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0"
+        android:elevation="8dp"
+        android:inputType="numberPassword"
+        android:longClickable="false"
+        android:maxLength="6"
+        android:textIsSelectable="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/icono_submenu"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:contentDescription="@string/gen_desc"
+        android:elevation="16dp"
+        android:src="@drawable/ic_more_elements"
+        app:layout_constraintRight_toRightOf="@id/guideline2" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        style="@style/CardViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="190dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/icono_producto"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="28dp"
+                android:contentDescription="@string/gen_desc"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/nombre_producto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorGrey"
+                android:gravity="center"
+                android:maxLines="2"
+                android:padding="12dp"
+                android:textSize="@dimen/tamaño_texto_standar" />
+
+            <ImageView
+                android:id="@+id/icono_producto_presionado"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|top"
+                android:background="#CCb8b8b8"
+                android:contentDescription="@string/gen_desc"
+                android:scaleType="centerCrop"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="1.00"
+        app:layout_constraintLeft_toLeftOf="@id/cardView"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

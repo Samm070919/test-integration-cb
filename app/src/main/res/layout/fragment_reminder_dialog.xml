@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/white"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="1dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:backgroundTint="@android:color/white"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="2dp">
+
+                    <ImageView
+                        android:id="@+id/imgIcon"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        app:srcCompat="@drawable/ya_icon_logo" />
+
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/linAlias"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:text="Alias"
+                            android:textColor="@color/colorGreyDark" />
+
+                        <EditText
+                            android:id="@+id/edtAlias"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:imeOptions="actionNext"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:maxLength="20"
+                            android:focusable="true"
+                            android:longClickable="false"
+                            android:textColor="@color/colorGreyDark"
+                            android:textSize="16dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#e0e0e0"
+                            android:orientation="horizontal" />
+
+                    </LinearLayout>
+
+                    <!--
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Día"
+                            android:textColor="@color/colorGreyDark" />
+
+                        <LinearLayout
+                            android:id="@+id/linDataPicker"
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txvDate"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:textColor="@color/colorGreyDark"
+                                android:textSize="16dp" />
+
+                            <ImageButton
+                                android:id="@+id/btnDatePicker"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:backgroundTint="@android:color/transparent"
+                                android:gravity="center|right"
+                                android:src="@drawable/arrow_spinner" />
+
+                        </LinearLayout>
+
+
+
+                        <View
+                            android:id="@+id/space_div1"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#e0e0e0"
+                            android:orientation="horizontal" />
+
+                    </LinearLayout>
+                    -->
+
+                    <LinearLayout
+                        android:id="@+id/linDia"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:text="Día"
+                            android:textColor="@color/colorGreyDark" />
+
+                        <EditText
+                            android:id="@+id/edtDay"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:imeOptions="actionNext"
+                            android:inputType="number"
+                            android:maxLines="1"
+                            android:maxLength="2"
+                            android:focusable="true"
+                            android:longClickable="false"
+                            android:textColor="@color/colorGreyDark"
+                            android:textSize="16dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#e0e0e0"
+                            android:orientation="horizontal" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Repetir cada"
+                            android:textColor="@color/colorGreyDark" />
+
+                        <Spinner
+                            android:id="@+id/spnPeriodicity"
+                            style="@style/CalendarSpinnerCustom"
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:layout_marginRight="18dp"
+                            android:gravity="center"
+                            android:popupBackground="@android:color/white"
+                            android:spinnerMode="dropdown" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#e0e0e0"
+                            android:orientation="horizontal" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="71dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="horizontal">
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/gl2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.45" />
+
+
+                    <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.BotonClickUnico
+                        android:id="@+id/btnCancelDialog"
+                        style="@style/ButtonCancelStyleDialogWhite"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_margin="10dp"
+                        android:text="@string/cancelar"
+                        android:textColor="@color/colorSaldoAzul"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="@id/gl2"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                    <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.BotonClickUnico
+                        android:id="@+id/btnConfirmDialog"
+                        style="@style/ButtonStyle"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="87dp"
+                        android:paddingRight="15dp"
+                        android:background="@drawable/bg_button_wallet"
+                        android:text="@string/guardar"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="@id/gl2"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</layout>

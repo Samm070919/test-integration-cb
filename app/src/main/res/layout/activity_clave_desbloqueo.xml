@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/containerDesbloqueo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_app">
+
+
+        <RelativeLayout
+            android:id="@+id/lnCabecera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/espacio_largo"
+            android:layout_marginTop="@dimen/espacio_xxlargo"
+            android:layout_marginEnd="@dimen/espacio_largo"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/iv_regresar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:scaleType="center"
+                android:src="@drawable/ic_icono_back" />
+
+            <TextView
+                android:id="@+id/titulo_recuperar"
+                style="@style/TextStyleDialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/recuperar_clave"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/tam_txt_grande" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/text_recuperar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="@string/recuperar_clave_enviar"
+            android:textColor="@color/texto_simple_modal"
+            android:textSize="@dimen/gen_dimen_txt_16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lnCabecera"
+
+            />
+
+
+        <TextView
+            android:id="@+id/algun_correo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gen_dimen_txt_30"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="@string/correo_electr_nico_recuperar"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/gen_dimen_txt_16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_recuperar" />
+
+
+        <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.EditTextDatosUsuarios
+            android:id="@+id/ed_correo_electronico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gen_dimen_txt_30"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:textSize="@dimen/gen_dimen_txt_16"
+            android:visibility="gone"
+            tools:visibility="visible"
+            app:iscontrasena="false"
+            app:hint="@string/ingrese_correo_electronico"
+            android:inputType="textEmailAddress"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_recuperar"
+            />
+
+
+        <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.BotonClickUnico
+            android:id="@+id/btn_send_email"
+            style="@style/ButtonStyle"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="50dp"
+            android:text="@string/continuar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:paddingRight="40dp"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

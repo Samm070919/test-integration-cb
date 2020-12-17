@@ -1,0 +1,16 @@
+<resources>
+    <!--Dimens Login -->
+    <dimen name="tam_logo">160dp</dimen>
+    <dimen name="altura_boton">48dp</dimen>
+    <!--Dimens Registro-->
+    <dimen name="ancho_campos_registro">600dp</dimen>
+    <!-- Escaneo carrito-->
+    <dimen name="altura_items_carro_adapter">40dp</dimen>
+    <!--Progreso Dialogo-->
+    <dimen name="ancho_dialogo">600dp</dimen>
+    <!--Modal-->
+    <!--Cierre de Turno-->
+
+    <!--Botones -->
+    <dimen name="tamaño_ancho_boton_standar">360dp</dimen>
+</resources>

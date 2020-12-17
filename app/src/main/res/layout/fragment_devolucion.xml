@@ -1,0 +1,72 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhiteBackground">
+
+        <TextView
+            android:id="@+id/tv_title_ref"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ref_ya_ganaste"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/tam_txt_grande"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/et_referencia"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espacio_pequeño"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="@dimen/tam_txt_ext"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title_ref" />
+
+        <ImageView
+            android:id="@+id/iv_title"
+            android:layout_width="109dp"
+            android:layout_height="195dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/cap"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_referencia" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvListOpciones"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/gen_dimen_txt_24"
+            android:layout_marginBottom="@dimen/gen_dimen_txt_16"
+            android:overScrollMode="never"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toTopOf="@id/btn_confirmar"
+            app:layout_constraintTop_toBottomOf="@id/iv_title"
+            app:layout_constraintVertical_bias="0.503"
+            tools:layout_editor_absoluteX="0dp"
+            tools:listitem="@layout/list_submenu" />
+
+        <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.BotonClickUnico
+            android:id="@+id/btn_confirmar"
+            style="@style/ButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="@string/confirmar"
+            android:textSize="@dimen/gen_dimen_txt_16"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:visibility="visible" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

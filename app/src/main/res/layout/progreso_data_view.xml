@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/progreso_data_view_card_view"
+    style="@style/CardViewStyle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp">
+
+        <TextView
+            android:id="@+id/progreso_data_view_titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="28dp"
+            android:gravity="center"
+            android:textSize="@dimen/gen_dimen_txt_28" />
+
+        <ProgressBar
+            android:id="@+id/progreso_data_view_progreso_determinado"
+            style="@style/CustomProgressBarHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/progreso_data_view_titulo"
+            android:indeterminate="false"  />
+
+        <ProgressBar
+            android:id="@+id/progreso_data_view_progreso_indeterminado"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_below="@id/progreso_data_view_titulo"
+            android:theme="@style/CircularProgress"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/bg_img_cargango"
+            android:indeterminate="true"
+            android:paddingEnd="12dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/progreso_data_view_porcentaje"
+            style="@style/TextProgressDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/progreso_data_view_progreso_determinado"
+            android:layout_marginBottom="22dp"
+            android:textColor="@color/colorGreySolid"
+            android:textSize="@dimen/gen_dimen_txt_24"/>
+
+        <TextView
+            android:id="@+id/progreso_data_view_restantes"
+            style="@style/TextProgressDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/progreso_data_view_progreso_determinado"
+            android:textColor="@color/colorGreySolid"
+            android:textSize="@dimen/gen_dimen_txt_24" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

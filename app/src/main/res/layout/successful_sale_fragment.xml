@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fafafc">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="16dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="16dp" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="30dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_successful"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/title_frag_venta_exitosa"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView12"
+            tools:visibility="visible" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardCancelado"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="24dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@id/guidelineRight"
+            app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+            app:layout_constraintTop_toBottomOf="@id/textView8"
+            tools:visibility="visible">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawableStart="@drawable/close_circle_outline"
+                    android:drawablePadding="@dimen/espacio_pequeño"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Movimiento Cancelado"
+                    android:textColor="#e10011"
+                    android:textSize="@dimen/gen_dimen_txt_18" />
+            </FrameLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardIcono"
+            android:layout_width="112dp"
+            android:layout_height="112dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+            app:layout_constraintTop_toBottomOf="@id/cardCancelado">
+
+            <ImageView
+                android:id="@+id/icono"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="8dp"
+                android:scaleType="fitCenter"
+                tools:src="@tools:sample/avatars" />
+        </androidx.cardview.widget.CardView>
+
+        <FrameLayout
+            android:id="@+id/frameMontoPagado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            app:layout_constraintBottom_toTopOf="@id/tvMontoLabel"
+            app:layout_constraintEnd_toEndOf="@id/guidelineRight"
+            app:layout_constraintTop_toTopOf="@id/cardIcono"
+            app:layout_constraintVertical_chainStyle="packed">
+
+            <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.MontoViewController
+                android:id="@+id/mv_importe"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|end"
+                android:maxLines="1"
+                app:TextoInferior="Saldo Disponible"
+                app:colorTexto="@color/colorAzulImporte"
+                app:mostrarTextoInferior="false" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tvMontoLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#00a1e1"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@id/tvFechaPago"
+            app:layout_constraintEnd_toEndOf="@id/guidelineRight"
+            app:layout_constraintTop_toBottomOf="@id/frameMontoPagado"
+            app:layout_constraintVertical_chainStyle="packed"
+            tools:text="Monto Cobrado" />
+
+        <TextView
+            android:id="@+id/tvFechaPago"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@id/cardIcono"
+            app:layout_constraintEnd_toEndOf="@id/guidelineRight"
+            app:layout_constraintTop_toBottomOf="@id/tvMontoLabel"
+            app:layout_constraintVertical_chainStyle="packed"
+            tools:text="@tools:sample/date/mmddyy" />
+
+        <TextView
+            android:id="@+id/labelRefUnq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#00a1e1"
+            android:textSize="16sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@id/labelConcept"
+            app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+            app:layout_constraintTop_toBottomOf="@+id/cardIcono"
+            app:layout_constraintVertical_bias="0.9"
+            app:layout_constraintVertical_chainStyle="packed"
+            tools:text="@string/txt_referencia_nica"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/textRefUnq"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/espacio_pequeño"
+            android:ellipsize="marquee"
+            android:freezesText="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textAlignment="textEnd"
+            android:textSize="16sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@id/guidelineRight"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@id/labelRefUnq"
+            app:layout_constraintTop_toTopOf="@id/labelRefUnq"
+            tools:src="@tools:sample/lorem"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/labelConcept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espacio_pequeño"
+            android:text="Referencia Única"
+            android:textColor="#00a1e1"
+            android:textSize="16sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@id/labelTarjeta"
+            app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+            app:layout_constraintTop_toBottomOf="@+id/labelRefUnq"
+            app:layout_constraintVertical_bias="0.9"
+            app:layout_constraintVertical_chainStyle="packed"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/textConcept"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/espacio_pequeño"
+            android:ellipsize="marquee"
+            android:freezesText="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textAlignment="textEnd"
+            android:textSize="16sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@id/guidelineRight"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@id/labelConcept"
+            app:layout_constraintTop_toTopOf="@id/labelConcept"
+            tools:src="@tools:sample/lorem"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/labelTarjeta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espacio_pequeño"
+            android:layout_marginBottom="20dp"
+            android:text="Tarjeta"
+            android:textColor="#00a1e1"
+            android:textSize="16sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@id/viewGrayLine"
+            app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+            app:layout_constraintTop_toBottomOf="@+id/labelConcept"
+            app:layout_constraintVertical_bias="0.9"
+            app:layout_constraintVertical_chainStyle="packed"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/textTarjeta"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/espacio_pequeño"
+            android:ellipsize="end"
+            android:gravity="end"
+            android:textSize="16sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@id/guidelineRight"
+            app:layout_constraintStart_toEndOf="@id/labelTarjeta"
+            app:layout_constraintTop_toTopOf="@id/labelTarjeta"
+            tools:text="@tools:sample/lorem"
+            tools:visibility="visible" />
+
+        <View
+            android:id="@+id/viewGrayLine"
+            android:layout_width="0dp"
+            android:layout_height="1.5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/grey_lines"
+            app:layout_constraintBottom_toTopOf="@+id/btn_aceptar"
+            app:layout_constraintEnd_toEndOf="@id/guidelineRight"
+            app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+            app:layout_constraintTop_toBottomOf="@id/cardIcono"
+            app:layout_constraintVertical_bias="0.4" />
+
+        <TextView
+            android:id="@+id/labelAuthEmisor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espacio_mediano"
+            android:text="Autorización Emisor"
+            android:textColor="#00a1e1"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+            app:layout_constraintTop_toBottomOf="@+id/viewGrayLine" />
+
+        <TextView
+            android:id="@+id/textAuthEmisor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/espacio_pequeño"
+            android:ellipsize="end"
+            android:gravity="end"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@id/guidelineRight"
+            app:layout_constraintStart_toEndOf="@id/labelAuthEmisor"
+            app:layout_constraintTop_toTopOf="@id/labelAuthEmisor"
+            tools:text="@tools:sample/lorem" />
+
+        <TextView
+            android:id="@+id/labelFolio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espacio_pequeño"
+            android:text="@string/txt_folio_ya_ganaste"
+            android:textColor="#00a1e1"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+            app:layout_constraintTop_toBottomOf="@id/labelAuthEmisor" />
+
+        <TextView
+            android:id="@+id/textFolio"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/espacio_pequeño"
+            android:textAlignment="textEnd"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@id/guidelineRight"
+            app:layout_constraintStart_toEndOf="@id/labelFolio"
+            app:layout_constraintTop_toTopOf="@id/labelFolio"
+            tools:src="@tools:sample/lorem" />
+
+        <LinearLayout
+            android:id="@+id/contenedor_campos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/btn_aceptar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/viewGrayLine" />
+
+        <EditText
+            android:id="@+id/texto_enviar_mail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/email_sale"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+            app:layout_constraintBottom_toTopOf="@+id/btn_aceptar"
+            app:layout_constraintEnd_toEndOf="@id/guidelineRight"
+            app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+            app:layout_constraintTop_toBottomOf="@+id/labelFolio"
+            tools:ignore="Autofill,TextFields" />
+
+        <Button
+            android:id="@+id/btn_aceptar"
+            style="@style/ButtonContinueStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/aceptar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

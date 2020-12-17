@@ -1,0 +1,528 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+        <!-- Customize your theme here. -->
+        <item name="android:windowBackground">@drawable/abg_azul_degradado</item>
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+
+    <style name="EditTextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="boxBackgroundMode">filled</item>
+        <item name="boxBackgroundColor">@color/background_app</item>
+
+    </style>
+
+    <style name="AppThemeBlue" parent="AppTheme">
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="primary">@color/colorPrimary</item>
+        <item name="primaryDark">@color/colorPrimaryDark</item>
+        <item name="blueDark">@color/colorBlueDark</item>
+        <item name="accent">@color/colorAccent</item>
+        <item name="defaultButtonBackGround">@color/colorPrimaryDark</item>
+        <item name="defaultButtonBackGroundPress">@color/colorPrimary</item>
+        <item name="wifi_gift">@raw/wifi_blue</item>
+
+        <item name="totem_not_found_gif">@raw/totem_not_found_blue</item>
+        <item name="totem_connecting_gif">@raw/totem_connecting_blue</item>
+        <item name="conectar_totem_gif">@raw/conectar_totem_blue</item>
+
+        <item name="fullcarga">@drawable/logo</item>
+        <item name="fullcarga_flat">@drawable/ic_img_yaganaste_blue</item>
+        <item name="menu_button_background">@drawable/shadow_blue</item>
+        <item name="ic_logo">@drawable/ic_logo_azul</item>
+
+        <item name="drawerArrowStyle">@style/DrawerHamburgerStyle</item>
+
+    </style>
+
+    <style name="DrawerHamburgerStyle" parent="@style/Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/white</item>
+    </style>
+
+    <style name="TabparecenStyle" parent="@style/Widget.MaterialComponents.TabLayout.Colored">
+        <item name="android:background">@drawable/bg_reporte_item</item>
+        <item name="tabBackground">@drawable/selector_bg_tab_mov</item>
+        <item name="tabSelectedTextColor">@color/colorWhite</item>
+        <item name="tabTextColor">@color/coloproducttext</item>
+        <item name="tabIndicatorColor">@color/colorPrimary</item>
+        <item name="tabRippleColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="AppThemeRed" parent="AppTheme">
+
+        <item name="colorPrimary">@color/colorSoftRed</item>
+        <item name="colorPrimaryDark">@color/colorStrongRed</item>
+        <item name="colorAccent">@color/colorDefaultButtonBackGround</item>
+
+        <item name="android:statusBarColor">@color/colorSoftRed</item>
+        <item name="primary">@color/colorSoftRed</item>
+        <item name="primaryDark">@color/colorStrongRed</item>
+        <item name="accent">@color/colorDefaultButtonBackGround</item>
+        <item name="defaultButtonBackGround">@color/colorDefaultButtonBackGround</item>
+        <item name="defaultButtonBackGroundPress">@color/colorDefaultButtonBackGroundPress</item>
+        <item name="wifi_gift">@raw/wifi_red</item>
+
+        <item name="totem_not_found_gif">@raw/totem_not_found_red</item>
+        <item name="totem_connecting_gif">@raw/totem_connecting_red</item>
+        <item name="conectar_totem_gif">@raw/conectar_totem_red</item>
+
+        <item name="fullcarga">@drawable/ic_logo_negro</item>
+        <item name="fullcarga_flat">@drawable/ic_logo_vertical</item>
+        <item name="menu_button_background">@drawable/shadow_red</item>
+        <item name="ic_logo">@drawable/ic_logo</item>
+
+    </style>
+
+    <style name="AppThemeFull" parent="AppTheme">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="PickerStyle">
+        <item name="android:editTextColor">@color/colorAzulLetra</item>
+        <item name="android:textSize">23sp</item>
+    </style>
+
+    <style name="SpinnerTheme" parent="android:Widget.Spinner">
+        <item name="android:background">@drawable/bg_spinner</item>
+    </style>
+
+
+    <!-- Cold screen fix ends-->
+    <!--CardView theme-->
+    <style name="CardViewStyle" parent="CardView">
+        <item name="cardCornerRadius">@dimen/curvatura_standar</item>
+        <item name="cardElevation">4dp</item>
+
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="TextStyleDialog" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">@color/colorGrey</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="ButtonContinueStyle">
+        <item name="android:layout_width">@dimen/tamaño_ancho_boton_standar</item>
+        <item name="android:layout_height">@dimen/altura_boton</item>
+        <item name="android:background">@drawable/selector_bg__buttons</item>
+        <item name="android:paddingEnd">40dp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/gen_dimen_txt_16</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:focusable">false</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+
+    <style name="ButtonContinueStylePercentage">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/selector_bg__buttons</item>
+        <item name="android:maxHeight">70dp</item>
+        <item name="android:paddingEnd">20dp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/gen_dimen_txt_20</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:focusable">false</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="ButtonActionStyleWhite">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/selector_bg_modal_btn_negativo</item>
+        <item name="android:maxHeight">70dp</item>
+        <item name="android:textColor">@color/colorSaldoAzul</item>
+        <item name="android:textSize">@dimen/gen_dimen_txt_20</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:focusable">false</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="CalendarButton" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/calendar_btn_active</item>
+    </style>
+
+    <style name="ButtonContinueStyleDialog">
+        <item name="android:layout_width">@dimen/tamaño_ancho_boton_standar</item>
+        <item name="android:layout_height">@dimen/altura_boton</item>
+        <item name="android:background">@drawable/selector_bg__buttons</item>
+        <item name="android:paddingEnd">80dp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/gen_dimen_txt_14</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:focusable">false</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="ButtonCancelStyleDialogWhite">
+        <item name="android:layout_width">@dimen/tamaño_ancho_boton_standar</item>
+        <item name="android:layout_height">@dimen/altura_boton</item>
+        <item name="android:background">@drawable/selector_bg_modal_btn_negativo</item>
+        <item name="android:textColor">@color/colorSaldoAzul</item>
+        <item name="android:textSize">@dimen/gen_dimen_txt_14</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:focusable">false</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="ButtonCobrarStyle">
+        <item name="android:layout_height">@dimen/altura_boton</item>
+        <item name="android:background">@drawable/selector_bg_green</item>
+        <item name="android:paddingEnd">40dp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/gen_dimen_txt_16</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:focusable">false</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    
+    <style name="ButtonFullCobrar">
+        <item name="android:background">@drawable/selector_btn_full</item>
+        <item name="android:layout_height">@dimen/altura_boton</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/gen_dimen_txt_16</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:focusable">false</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="ButtonStyle">
+        <item name="android:layout_width">@dimen/tamaño_ancho_boton_standar</item>
+        <item name="android:layout_height">@dimen/altura_boton</item>
+        <item name="android:background">@drawable/selector_bg__buttons</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/gen_dimen_txt_16</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:focusable">false</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="FlatButtonStyle">
+        <item name="android:layout_width">@dimen/tamaño_ancho_boton_standar</item>
+        <item name="android:layout_height">@dimen/flat_button_height</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/flat_button_text_size</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:focusable">false</item>
+    </style>
+
+
+    <style name="FlatButtonStyle_white">
+        <item name="android:layout_width">@dimen/tamaño_ancho_boton_standar</item>
+        <item name="android:layout_height">@dimen/flat_button_height</item>
+        <item name="android:background">@drawable/button_login_style</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/flat_button_text_size</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:focusable">false</item>
+    </style>
+
+    <style name="NewFlatButtonStyle">
+        <item name="android:layout_width">@dimen/tamaño_ancho_boton_standar</item>
+        <item name="android:layout_height">@dimen/flat_button_height</item>
+        <item name="android:background">@drawable/selector_bg_white_buttons</item>
+        <item name="android:textColor">@color/colorBlueDark</item>
+        <item name="android:textSize">@dimen/flat_button_text_size</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:focusable">false</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+
+    <style name="ButtonStyleCancelar">
+        <item name="android:layout_width">@dimen/tamaño_ancho_boton_standar </item>
+        <item name="android:layout_height">@dimen/altura_boton</item>
+        <item name="android:background">@color/color_cancelar_botton</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/tamaño_texto_botton</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:focusable">false</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="ButtonStyleAceptar">
+        <item name="android:layout_width">@dimen/tamaño_ancho_boton_standar </item>
+        <item name="android:layout_height">@dimen/altura_boton</item>
+        <item name="android:background">@null</item>
+        <item name="android:textColor">@color/color_cancelar_botton</item>
+        <item name="android:textSize">@dimen/tamaño_texto_botton</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:focusable">false</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+
+
+    <style name="RadioButtonStyle" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:button">@drawable/bg_radio_button</item>
+    </style>
+
+    <style name="EditTextInput" parent="@android:style/Widget.EditText">
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:textColor">@color/colorGrey</item>
+        <item name="android:textColorHint">@color/colorGrey</item>
+        <item name="android:backgroundTint">@color/colorGrey</item>
+    </style>
+
+    <style name="EditTextPassword">
+        <item name="colorControlNormal">@color/colorWhite</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+    </style>
+
+    <style name="TextViewPersonalizado" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:textColor">@color/colorGrey</item>
+        <item name="android:textColorHint">@color/colorGrey</item>
+    </style>
+
+    <style name="CircularProgress" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">?attr/primary</item>
+    </style>
+
+    <style name="TextProgressDialog" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/colorGrey</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="CustomProgressBarHorizontal" parent="android:Widget.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/bg_progreso_horizontal</item>
+        <item name="android:minHeight">18dp</item>
+        <item name="android:maxHeight">18dp</item>
+    </style>
+
+    <style name="LoginPasswordInputLand">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="AnimacionModal" parent="@android:style/Animation.Activity">
+        <item name="android:layout_width">600dp</item>
+        <item name="android:windowEnterAnimation">@anim/agrandar</item>
+        <item name="android:windowExitAnimation">@anim/disminuir</item>
+    </style>
+
+    <style name="Estilo_Texto_Pos" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/tamaño_texto_standar</item>
+        <item name="android:textColor">@color/colorStrongRed</item>
+    </style>
+
+
+    <style name="ToolBarStyle" parent="AppTheme">
+
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+        <item name="actionMenuTextColor">@android:color/white</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_next</item>
+    </style>
+
+    <style name="Separador">
+        <item name="android:layout_width">2dp</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:background">@color/colorWhite</item>
+        <item name="android:layout_marginStart">3dp</item>
+        <item name="android:layout_marginEnd">3dp</item>
+    </style>
+
+    <style name="TextViewUnDigito">
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+    <style name="configuracionItems">
+
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+
+    </style>
+
+    <style name="configuracionItemImagenes">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+    </style>
+
+    <style name="config_menu_reporte_ventas_item_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/darker_gray</item>
+        <item name="android:textSize">13dp</item>
+    </style>
+
+    <style name="DatePickerStyle" parent="@android:style/Theme.Holo.Dialog" tools:ignore="NewApi">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+    <style name="ExitFragment_ButtonsStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/margin_exit_fragment</item>
+        <item name="android:layout_marginRight">@dimen/margin_exit_fragment</item>
+        <item name="android:background">@drawable/exit_fragment_rounded_buttons</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+
+    <style name="AcceptFragment_ButtonsStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/margin_exit_fragment</item>
+        <item name="android:layout_marginRight">@dimen/margin_exit_fragment</item>
+        <item name="android:background">@drawable/accept_fragment_roundend_buttons</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+
+    <style name="Cancelar_ButtonStyle">
+        <item name="android:background">@drawable/selector_bg_modal_btn_negativo</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingStart">30dip</item>
+        <item name="android:paddingEnd">30dip</item>
+        <item name="android:textSize">@dimen/tamaño_texto_standar</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:text">@string/btnActualizarProductos</item>
+    </style>
+    <style name="Aceptar_ButtonStyle">
+        <item name="android:background">@drawable/selector_bg_modal_btn_positivo</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingStart">30dip</item>
+        <item name="android:paddingEnd">30dip</item>
+        <item name="android:textSize">@dimen/tamaño_texto_standar</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:text">@string/aceptar</item>
+    </style>
+
+    <style name="TicketBold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="FullScreenDialogStyle" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="BlancoLeft14Px">
+        <item name="android:fontFamily">Roboto-Regular</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">0.18</item>
+    </style>
+
+    <style name="phone_verification_input">
+        <item name="android:elevation">2dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/gen_dimen_txt_20</item>
+        <item name="android:maxLength">1</item>
+    </style>
+    <style name="TitulosRegistro">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+    </style>
+
+    <!-- ToolBar -->
+    <style name="ToolBarTheme.ToolBarStyle" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textColorPrimary">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textColorPrimaryInverse">@color/colorPrimary</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_back</item>
+
+    </style>
+
+    <style name="DialogStyle" parent="Base.Theme.AppCompat.Dialog">
+        <item name="android:windowMinWidthMajor">85%</item>
+        <item name="android:windowMinWidthMinor">85%</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="CalendarSpinnerCustom">
+        <item name="android:background">@drawable/custom_spinner_calendar</item>
+    </style>
+
+    <style name="CardLabel">
+        <item name="android:textSize">@dimen/small_text</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/items_inbetween_medium</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+    <style name="CardInput">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/items_inbetween_medium</item>
+    </style>
+
+
+    <style name="CardStyle">
+        <item name="android:layout_marginLeft">@dimen/activity_vertical_margin</item>
+        <item name="android:layout_marginRight">@dimen/activity_vertical_margin</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- MoneyIn Styles -->
+    <style name="TextViewExtraFieldLabel">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">0.6</item>
+        <item name="android:fontFamily">"Roboto-Regular"</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/gen_dimen_txt_18</item>
+    </style>
+
+    <style name="TextViewExtraFieldValue">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_weight">0.4</item>
+        <item name="android:fontFamily">"Roboto-Regular"</item>
+        <item name="android:textAlignment">textEnd</item>
+        <item name="android:textColor">@color/colorGreyFormulario</item>
+        <item name="android:textSize">@dimen/gen_dimen_txt_18</item>
+    </style>
+    <style name="LayoutExtraFields">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ViewSeparador">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_marginTop">@dimen/margen_mediano</item>
+        <item name="android:layout_marginStart">@dimen/espacio_mediano</item>
+        <item name="android:layout_marginEnd">@dimen/espacio_mediano</item>
+        <item name="android:background">#CABBBBBB</item>
+    </style>
+
+
+</resources>

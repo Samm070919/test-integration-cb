@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_fingerprintCnt"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_huella"
+        android:layout_width="45dp"
+        android:layout_height="49dp"
+        android:src="@drawable/fingerprint"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:textColor="?attr/blueDark"
+        android:textSize="26sp"
+        android:text="@string/titulo_autoriza"/>
+
+    <TextView
+        android:id="@+id/tv_contenido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/accion_fingerprint"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

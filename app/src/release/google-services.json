@@ -1,0 +1,818 @@
+{
+  "project_info": {
+    "project_number": "119676846275",
+    "firebase_url": "https://mobilepth-5e4a9.firebaseio.com",
+    "project_id": "mobilepth-5e4a9",
+    "storage_bucket": "mobilepth-5e4a9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:119676846275:android:9a066963271fb79273e276",
+        "android_client_info": {
+          "package_name": "com.pagatodo.SUNMI.CO.release"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "119676846275-bs5n3i4odehkg6b68be6vmh67c1iuoiu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWzXPqXLz2mC3Av7fY8cvzcO0jKdWgKF4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "119676846275-bs5n3i4odehkg6b68be6vmh67c1iuoiu.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "119676846275-3d2u9g64nvc3dptk5rqk47sl91cu5fbq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.pagatodomobile.ygwallet",
+                "app_store_id": "1488541639"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:119676846275:android:fd88f65611b46e6873e276",
+        "android_client_info": {
+          "package_name": "com.pagatodo.SUNMI.PE.release"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "119676846275-bs5n3i4odehkg6b68be6vmh67c1iuoiu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWzXPqXLz2mC3Av7fY8cvzcO0jKdWgKF4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "119676846275-bs5n3i4odehkg6b68be6vmh67c1iuoiu.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "119676846275-3d2u9g64nvc3dptk5rqk47sl91cu5fbq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.pagatodomobile.ygwallet",
+                "app_store_id": "1488541639"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:119676846275:android:a035deb3e2329da473e276",
+        "android_client_info": {
+          "package_name": "com.pagatodo.SUNMI.Valera.release"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "119676846275-bs5n3i4odehkg6b68be6vmh67c1iuoiu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWzXPqXLz2mC3Av7fY8cvzcO0jKdWgKF4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "119676846275-bs5n3i4odehkg6b68be6vmh67c1iuoiu.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "119676846275-3d2u9g64nvc3dptk5rqk47sl91cu5fbq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.pagatodomobile.ygwallet",
+                "app_store_id": "1488541639"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:119676846275:android:435a3ca2cedc46b7",
+        "android_client_info": {
+          "package_name": "com.pagatodo.apidemo.AR.release"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "119676846275-hnuhpubgl1i6clb7leihva62f3cru2jq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pagatodo.apidemo.AR.release",
+            "certificate_hash": "8e750d908aaf252c5e6f8b3ace1dd25cbb516730"
+          }
+        },
+        {
+          "client_id": "119676846275-bs5n3i4odehkg6b68be6vmh67c1iuoiu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWzXPqXLz2mC3Av7fY8cvzcO0jKdWgKF4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "119676846275-bs5n3i4odehkg6b68be6vmh67c1iuoiu.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "119676846275-3d2u9g64nvc3dptk5rqk47sl91cu5fbq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.pagatodomobile.ygwallet",
+                "app_store_id": "1488541639"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:119676846275:android:513265f950feacf6",
+        "android_client_info": {
+          "package_name": "com.pagatodo.apidemo.CL.release"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "119676846275-b3aktbpqt2e6ppv885fr04rctssue8vo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pagatodo.apidemo.CL.release",
+            "certificate_hash": "8e750d908aaf252c5e6f8b3ace1dd25cbb516730"
+          }
+        },
+        {
+          "client_id": "119676846275-bs5n3i4odehkg6b68be6vmh67c1iuoiu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWzXPqXLz2mC3Av7fY8cvzcO0jKdWgKF4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "119676846275-bs5n3i4odehkg6b68be6vmh67c1iuoiu.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "119676846275-3d2u9g64nvc3dptk5rqk47sl91cu5fbq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.pagatodomobile.ygwallet",
+                "app_store_id": "1488541639"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:119676846275:android:a85de1b0c880742c",
+        "android_client_info": {
+          "package_name": "com.pagatodo.apidemo.CO.release"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "119676846275-02eqvd3gq2glde76u3uq661fbrvv149t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pagatodo.apidemo.CO.release",
+            "certificate_hash": "8e750d908aaf252c5e6f8b3ace1dd25cbb516730"
+          }
+        },
+        {
+          "client_id": "119676846275-bs5n3i4odehkg6b68be6vmh67c1iuoiu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWzXPqXLz2mC3Av7fY8cvzcO0jKdWgKF4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "119676846275-bs5n3i4odehkg6b68be6vmh67c1iuoiu.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "119676846275-3d2u9g64nvc3dptk5rqk47sl91cu5fbq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.pagatodomobile.ygwallet",
+                "app_store_id": "1488541639"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:119676846275:android:1b5c7bb62fcc2a19",
+        "android_client_info": {
+          "package_name": "com.pagatodo.apidemo.EC.release"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "119676846275-8pahcgj87o3e9ah5am60p8pj8s4f2qa0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pagatodo.apidemo.EC.release",
+            "certificate_hash": "8e750d908aaf252c5e6f8b3ace1dd25cbb516730"
+          }
+        },
+        {
+          "client_id": "119676846275-bs5n3i4odehkg6b68be6vmh67c1iuoiu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWzXPqXLz2mC3Av7fY8cvzcO0jKdWgKF4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "119676846275-bs5n3i4odehkg6b68be6vmh67c1iuoiu.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "119676846275-3d2u9g64nvc3dptk5rqk47sl91cu5fbq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.pagatodomobile.ygwallet",
+                "app_store_id": "1488541639"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:119676846275:android:a47b92f24902737b",
+        "android_client_info": {
+          "package_name": "com.pagatodo.apidemo.MX.release"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "119676846275-7jp6cm47fm89g07ieoajdnusc5pqac4s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pagatodo.apidemo.MX.release",
+            "certificate_hash": "8e750d908aaf252c5e6f8b3ace1dd25cbb516730"
+          }
+        },
+        {
+          "client_id": "119676846275-bs5n3i4odehkg6b68be6vmh67c1iuoiu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWzXPqXLz2mC3Av7fY8cvzcO0jKdWgKF4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "119676846275-bs5n3i4odehkg6b68be6vmh67c1iuoiu.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "119676846275-3d2u9g64nvc3dptk5rqk47sl91cu5fbq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.pagatodomobile.ygwallet",
+                "app_store_id": "1488541639"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:119676846275:android:b222d10905fd3eed",
+        "android_client_info": {
+          "package_name": "com.pagatodo.apidemo.PE.release"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "119676846275-6bi701fl9j9192m4hdla84s9dgqogj4h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pagatodo.apidemo.PE.release",
+            "certificate_hash": "8e750d908aaf252c5e6f8b3ace1dd25cbb516730"
+          }
+        },
+        {
+          "client_id": "119676846275-bs5n3i4odehkg6b68be6vmh67c1iuoiu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWzXPqXLz2mC3Av7fY8cvzcO0jKdWgKF4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "119676846275-bs5n3i4odehkg6b68be6vmh67c1iuoiu.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "119676846275-3d2u9g64nvc3dptk5rqk47sl91cu5fbq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.pagatodomobile.ygwallet",
+                "app_store_id": "1488541639"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:119676846275:android:7b119320dbe424dd",
+        "android_client_info": {
+          "package_name": "com.pagatodo.totemlight.release"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "119676846275-bs5n3i4odehkg6b68be6vmh67c1iuoiu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWzXPqXLz2mC3Av7fY8cvzcO0jKdWgKF4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "119676846275-bs5n3i4odehkg6b68be6vmh67c1iuoiu.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "119676846275-3d2u9g64nvc3dptk5rqk47sl91cu5fbq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.pagatodomobile.ygwallet",
+                "app_store_id": "1488541639"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:119676846275:android:71093361ce958b7e73e276",
+        "android_client_info": {
+          "package_name": "com.pagatodo.tpos.YaGanaste.MX.release"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "119676846275-bs5n3i4odehkg6b68be6vmh67c1iuoiu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWzXPqXLz2mC3Av7fY8cvzcO0jKdWgKF4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "119676846275-bs5n3i4odehkg6b68be6vmh67c1iuoiu.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "119676846275-3d2u9g64nvc3dptk5rqk47sl91cu5fbq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.pagatodomobile.ygwallet",
+                "app_store_id": "1488541639"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:119676846275:android:31177ebb3f4b1c3673e276",
+        "android_client_info": {
+          "package_name": "com.pagatodo.yawallet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "119676846275-53o0rc1gnltgopftu3d5eu62a0lq8g2l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pagatodo.yawallet",
+            "certificate_hash": "8e750d908aaf252c5e6f8b3ace1dd25cbb516730"
+          }
+        },
+        {
+          "client_id": "119676846275-bs5n3i4odehkg6b68be6vmh67c1iuoiu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWzXPqXLz2mC3Av7fY8cvzcO0jKdWgKF4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "119676846275-bs5n3i4odehkg6b68be6vmh67c1iuoiu.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "119676846275-3d2u9g64nvc3dptk5rqk47sl91cu5fbq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.pagatodomobile.ygwallet",
+                "app_store_id": "1488541639"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:119676846275:android:978d306c76a87cc873e276",
+        "android_client_info": {
+          "package_name": "com.pagatodo.yawallet.AR"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "119676846275-g1s3pmsmp7a6c0apt10gpo0uiv97fkj0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pagatodo.yawallet.AR",
+            "certificate_hash": "8e750d908aaf252c5e6f8b3ace1dd25cbb516730"
+          }
+        },
+        {
+          "client_id": "119676846275-bs5n3i4odehkg6b68be6vmh67c1iuoiu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWzXPqXLz2mC3Av7fY8cvzcO0jKdWgKF4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "119676846275-bs5n3i4odehkg6b68be6vmh67c1iuoiu.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "119676846275-3d2u9g64nvc3dptk5rqk47sl91cu5fbq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.pagatodomobile.ygwallet",
+                "app_store_id": "1488541639"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:119676846275:android:2244f36ab462be3673e276",
+        "android_client_info": {
+          "package_name": "com.pagatodo.yawallet.CL"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "119676846275-1b9l9s5mfo9tu9gulc6ajab679f8n0n6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pagatodo.yawallet.CL",
+            "certificate_hash": "8e750d908aaf252c5e6f8b3ace1dd25cbb516730"
+          }
+        },
+        {
+          "client_id": "119676846275-bs5n3i4odehkg6b68be6vmh67c1iuoiu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWzXPqXLz2mC3Av7fY8cvzcO0jKdWgKF4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "119676846275-bs5n3i4odehkg6b68be6vmh67c1iuoiu.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "119676846275-3d2u9g64nvc3dptk5rqk47sl91cu5fbq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.pagatodomobile.ygwallet",
+                "app_store_id": "1488541639"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:119676846275:android:5a424361f5b5e42a73e276",
+        "android_client_info": {
+          "package_name": "com.pagatodo.yawallet.EC"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "119676846275-s05mvcqoi4makrp8s87qqbdk2hgo80lj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pagatodo.yawallet.EC",
+            "certificate_hash": "8e750d908aaf252c5e6f8b3ace1dd25cbb516730"
+          }
+        },
+        {
+          "client_id": "119676846275-bs5n3i4odehkg6b68be6vmh67c1iuoiu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWzXPqXLz2mC3Av7fY8cvzcO0jKdWgKF4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "119676846275-bs5n3i4odehkg6b68be6vmh67c1iuoiu.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "119676846275-3d2u9g64nvc3dptk5rqk47sl91cu5fbq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.pagatodomobile.ygwallet",
+                "app_store_id": "1488541639"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:119676846275:android:01b278412620e71d73e276",
+        "android_client_info": {
+          "package_name": "com.pagatodo.yawallet.MX"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "119676846275-eqirehgk0dc2ceo28lj6gilbm1obv6qm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pagatodo.yawallet.MX",
+            "certificate_hash": "8e750d908aaf252c5e6f8b3ace1dd25cbb516730"
+          }
+        },
+        {
+          "client_id": "119676846275-bs5n3i4odehkg6b68be6vmh67c1iuoiu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWzXPqXLz2mC3Av7fY8cvzcO0jKdWgKF4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "119676846275-bs5n3i4odehkg6b68be6vmh67c1iuoiu.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "119676846275-3d2u9g64nvc3dptk5rqk47sl91cu5fbq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.pagatodomobile.ygwallet",
+                "app_store_id": "1488541639"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:119676846275:android:091ee23683a58f0973e276",
+        "android_client_info": {
+          "package_name": "com.pagatodo.yawallet.PE"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "119676846275-pdt2qp65hsdst316gtos7alml65fq5i5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pagatodo.yawallet.PE",
+            "certificate_hash": "8e750d908aaf252c5e6f8b3ace1dd25cbb516730"
+          }
+        },
+        {
+          "client_id": "119676846275-bs5n3i4odehkg6b68be6vmh67c1iuoiu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWzXPqXLz2mC3Av7fY8cvzcO0jKdWgKF4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "119676846275-bs5n3i4odehkg6b68be6vmh67c1iuoiu.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "119676846275-3d2u9g64nvc3dptk5rqk47sl91cu5fbq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.pagatodomobile.ygwallet",
+                "app_store_id": "1488541639"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:119676846275:android:20630d6acee63e7a",
+        "android_client_info": {
+          "package_name": "com.pagatodoholdings.launcher"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "119676846275-bs5n3i4odehkg6b68be6vmh67c1iuoiu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWzXPqXLz2mC3Av7fY8cvzcO0jKdWgKF4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "119676846275-bs5n3i4odehkg6b68be6vmh67c1iuoiu.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "119676846275-3d2u9g64nvc3dptk5rqk47sl91cu5fbq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.pagatodomobile.ygwallet",
+                "app_store_id": "1488541639"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:119676846275:android:f7540b6fd75f9d80",
+        "android_client_info": {
+          "package_name": "com.pagatodoholdings.tools"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "119676846275-afln0trfqiofigibdodlsengff0b1fvb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pagatodoholdings.tools",
+            "certificate_hash": "8e750d908aaf252c5e6f8b3ace1dd25cbb516730"
+          }
+        },
+        {
+          "client_id": "119676846275-bs5n3i4odehkg6b68be6vmh67c1iuoiu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWzXPqXLz2mC3Av7fY8cvzcO0jKdWgKF4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "119676846275-bs5n3i4odehkg6b68be6vmh67c1iuoiu.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "119676846275-3d2u9g64nvc3dptk5rqk47sl91cu5fbq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.pagatodomobile.ygwallet",
+                "app_store_id": "1488541639"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,32 @@
+{"WEB_CARD":
+      {
+        "PRODUCTOS": [
+          {
+            "title-name": "PREPAGO",
+            "title-icon": "NoCard",
+            "Nivel": 1,
+              "PRE": [
+                {
+                  "Title_Menu": "Movimientos Ya ganaste",
+                  "Icon": "123456",
+                  "Producto" : "Movimientos",
+                  "Nivel" : "2"
+                },
+                {
+                  "Title_Menu": "Mi Cuenta",
+                  "Icon": "123456",
+                  "Producto" : "Mi_Cuenta",
+                  "Nivel" : "2"
+                },
+                {
+                  "Title_Menu": "Pago a QR",
+                  "Icon": "123456",
+                  "Producto" : "Pago_QR",
+                  "Nivel" : "2"
+                }
+              ]
+
+              }
+          ]
+    }
+}

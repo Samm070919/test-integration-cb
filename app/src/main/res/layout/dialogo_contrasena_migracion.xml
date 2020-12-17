@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <androidx.cardview.widget.CardView
+            style="@style/CardViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="150dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:minWidth="400dp"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/iv_icono_migracion"
+                    android:layout_width="54dp"
+                    android:layout_height="54dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/gen_desc"
+                    android:background="@drawable/ic_img_palomita" />
+
+                <TextView
+                    android:id="@+id/tv_titulo_migracion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:text="@string/titulo_cambio_contraseña"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/gen_dimen_txt_28"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/iv_icono_migracion" />
+
+                <TextView
+                    style="@style/TextStyleDialog"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:maxLines="6"
+                    android:textColor="@color/colorGreyDarkModal"
+                    android:textSize="@dimen/gen_dimen_txt_20"
+                    android:text="@string/cambio_contraseña"
+                    app:layout_constraintTop_toBottomOf="@id/tv_titulo_migracion" />
+
+                <LinearLayout
+                    android:id="@+id/extraContentLinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.EditTextDatosUsuarios
+                        android:id="@+id/migracion_clave_usuario"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="16dp"
+                        android:textColorHint="@color/colorGrey"
+                        android:inputType="number"
+                        app:hint="@string/clave_usuario_hint" />
+
+
+                    <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.EditTextDatosUsuarios
+                        android:id="@+id/migracion_validate_clave_usuario"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="16dp"
+                        android:textColorHint="@color/colorGrey"
+                        android:inputType="number"
+                        app:hint="@string/repite_clave_usuario" />
+                </LinearLayout>
+
+                <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.BotonClickUnico
+                    android:id="@+id/btn_migracion_aceptar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/selector_bg_modal_btn_positivo"
+                    android:gravity="center"
+                    android:paddingStart="26dip"
+                    android:paddingEnd="26dip"
+                    android:text="@string/aceptar"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/gen_dimen_txt_12"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

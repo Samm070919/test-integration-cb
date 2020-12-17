@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/espacio_pequeño"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        style="@style/CardViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.MontoViewController
+                android:id="@+id/mv_importe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/espacio_pequeño"
+                android:layout_marginTop="@dimen/espacio_pequeño"
+                android:layout_marginEnd="@dimen/espacio_pequeño"
+                android:layout_marginBottom="@dimen/espacio_mediano"
+                app:mostrarTextoInferior="false"
+                />
+
+            <TextView
+                android:id="@+id/tv_subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="@dimen/espacio_largo"
+                android:layout_marginEnd="@dimen/espacio_largo"
+                android:layout_marginBottom="@dimen/espacio_pequeño"
+                android:text="@string/total_compra_kit"
+                android:textColor="@color/colorPrimary"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

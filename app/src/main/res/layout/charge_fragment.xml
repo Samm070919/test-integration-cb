@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorbackgroudnproyect">
+
+        <Button
+            android:id="@+id/button"
+            style="@style/ButtonContinueStylePercentage"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/gen_dimen_txt_12"
+            android:text="@string/continuar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/button_guide"
+            app:layout_constraintTop_toBottomOf="@id/keyguide" />
+
+        <ImageButton
+            android:id="@+id/imageButton_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/gen_dimen_txt_12"
+            android:layout_marginStart="25dp"
+            android:background="@drawable/selector_key_btn"
+            android:contentDescription="@string/app_name"
+            android:maxHeight="70dp"
+            android:src="@drawable/ic_setting_key"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/keyguide" />
+
+        <TextView
+            android:id="@+id/business_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gen_dimen_txt_12"
+            android:fontFamily="@font/roboto"
+            android:text="@string/app_name"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@id/moneyInputSimple"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/guideline_products" />
+
+        <TextView
+            android:id="@+id/sum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/gen_dimen_txt_36"
+            android:gravity="end"
+            android:scrollbars="horizontal"
+            android:singleLine="true"
+            android:textColor="@color/coloproducttext"
+            android:textSize="@dimen/font_sum_size"
+            app:layout_constraintBottom_toTopOf="@id/importeguide"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/moneyInputSimple" />
+
+        <android.inputmethodservice.KeyboardView
+            android:id="@+id/keyboard_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/colorbackgroudnproyect"
+            android:keyBackground="@drawable/selector_key"
+            android:keyPreviewLayout="@layout/key_preview"
+            android:keyTextColor="#484848"
+            app:layout_constraintBottom_toTopOf="@+id/keyguide"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/importeguide" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/keyguide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".89" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/button_guide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.4" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/full_screen_guide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="1" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/importeguide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".45" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_products"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".2" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rec_menu_prod"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:overScrollMode="never"
+            app:layout_constraintBottom_toTopOf="@id/guideline_products"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:itemCount="3"
+            tools:listitem="@layout/button_checker" />
+
+        <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.MontoViewCustom
+            android:id="@+id/moneyInputSimple"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="end"
+            android:maxLines="1"
+            android:padding="0dp"
+            android:paddingTop="@dimen/gen_dimen_txt_12"
+            android:paddingBottom="@dimen/gen_dimen_txt_12"
+            android:singleLine="true"
+            android:textColor="@color/coloproducttext"
+            app:fontSize="large"
+            app:layout_constraintBottom_toTopOf="@id/sum"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/business_name"
+            app:maxLenght="9" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

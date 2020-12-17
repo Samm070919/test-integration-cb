@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_carrito_mas"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/altura_items_carro_adapter"
+        android:text="+"
+        android:textSize="20dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_cantidad_producto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="1"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@id/btn_carrito_menos"
+        app:layout_constraintStart_toEndOf="@id/btn_carrito_mas" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_carrito_menos"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/altura_items_carro_adapter"
+        android:text="-"
+        android:textSize="25dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toEndOf="@id/tv_cantidad_producto"
+        app:layout_constraintEnd_toStartOf="@id/tv_nombre_producto_carro"
+        />
+
+    <TextView
+        android:id="@+id/tv_nombre_producto_carro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:maxLines="4"
+        android:text="Coca"
+        android:textSize="16sp"
+       app:layout_constraintStart_toEndOf="@id/btn_carrito_menos"
+        app:layout_constraintEnd_toStartOf="@id/tv_costo_producto"
+        />
+
+    <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.TextViewNumerosDecimalesSuperioresChico
+        android:id="@+id/tv_costo_producto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

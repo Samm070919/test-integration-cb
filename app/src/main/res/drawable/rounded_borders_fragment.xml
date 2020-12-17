@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid
+        android:color="@color/colorWhite"/>
+    <corners
+        android:radius="@dimen/curvatura_standar" />
+    <padding
+        android:left="@dimen/espacio_mediano"
+        android:top="@dimen/espacio_mediano"
+        android:right="@dimen/espacio_mediano"
+        android:bottom="@dimen/espacio_mediano" />
+</shape>

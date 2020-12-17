@@ -1,0 +1,1172 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="serie">Serie:</string>
+    <string name="nombre_usuario">Mario Aguilar</string>
+    <string name="title_mi_cuenta">Mi Cuenta</string>
+    <string name="title_mis_datos">Mis Datos</string>
+    <string name="title_info_bancaria">Información Bancaria</string>
+    <string name="verificar">Verificar</string>
+    <string name="generic_error">Error</string>
+
+    <!-- HomeActivity-->
+    <string name="database_access_error">Error al acceder a la base de datos</string>
+
+    <!-- Splash -->
+    <string name="title_splash">Acepta Todo\n Tipo de Pagos!</string>
+    <string name="title_splash2">Paga tus Recibos\n a Tiempo y sin Recargos</string>
+
+    <!-- Inicio -->
+    <string name="title_inicio">Sin Renta\n Mensual</string>
+    <string name="title_inicio2">¡No Volverás a\n Pagar Recargos!</string>
+    <string name="subtitle_inicio">Tu Nueva Asistente Virtual\n te Recordará Todos tus Pagos</string>
+
+    <!-- Promociones -->
+    <string name="title_promociones">Promociones</string>
+    <string name="title_promociones_detalle">Detalle de Promoción</string>
+    <string name="title_mensajes_detalle">Detalle de Mensajes</string>
+    <string name="firestore_cupones">"notification/%1$s/%2$s/%3$s/Cupones"</string>
+    <string name="firestore_inbox">"notification/%1$s/%2$s/%3$s/Mensajes"</string>
+    <string name="validez_cupones">Válido hasta el</string>
+    <string name="serie_title_cupones">El Número de Serie es:\n\n</string>
+    <string name="title_legal_mensajes">Legales:</string>
+    <string name="body_legal_mensajes">Ya Ganaste no se Hace Responsable por los Mensajes Aquí Recibidos ni el Contenido de Ellos.</string>
+
+
+    <!-- Slides Intro -->
+    <string name="saltar_intro"><u>Saltar Intro</u></string>
+    <string name="continuar">Continuar</string>
+    <string name="validate_code">Validar Código</string>
+    <string name="guardar">Guardar</string>
+    <string name="regresar">Regresar</string>
+    <string name="mensaje_slide1">Con Ya Ganaste Cobra desde\n Cualquier Lugar con tu\n Propio Lector MPos</string>
+    <string name="mensaje_slide2">Es Fácil, Rápido\n y Seguro</string>
+    <string name="mensaje_slide3">Lo Mejor\n sin Renta ni Plazos Forzosos</string>
+    <string name="bienvenida">¡Bienvenido a Ya Ganaste! \n Desde Ahora:</string>
+    <string name="bienvenida_inicio">Bienvenido a\nTu Nueva Vida…\nYa Ganaste</string>
+    <string name="bienvenida_inicio_sesion">Ya Tengo una Cuenta</string>
+    <string name="bienvenida_inicio_registrate">Inicia tu Registro</string>
+    <string name="bienvenido_login">Bienvenido</string>
+    <string name="iniciar_sesion">Iniciar Sesión</string>
+    <string name="crear_cuenta">Crear Cuenta</string>
+    <string name="sin_correo">Debes Escribir Un Correo Electrónico</string>
+
+    <string name="contrasena_usuario_incorrecta">La Clave de Usuario es Incorrecta</string>
+
+    <string name="olvido_contraseña">¿Olvidaste tu Contraseña?</string>
+    <string name="message_confirmacion_cambio_contrasena_titulo">Recuperar Contraseña</string>
+    <string name="message_confirmacion_cambio_contrasena">Te Enviaremos las Instrucciones a tu Correo Electrónico para Recuperar Contraseña</string>
+    <string name="message_envio_correo">Hemos Enviado un Correo con las Instrucciones para Recuperar tu Contraseña</string>
+    <string name="message_confirmacion_cambio_contrasena_warning">* No Podrás Salir de la Aplicación Hasta Haber Concluido el Proceso. </string>
+
+    <!-- Menú Seguridad-->
+    <string name="menu_title_ajustes_seguridad">Ajustes de Seguridad</string>
+    <string name="menu_ajustes_opcion_contraseña">Cambiar Contraseña</string>
+    <string name="menu_ajustes_opcion_recuperar_contrasena">Recuperar Contraseña</string>
+    <string name="menu_ajustes_opcion_huella">Huella Digital</string>
+    <string name="menu_ajustes_opcion_saldos">Mostrar Saldos</string>
+    <string name="menu_ajustes_sub_huella">Autorizar Inicio de Sesión con Biométricos</string>
+    <string name="menu_title_ajustes_cambio_contraseña">Cambio de Contraseña</string>
+    <string name="codigo_recibido">Código</string>
+    <string name="codigo_recibido_foot">* Ingresa el Código de Verificación que te fue Enviado</string>
+    <string name="nueva_contrase_a">Nueva Contraseña</string>
+    <string name="conf_nueva_contrase_a">Confirmar Contraseña</string>
+    <string name="message_cambio_contrasena_success_body">La Contraseña ha Sido Actualizada.\nInicie Sesión Nuevamente.</string>
+
+    <!--Bienvenido Shopper-->
+    <string name="text1_bienvenida4L">Recibe Pagos con Tarjeta de \nCrédito y Débito</string>
+    <string name="text2_bienvenida4L">Paga y Cobra Desde tu Celular\ncon QR y Olvídate del Efectivo</string>
+    <string name="text3_bienvenida4L">Paga tus Servicios\ny Realiza Recargas</string>
+    <string name="text4_bienvenida4L">Recibe Atractivas Promociones\nde las Mejores Marcas</string>
+    <string name="text5_bienvenida4L">Envía Dinero a Familiares\ny Amigos </string>
+    <string name="text6_bienvenida4L">Consulta Tus Movimientos</string>
+    <string name="text7_bienvenida4L">Ofrece a tus Clientes Pago \nde Servicios y Recargas</string>
+
+    <!--Condiciones Comerciales-->
+    <string name="titulo_condiciones">Ganan Más con Nuestros \nProductos Digitales</string>
+    <string name="subtitulo1_condiciones">Pago de Servicios</string>
+    <string name="contenido1_condiciones">El 85% de los Clientes que Pagan un Servicio, \nse Llevará Algo Más. (Puede Aplicar una \nComisión al Cliente)</string>
+    <string name="subtitulo2_condiciones">Recargas Electronicas</string>
+    <string name="contenido2_condiciones">Ofrece y Vende el Producto Más Exitoso</string>
+    <string name="subtitulo3_condiciones">Paquetes de Datos y Pines</string>
+    <string name="contenido3_condiciones">Genera Valor Agregado Para tus Clientes</string>
+    <string name="btn_ontinuar_despues">Continuar Después</string>
+
+
+    <!--Upgrade Profesionista -->
+    <string name="title_nombre_negocio_giro_empty">Datos Faltantes</string>
+    <string name="msg_nombre_negocio_giro_empty">Selecciona un Giro Comercial</string>
+    <string name="text_upgrade_felicidades">¡Felicidades!</string>
+    <string name="text_parrafo_upgrade_profesionista">A partir de Este Momento ya Puedes Aceptar Pagos con Tarjetas de Crédito y Débito</string>
+    <string name="title_pago_seguro">Pago Seguro y Confiable</string>
+    <string name="text_cert_pci">Contamos con la Certificación PCI. Lo que Garantiza el más Alto Nivel de Protección de sus Datos al Realizar Pagos</string>
+    <string name="text_protocolo_tls">Las Transacciones Realizadas por Ya Ganaste son Seguras y se Realizan con el Protocolo TLS</string>
+
+    <!--Upgrade Merchant -->
+    <string name="text_parrafo_upgrade_merchant">Ya Puedes Ganar Atractivas Comisiones al Ofrecer a tus Clientes Pago de Servicios y Recargas Electrónicas</string>
+    <string name="tile_upgrade_premium">Convierte tu Negocio en un Centro de Pagos Electrónicos</string>
+    <string name="text_upgrade_premium">Conviértete en Premium y Obtén Más</string>
+    <string name="text_column_basic">Básico</string>
+    <string name="text_column_premium">Premium</string>
+    <string name="text_row_1">Sin Costo Mensual por Lector MPos</string>
+    <string name="text_row_2">Cobra y Paga con QR</string>
+    <string name="text_row_3">Recibe Cualquier Tipo de Tarjeta"</string>
+    <string name="text_row_4">Premios por Metas</string>
+    <string name="text_row_5">"Recibe Comisiones por Pago de Servicios y Recargas</string>
+    <string name="text_butn_upgrade_merchant">Quiero Premium</string>
+
+    <!-- Registro -->
+    <string name="txt_codigo">Código Cliente FullCarga</string>
+    <string name="completa_el_formulario">  Completa el Formulario y te Enviaremos el Código de Activación de tu Terminal Android.</string>
+    <string name="soy_cliente">Soy Cliente</string>
+    <string name="codigo_cliente">Código Cliente FullCarga</string>
+    <string name="rellena_cliente">Rellena Si ya Eres Cliente FullCarga</string>
+    <string name="txt_tipo_documento">Tipo Documento Identificación *</string>
+    <string name="personal">Personal</string>
+    <string name="empresa">Empresa</string>
+    <string name="documento">* Documento</string>
+    <string name="registrar">Registrar</string>
+    <string name="direccion">* Dirección </string>
+    <string name="otra_localidad">Otra Localidad</string>
+    <string name="celular">* Celular</string>
+    <string name="telefono_alternativo">Teléfono Alternativo</string>
+    <string name="correo_electr_nico">* Correo Electrónico</string>
+    <string name="correo_electr_nico_recuperar">eje***@yaganaste.com</string>
+    <string name="comentarios">Comentarios</string>
+    <string name="reg_nombre">* Nombre</string>
+    <string name="apellido_1">* Primer Apellido</string>
+    <string name="segundo_apellido">* Segundo Apellido</string>
+    <string name="longitud_incorrecta">El Texto Debe ser de %1$s Caracteres</string>
+    <string name="num_documento">Número Documento Identificación *</string>
+    <string name="btnActualizarProductos">Cancelar</string>
+    <string name="programar">Programar</string>
+    <string name="No">No</string>
+    <string name="clave_usuario_hint">Clave Usuario</string>
+    <string name="recuperar_clave">Recuperar Contraseña</string>
+    <string name="recuperar_clave_enviar">Te Enviaremos las Instrucciones a tu Correo \n Electrónico para Recuperar Contraseña</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="confirmar">Confirmar</string>
+    <string name="no_por_ahora">No por Ahora</string>
+    <string name="SI">Si</string>
+    <string name="region">Región</string>
+    <string name="siguiente">Siguiente</string>
+    <string name="no_serie">Número de Serie</string>
+    <string name="no_serie_prefijo">Prefijo</string>
+    <string name="error">Error al Realizar la Operación </string>
+    <string name="error_conexion">Error de Conexión</string>
+    <string name="error_conexion_dongle">Error al Conectar el Lector MPos</string>
+    <string name="error_intente_mas_tarde">Ocurrió un Error, Intente de Nuevo</string>
+    <string name="cargando">Cargando</string>
+    <string name="configurando_dispositivo">Un momento. Estamos Configurando tu Lector MPos por Primera vez…</string>
+    <string name="exito">Éxito</string>
+    <string name="registro_exitoso">Registro Exitoso</string>
+    <string name="registro_fallido">Registro Fallido, Inténte de Nuevo</string>
+    <string name="registro_dialog_cargando_error">Error</string>
+    <string name="registro_dialog_cargando_error_internet">Error de Conexión</string>
+    <string name="error_conexion_bd">Ocurrió un Error con la Base de Datos, Intente de Nuevo</string>
+    <string name="registro_dialog_cargando_niveles">Cargando niveles</string>
+    <string name="registro_dialog_cargando_estados">Cargando %1$s</string>
+    <string name="registro_dialog_cargando_municipios">Cargando %1$s</string>
+    <string name="registro_dialog_cargando_colonias">Cargando %1$s</string>
+    <string name="registro_dialog_cargando_comunas">Cargando %1$s</string>
+    <!--Nuevo Registro-->
+    <string name="activate_ya">Actívate Ya</string>
+    <string name="registro_et_correo_electr_nico">Correo Electrónico</string>
+    <string name="registro_et_contrase_a">Contraseña</string>
+    <string name="registro_et_conf_contrase_a">Confirmar Contraseña</string>
+    <string name="registro_tv_guia_paso_3">Ahora Queremos\nSaber de Ti</string>
+    <string name="registro_rb_se_or">Señor</string>
+    <string name="registro_rb_se_ora">Señora</string>
+    <string name="registro_rb_masculino">Hombre</string>
+    <string name="registro_rb_femenino">Mujer</string>
+    <string name="registro_et_dni">Cédula de Ciudadanía</string>
+    <string name="registro_et_nombre">Nombre(s)</string>
+    <string name="registro_et_apellido_paterno">Primer Apellido</string>
+    <string name="registro_et_apellido_materno">Segundo Apellido</string>
+    <string name="registro_et_fecha_nacimiento">Fecha de Nacimiento</string>
+    <string name="registro_et_codigo_postal">Código Postal (Opcional)</string>
+    <string name="registro_cb_t_c_aviso">Acepto los Términos y Condiciones y el Aviso de Privacidad</string>
+    <string name="registro_valid_characters">"[a-zñáéíóú\\s]"</string>
+    <string name="aceptar_terminos_condiciones">Debe Aceptar los Términos y Condiciones</string>
+
+    <!--Login -->
+    <string name="clave_de_usuario">Introduce tu Clave de Usuario </string>
+    <string name="error_clave_invalida">Por Favor Introduce una Clave Válida </string>
+    <string name="error_clave_vacia">Favor de Ingresar una Contraseña </string>
+    <string name="restauracion_correcta">Proceso Ejecutado Correctamente</string>
+    <string name="msj_bienvenida_nombre">¡Hola %1$s!</string>
+    <!--Login pci -->
+    <string name="clave_de_usuario_pci">Introduce tu Clave PCI </string>
+    <string name="costo_operacion">Esta Operación Generara un Cargo por</string>
+    <string name="dongle_error">Dongle Error</string>
+    <string name="dongle_error_sesionpci">No haz iniciado Sesión PCI</string>
+    <string name="dongle_error_msg">Dongle Desconectado, para Realizar Operaciones con este Producto es Necesario Conectarlo</string>
+
+    <!-- Desbloqueo-->
+    <string name="clave_desbloqueo_enviada">La Nueva Clave de Desbloqueo Ha Sido Enviada al Correo Proporcionado</string>
+    <string name="clave_desbloqueo_invalida">Clave de Desbloqueo Inválida</string>
+    <string name="validando_datos">Validando Clave de Desbloqueo</string>
+    <string name="crea_tu_clave_de_4_digitos">Crea tu Clave de 4 Dígitos para Acceder al Terminal : </string>
+    <string name="repite_clave_usuario">Repite Clave Usuario</string>
+    <string name="introduce_clave_desbloqueo">Introduce la Clave de Desbloqueo de 8 Dígitos que te han Enviado : </string>
+    <string name="clave_desbloqueo">Clave Desbloqueo</string>
+    <string name="clave_usuario_noigual">Las Claves de Usuario no Coinciden</string>
+    <string name="clave_usuario_incorrecta">La Clave de Usuario no es Válida</string>
+    <string name="desbloqueo_advertencia_titulo">Advertencia</string>
+    <string name="desbloqueo_advertencia_body">Si Continuas tu Clave Será Borrada</string>
+    <!-- Bluethooth logg -->
+    <string name="scan_bt_device">Buscar Lector MPos</string>
+    <string name="Seleccione_Conexion">Conecte su Lector MPos</string>
+    <string name="Conectando_Dispositivo">Conectando Lector MPos, Espere un Momento</string>
+    <string name="Dispositivo_Conectado">Lector MPos Conectado, Espere un Momento</string>
+    <string name="Dispositivo_NoEncontrado">Lector MPos no Encontrado</string>
+    <string name="bluetooth_select_device">Seleccionar Lector MPos</string>
+    <string name="exito_vincular_lector_tarjeta">Tu Lector MPos \n ha Sido Vinculado Exitosamente</string>
+    <string name="fallo_vincular_lector_tarjeta">Tu Lector MPos no \n ha Sido Vinculado Exitosamente</string>
+    <string name="exito_desvincular_lector_tarjeta">Tu Lector MPos \n ha Sido Desvinculado Exitosamente</string>
+    <string name="fallo_desvincular_lector_tarjeta">Tu Lector MPos no \n ha Sido Desvinculado Exitosamente</string>
+    <string name="desvincular_dongle">Estas a Punto de Desvincular\nTu Lector MPos Actual</string>
+
+    <!-- Device Permission-->
+    <!-- Realizando Operaciones -->
+    <string name="Operando">Realizando Operación</string>
+    <string name="operacion_aprobada">Operación Aprobada</string>
+    <string name="error_obtener_icono">Error al Obtener el Ícono</string>
+
+    <!-- Menu Home -->
+    <string name="sin_cuenta"><u>¿Aún no Tienes una Cuenta?</u></string>
+    <string name="otra_cuenta"><u>Ingresar con Otra Cuenta</u></string>
+
+    <string name="menu_item_mis_datos">Mis Datos</string>
+    <string name="menu_item_info_bancaria">Información Bancaria</string>
+    <string name="menu_item_seguridad">Seguridad</string>
+    <string name="menu_item_legal">Legal</string>
+    <string name="menu_item_ayuda">Ayuda</string>
+    <string name="menu_item_configuracion">Configuración</string>
+
+    <!-- Menu Home -->
+    <string name="text1_promo_prof">¡Acepta Tarjetas Visa, Mastercard y Más!</string>
+    <string name="text2_promo_prof">La Comisión Más Baja del Mercado</string>
+    <string name="text3_promo_prof">Recibe tu Dinero de Inmediato</string>
+    <string name="text4_promo_prof">Regístrate en Pocos Pasos</string>
+    <string name="btn_registrar_profesionista">Registrar Mi Negocio</string>
+    <string name="btn_vincular_dongle">Vincular Lector MPos</string>
+    <string name="aun_sin_dongle">¿Aún no Cuentas con un Lector MPos?</string>
+
+    <!-- Submenu Home Factura -->
+    <string name="menu_item_factura_datos_facturacion">Datos de facturación</string>
+    <string name="menu_item_factura_consulta_factura">Consulta de factura</string>
+    <string name="productos_buscar">Buscar ....</string>
+    <!-- Submenu Home Configuracion -->
+    <string name="menu_item_config_config_dispositivos">Configuración de Dispositivo</string>
+    <string name="menu_item_config_tiempo_inactividad">Tiempo de Inactividad</string>
+    <string name="menu_item_config_reporte_ventas">Mis Movimientos</string>
+    <string name="menu_item_config_cierre_turno">Cierre de Turno</string>
+    <string name="menu_item_config_actualizacion_productos">Actualización de Productos</string>
+    <string name="menu_item_config_conexion">Conexión</string>
+    <string name="menu_item_config_ajustes_seguridad">Ajustes de Seguridad</string>
+
+
+    <!-- Menu Mi Cuenta -->
+    <string name="title_mi_cuenta_banner">Gana Más Dinero con\nYa Ganaste</string>
+    <string name="title_codigo_cliente">Número de Cliente</string>
+
+    <!-- Menu Mis Datos-->
+    <string name="title_mi_cuenta_tipo_personal">Personal</string>
+    <string name="title_mi_cuenta_change_photo_profile">Cambiar mi Foto de Perfil</string>
+    <string name="title_mi_cuenta_nombre1">Primer Nombre</string>
+    <string name="title_mi_cuenta_nombre2">Segundo Nombre</string>
+    <string name="title_mi_cuenta_apellido_pat">Apellido Paterno</string>
+    <string name="title_mi_cuenta_apellido_mat">Apellido Materno</string>
+    <string name="title_mi_cuenta_telefono">Teléfono</string>
+    <string name="title_mi_cuenta_numero_agente">Número de Agente</string>
+    <string name="title_mi_cuenta_numero_serie">Número de Serie</string>
+
+    <!-- Menu Información Bancaria -->
+    <string name="title_tipo_cuenta">Tipo de Cuenta</string>
+    <string name="title_numero_cuenta">Número de Cuenta</string>
+    <string name="title_banco">Banco</string>
+    <string name="title_cambio_cuenta_title">Cambio de Cuenta</string>
+    <string name="title_cambio_cuenta_header">Para Realizar un Cambio en\n tu Cuenta es Necesario Enviar los\n Siguientes Documentos a:</string>
+    <string name="title_correo_help">ayuda.co@yaganaste.com</string>
+    <string name="title_cambio_cuenta_document1">\u2022 Certificación Bancaria</string>
+    <string name="title_cambio_cuenta_document2">\u2022 Fotocopia de Cédula de Ciudadanía</string>
+    <string name="title_cambio_cuenta_footer">Una vez Enviado en un Máximo\n de 72 hrs se Validará la Cuenta</string>
+
+    <!-- Calendario -->
+    <string name="marked_pay_title">Marcar como Pagado</string>
+
+    <string name="ana_presentation_title">Soy Ana Tu Nueva Asistente</string>
+    <string name="pay_and_services_title">Mis Pagos y Recargas</string>
+    <string name="tutorial_ana_1">Mi Trabajo es Asegurarme que Pagues a Tiempo Todos tus Servicios</string>
+    <string name="tutorial_ana_2">De Forma Segura, Sin Salir de Casa y Sin Tener que Pagar Recargos</string>
+    <string name="tutorial_ana_3">Aquí Podrás Programar los Pagos de tus Servicios Favoritos</string>
+    <string name="comenzar">Comenzar</string>
+    <string name="register_favourite_default_text">No Importa el Tipo de Pago,\n yo te Recordaré Cada uno de Ellos</string>
+    <string name="register_favourite_default_title">Registra Cualquier Pago</string>
+    <string name="favourites_title">Mis Favoritos</string>
+    <string name="añadir_title">Añadir</string>
+
+    <string name="dialog_update_reminder_success">Se actualizó con éxito</string>
+    <string name="dialog_update_reminder_failed">Hubo un problema al actualizar, intenta más tarde</string>
+
+    <string name="dialog_save_reminder_success">Se guardó con Éxito</string>
+    <string name="dialog_save_reminder_failed">Hubo un problema al guardar, intenta más tarde</string>
+
+    <string name="dialog_delet_reminder_success">Se eliminó con éxito</string>
+    <string name="dialog_delet_reminder_failed">Hubo un problema al eliminar, intenta más tarde</string>
+
+    <!--Mis Datos Negocio -->
+    <string name="title_mi_cuenta_tipo_negocio">Negocio</string>
+    <string name="title_mi_cuenta_nombre_negocio">Nombre del Negocio</string>
+    <string name="title_mi_cuenta_actividad">Actividad Económica</string>
+    <string name="title_mi_cuenta_alias">Así te Verán tus Clientes en su Estado de Cuenta</string>
+    <string name="title_mi_cuenta_direccion">Dirección</string>
+    <string name="title_mi_cuenta_codigoPostal">Código Postal</string>
+    <string name="title_mi_cuenta_ruc">NIT</string>
+
+    <!-- Legal -->
+    <string name="title_legal">Términos y Condiciones</string>
+
+    <string name="title_correo">Correo Electrónico</string>
+    <string name="title_llamar">Llamar</string>
+    <string name="title_chat">Chat</string>
+
+    <!-- Datos Envio -->
+    <string name="title_envio_depto">Departamento</string>
+    <string name="title_envio_ciudad">Ciudad o Municipio</string>
+    <string name="kit_title_direccion_envio_empty">Ingresa el Domicilio a Donde \nEnviaremos tu Lector MPos</string>
+
+    <!-- Menú Ayuda-->
+    <string name="ayuda_title">Preguntas Frecuentes</string>
+    <string name="ayuda_cuestion1">Además de Poder Pagar mis Servicios y Poder hacer Recargas Electrónicas, ¿Qué más Puedo Hacer en esta App? </string>
+    <string name="ayuda_cuestion2">En Caso de Daño o Perdida de mi Lector MPos, ¿Que debo de hacer?  </string>
+    <string name="ayuda_cuestion3">¿Cómo Puedo Cambiar o Recuperar mi Clave? </string>
+    <string name="ayuda_cuestion4">¿Por qué Necesitan mi Cuenta Bancaria? </string>
+    <string name="ayuda_cuestion5">¿Cómo Adquiero mi Lector MPos Ya Ganaste? </string>
+
+    <!-- Menu Respuestas -->
+    <string name="ayuda_cuestion1_answer">Podrás Recibir Pagos con Tarjetas Bancarias Como Profesionista con mi Lector MPos.</string>
+    <string name="ayuda_cuestion2_answer">Comuníquese con Servicio al Cliente de Ya Ganaste y le Ayudaremos en el Proceso. </string>
+    <string name="ayuda_cuestion3_answer">Al Entrar a la App en la Sección de Login, Aparecerá un Texto “Olvidaste tu Contraseña”, al dar Click Sobre el Texto te Mandará a una Pantalla Donde:
+\n
+\n· Si ya has Iniciado Sesión Alguna Vez te Mostrará Parte del Correo Registrado
+\n
+\n· Si no has Iniciado Sesión, te Pedirá Capturar el Correo con el cual te Diste de Alta
+\n  Posteriormente la Aplicación te Dirigirá a una Pantalla Donde te Pedirá los Siguientes Datos:\n
+\n· Código (Este te Llegara al Correo Electrónico Registrado en la Aplicación)
+\n
+\n· Contraseña Nueva
+\n
+\n· Confirmar Contraseña. </string>
+
+    <string name="ayuda_cuestion4_answer">Cuando Recibes Pagos con Tarjeta Débito y Crédito ese Dinero Queda en tu Saldo. Tú Saldo lo Puedes Usar para Hacer Recargas, Pago de Servicios Públicos o para Adquirir Bienes o Servicios Usando tu Aplicación Ya Ganaste. Para Pasar Dinero de tu Saldo a tu Cuenta es Necesario Tener una Cuenta Registrada.  </string>
+
+    <string name="ayuda_cuestion5_answer">Desde la Aplicación Deberás de Dirigirte a la Sección de “Mi Cuenta” ahí Aparecerá un Banner Invitándote a Adquirir el Lector MPos al dar Click en el Banner Seguir los Siguientes Pasos:
+\n
+\n1. Indicar si la Dirección de Entrega es la Misma a la Capturada en el Registro, en Caso Contrario Capturar la Dirección de Envió.
+\n
+\n2. Se Mostrará la Pantalla del Costo con el Envió.
+\n
+\n3. El Pago Será a Través de PSE Misma que te Abre la Aplicación.
+\n
+\n4. Recibirás un Correo de Confirmación y que tu Envió está en Camino.
+\n
+\n5. En un Lapso de 72 Horas o Menos Recibirás tu Lector MPos
+
+ </string>
+    <string name="ayuda_cuestion6_answer"></string>
+    <!-- Ayuda -->
+
+    <string name="title_whats">WhatsApp</string>
+
+    <string name="title_ayuda_dialog_email_error">¡NO Existe Ningún Cliente de Correo Electrónico Instalado!</string>
+    <string name="title_ayuda_dialog_llamada_error">¡No se Puede Realizar la Llamada!</string>
+    <string name="title_ayuda_dialog_whats_error">¡La Aplicación no se Encuentra Instalada!</string>
+    <string name="title_email_destinatario_ayuda">ayuda.co@yaganaste.com</string>
+    <string name="title_email_asunto_ayuda">¡Ayuda!</string>
+    <string name="title_text_ayuda">Hola,\nNecesito Ayuda, ¿Podrían Contactarme?</string>
+    <string name="title_phone_ayuda">+5717454252</string>
+    <string name="title_body_N">Nombre</string>
+    <string name="title_body_C">Correo</string>
+    <string name="title_body_Nu">Numero</string>
+
+
+    <!-- Home-->
+    <string name="error_menu"> Error al Obtener Elementos del Menú </string>
+    <string name="gen_desc">Descripción Genérica</string>
+    <string name="etiq_saldo_modal">Saldos</string>
+    <string name="etiq_saldo_modal_entry">%1$s: %2$s \n</string>
+    <string name="seleccion_operacion">Elige una Operación</string>
+    <!-- Menu de configuracion -->
+    <string name="menu_item_cierre_turno">Cierre de Turno</string>
+    <string name="menu_item_cierre_sesion">Cerrar Sesión</string>
+    <string name="menu_item_actualizar_productos">Actualizar Productos</string>
+    <string name="menu_item_contactanos">Contáctanos</string>
+
+    <string name="menu_item_restaurar_datos_fabrica">Restaurar Datos de Fábrica</string>
+    <string name="string_question_restaurar_fabrica">Al Confirmar, tu Aplicación se Restaurará a los Valores Iniciales</string>
+    <string name="success_message_restaurar_fabrica">Los Datos se Han Restaurado Exitosamente.</string>
+    <string name="menu_fragment_titulo_ayuda">Ayuda</string>
+    <string name="menu_item_conexion">Conexión</string>
+    <string name="menu_inactividad">Bloqueo Automático</string>
+    <string name="minutos_inactividad">Tiempo Seleccionado: %1$d Minutos</string>
+
+    <string name="menu_item_consultar_saldo">Consultar Saldo</string>
+    <string name="menu_item_reporte_ventas">Reporte de Ventas</string>
+    <string name="sin_resultados">Sin Resultados</string>
+    <string name="rango_fechas_invalidas">Rango de Fechas no Válido</string>
+    <string name="selecciona_fecha">Selecciona una Fecha</string>
+    <string name="selecciona_semana">Selecciona una Semana</string>
+    <string name="selecciona_fecha_inicial">Fecha Inicial</string>
+    <string name="selecciona_fecha_final">Fecha Final</string>
+    <string name="exit_fragment_title_lbl">¿Deseas Salir de la Aplicación?</string>
+    <string name="dialog_title_cerrar_sesion">¿Estás Seguro que Deseas \nCerrar Sesión?</string>
+    <string name="exit_fragment_body_lbl">Al Confirmar, tus Datos de Sesión Serán Eliminados de Este Dispositivo y se Pedirán Nuevamente tus Credenciales</string>
+    <string name="dialog_txt_accept">ACEPTAR</string>
+    <string name="dialog_txt_cancel">CANCELAR</string>
+    <string name="dialog_text_send_email">Enviar Ticket por Email</string>
+    <string name="transaction_adapter_reference_local">Ref Local : %1$s</string>
+    <string name="transaction_adapter_reference_client">Ref Cliente : %1$s</string>
+    <string name="operacion">Operación</string>
+    <string name="sin_operaciones">Producto Sin Operaciones Disponibles</string>
+    <string name="actualizando">Actualizando</string>
+    <string name="actualizacion_productos">La Lista de Productos\n se Está Cargando</string>
+
+    <string name="config_menu_configuracion_vincular_lector">Vincular Lector MPos</string>
+    <string name="config_menu_configuracion_velocidad_conexion">Velocidad de Conexión</string>
+    <string name="config_menu_configuracion_actualizacion_productos">Actualización de Productos</string>
+    <string name="config_menu_configuracion_ajustes_seguridad">Ajustes de Seguridad</string>
+
+    <!--Config Menu Legal -->
+    <string name="config_menu_legal_contratos">Contratos</string>
+    <string name="config_menu_legal_terminos_y_condiciones">Términos y Condiciones</string>
+    <string name="config_menu_legal_aviso_privacidad">Aviso de Privacidad</string>
+
+    <!-- Validaciones -->
+    <string name="campo_requerido">Este Campo es Requerido</string>
+    <string name="campo_requerido_correo">Es Necesario Ingresar un Correo Correcto</string>
+    <string name="email_invalido">Debes Ingresar un Correo Válido</string>
+    <string name="campo_no_iguales">Las Contraseñas Deben Ser Iguales</string>
+    <string name="contrasen_a_valida">Debes Ingresar una Contraseña de 6 digitos</string>
+    <string name="contrasen_a_no_coinciden">Las Contraseñas no Coinciden</string>
+    <string name="error_direccion">Error en la Direccion Comercial </string>
+    <string name="direccion_incorrecta">Es necesario Ingresar una Direccion Comercial </string>
+
+    <!-- Task -->
+    <string name="error_operacion">Error al Realizar la Operación</string>
+    <string name="no_internet">No se Detecta Conexión a Internet</string>
+    <string name="error_consulta_saldo">Error al Consultar Saldo</string>
+    <!-- Wifi Options -->
+    <string name="wifi_conectado">Wifi Conectado</string>
+    <string name="wifi_title">Wifi</string>
+    <string name="datos_moviles_title">Datos Móviles</string>
+    <string name="datos_moviles_conectado">Datos Móviles Conectado</string>
+    <string name="ethernet_title">Ethernet</string>
+    <string name="ethernet_conectado">Ethernet Conectado</string>
+    <string name="texto_enviado_correo">Hemos Enviado un Correo \n con las Instrucciones para \n Recuperar tu Contraseña</string>
+    <string name="Invalidate_Importe_Mayor"> El Importe Ingresado es Mayor al Permitido </string>
+    <string name="Invalidate_Importe_Menor"> El Importe Ingresado es Menor al Permitido </string>
+    <string name="Invalidate_Importe_Incremento"> El Importe Ingresado No es Válido </string>
+    <!-- Cierre de turno Options -->
+    <string name="cierre_turno_title">Cierre de Turno</string>
+    <string name="enviar_mail_titulo">Enviar</string>
+    <string name="enviando_mail_titulo">Enviando</string>
+    <string name="direccion_correo">Ingresa el Correo Electrónico</string>
+    <string name="cierre_turno_pregunta">¿Quieres Cerrar el Turno?\n Las Operaciones se Borrarán del Reportes de Ventas</string>
+    <string name="cierre_turno_correct">Cierre de Turno Exitoso</string>
+    <string name="no_transactions">No hay Transacciones en Este Turno</string>
+    <string name="emal_ivalid">Email Inválido</string>
+    <string name="rellena_campos">Rellena los Campos</string>
+    <string name="email_correct">Email Enviado Correctamente</string>
+    <string name="email_incorrect">Error al Enviar el Email</string>
+    <!--StringTicketPrinter-->
+    <string name="reintentar_impresion">Reintentar Impresión</string>
+    <string name="imprimir">IMPRIMIR</string>
+    <string name="indicar_direccion_envio">Indica la Dirección de Envío :</string>
+    <string name="impresion_copia">Imprimir Copia de Cliente</string>
+    <string name="impresion_op">Desea Imprimir Ticket</string>
+    <string name="impresion_copia_op">Desea Imprimir Copia de Cliente</string>
+    <string name="sin_imprimir">Sin imprimir</string>
+    <string name="left_margin">Left Margin:</string>
+    <string name="row_space">Row Space:</string>
+    <string name="font_size">Font Size：</string>
+    <string name="gray_level">Gray Level:</string>
+    <string name="printing_wait">Imprimiendo, por Favor Espere……</string>
+    <string name="maker_not_find">No se Encuentra Sección en Negro </string>
+    <string name="noPaperNotice">Impresora sin Papel, Agregue Papel e Intente De Nuevo.</string>
+    <string name="LowBattery">Batería Baja, ¡Por Favor Conecte el Cargador!</string>
+    <string name="overTemp">¡Tiempo Terminado!</string>
+    <string name="ptintInit"> Iniciando Impresora Espere y Pruebe en Unos Segundos.</string>
+    <string name="outOfLeft">¡Esta más allá del Margen Izquierdo!</string>
+    <string name="outOfLine">¡Esta más allá del Espacio de la Fila!</string>
+    <string name="outOfFont">¡Esta más allá del Tamaño de la Fuente!</string>
+    <string name="outOfGray">¡Esta más allá del Nivel Gris!</string>
+    <string name="empty">¡El Contenido Está Vacío!</string>
+    <string name="lengthNotEnougth">¡El Tamaño es Insuficiente!</string>
+    <string name="bl_dy">Imprimir</string>
+    <string name="text_format_error">Texto con Formato Equivocado</string>
+    <string name="cve_usuario">Clave de Usuario</string>
+    <string name="error_encabezado_ticket">Error al Consultar el Encabezado del Ticket</string>
+    <string name="error_pie_ticket">Error al Consultar el Pie del Ticket</string>
+    <string name="error_operacionproducto_ticket">Error al Obtener Operación por Producto</string>
+    <string name="error_construccion_ticket"> Error al Construir el Ticket</string>
+
+    <!--FingerPrinet Dialogo-->
+    <string name="titulo_autoriza">Autoriza</string>
+    <string name="titulo_autorizar">Autorizar</string>
+    <string name="titulo_login">Login con huella</string>
+    <string name="accion_fingerprint">Usa tu Huella para Autorizar \n esta Acción</string>
+    <string name="accion_password">Ingresa tu Contraseña Para \n Autorizar la Operación</string>
+    <string name="cancel_usar_contraseña_fingerprint">Usa Contraseña</string>
+
+    <!--Qpos Update -->
+
+    <string name="update_qpos_correct_blue">"Lector MPos Actualizado Correctamente.</string>
+    <string name="compra_qpos">Adquiere tu Lector MPos</string>
+    <string name="compra_qpos_todo">Todo en esta Misma APP</string>
+    <string name="compra_qpos_tramites">Sin más Trámites</string>
+    <string name="compra_qpos_vincular">Fácil de Vincular vía Bluetooth</string>
+
+
+    <!-- PCI -->
+    <string name="iniciando_operacion">Ingrese la Tarjeta</string>
+    <string name="obteniendo_datos_tarjeta">Obteniendo Datos</string>
+    <string name="cancelando_operacion">Cancelando Operación</string>
+    <string name="operacion_finalizada">Operación Finalizada</string>
+    <string name="operacion_venta">Operación Venta</string>
+    <string name="error_formato_monto">Error al Dar Formato al Monto</string>
+    <string name="error_finaliza_operacion">Error al Finalizar la Operación</string>
+    <string name="realizando_pago">Realizando Pago</string>
+    <string name="te_gustaria_pagos_tarjeta">¿Te Gustaría Recibir \n Pagos con Tarjeta?</string>
+    <string name="te_gustaria_aumentar_ingresos">¿Te Gustaría Aumentar tus Ingresos?\n\nGana Atractivas Comisiones con Nuestros Productos Digitales</string>
+    <!-- Firma -->
+    <string name="firma_aqui">Tu Firma</string>
+    <string name="limpiar">Limpiar</string>
+    <string name="Enviar_DNI">DNI</string>
+    <string name="Indica_DNI">Indique su Número de Identificación</string>
+    <string name="completa_campo">Debes Completar el Campo</string>
+    <string name="enviar_firma">Es Necesario Enviar su Firma, Toque el Ticket y Envie el Correo</string>
+    <string name="error_envio_firma">Es Necesario Terminar el Flujo de Firma para Poder Continuar</string>
+    <!-- BroadCast -->
+    <!-- Campos EMV Data -->
+    <!--DBInterna-->
+    <!-- Premisos-->
+    <string name="permisos_warning">Es Necesario Conceder Permisos Para Poder Continuar</string>
+    <!--Correo -->
+    <string name="ingrese_correo_electronico">Correo Electrónico</string>
+    <string name="envio_Correo">Enviar</string>
+    <string name="all_non_valid_mail">Debes Ingresar un Correo Válido</string>
+    <string name="sesion_finalizada">Sesión Terminada</string>
+    <string name="identificate">Identifícate Nuevamente</string>
+    <string name="btn_reintentar">Reintentar</string>
+    <string name="operacion_pci">Operación PCI</string>
+    <string name="error_tipoOperacion">Operación no Disponible en Este Momento</string>
+    <string name="error_con_bd">Error con la Base de Datos</string>
+    <string name="enviando_email_a">Enviando Email a </string>
+    <string name="envio_exitoso">Correo Enviado Correctamente</string>
+    <string name="error_envio_correo">Error al Enviar el Correo Electrónico</string>
+
+    <!--ExtraKeys -->
+    <string name="error_fatal_key">FATAL</string>
+
+    <!--Migración-->
+    <string name="titulo_cambio_contraseña">Cambio Contraseña</string>
+    <string name="contrasena">Contraseña (Numérica 6 Dígitos)</string>
+    <string name="cambio_contraseña">Por Motivos de Seguridad Debe Cambiar su Contraseña</string>
+
+    <!-- PrinterBluetooth-->
+    <string name="menu_item_impresoras">Impresora Bluetooth</string>
+    <string name="printerBT_Error_txt_null">El texto a Imprimir Viene Vacío</string>
+    <string name="printerBT_no_found_device">Dispositivo de Impresión  No Encontrado</string>
+    <string name="printerBT_printer_not_init">Error al Inicializar la Impresora.</string>
+    <string name="printerBT_question">¿Desea Usar está Impresora Como Predeterminada?</string>
+    <string name="printerBT_change_successful">Impresora Cambiada Correctamente</string>
+    <string name="printerBT_title">Impresora Bluetooth</string>
+    <string name="printerBT_searchPrinter">Conectando con la Impresora...</string>
+
+    <string name="wallet_notificacion_path">%1$s/%2$s</string>
+    <string name="wallet_notificacion_path_1">notification/%1$s/%2$s</string>
+    <string name="wallet_notificacion_path_2">notification/%1$s/%2$s/%3$s/info</string>
+    <string name="no_existen_notificaciones">No Existen Notificaciones</string>
+
+
+    <!-- WALLET -->
+
+    <string name="wallet_Saldo">Saldo Disponible</string>
+    <string name="nombre_wallet">Ana Becerril</string>
+
+
+    <string name="continuar_registro">Continuar</string>
+    <string name="reload_registro">Volver A Intentar</string>
+    <string name="registro_header_datos_identificacion">Ingresa tus Datos tal como Aparecen en tu Identificación</string>
+    <string name="registro_header_datos_contacto">Ingresa tu Información de Contacto</string>
+    <string name="registro_header_datos_direccion">Ingresa tu Dirección</string>
+    <string name="registro_header_datos_nombre">Ingresa tu Nombre Completo</string>
+    <string name="registro_header_datos_completar">Completar Registro</string>
+    <string name="registro_header_select_pais">Selecciona tu País</string>
+    <string name="registro_header_select_pais_no_disponible">País no Disponible en tu Ubicación </string>
+    <string name="registro_header_numero_celular">Vamos a Registrar tu Celular</string>
+    <string name="registro_hint_numero_celular">Número Celular</string>
+    <string name="registro_inicio_celular">Tu Saldo en Tiempo Real</string>
+    <string name="registro_title_personal_information">Personalicemos tu Cuenta</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fragment_nombre_negocio_continuar_despues">Continuar Después</string>
+    <string name="fragment_nombre_negocio_nombre_comercial">Nombre de tu Negocio</string>
+    <string name="tipo_documento">Tipo Documento</string>
+    <string name="fragment_actividad_economica">Actividad Económica</string>
+    <string name="fragment_nombre_negocio_subgiro">Subgiro</string>
+    <string name="fragment_nombre_negocio_ruc">NIT</string>
+    <string name="fragment_negocio_fragment_titulo">Cuéntanos de tu Negocio</string>
+    <string name="fragment_ubicacion_negocio_titulo">¿Dónde se Encuentra?</string>
+    <string name="fragment_ubicacion_negocio_ED" tools:ignore="ExtraTranslation">Dirección</string>
+    <!--cuando se modifique este texto, también deben de cambiarse las posiciones donde se colorean en la clase
+    NombreNegocioFragment-->
+    <string name="fragment_ubicacion_negocio_terminos_condiciones">Acepto los Términos y Condiciones y el Aviso de Privacidad</string>
+    <string name="fragment_condiciones_comerciales">Condiciones Comerciales</string>
+    <string name="registro_instruction_sms">Ingresa el Código que Recibiste</string>
+    <string name="registro_resend_label">\u0020No Recibí Ningún Código\u0020</string>
+
+    <string name="reporte_ventas_int">Semana %1$s / %2$s</string>
+    <string name="tiempo_inactivdad_tiempo_seleccionado">de inactividad</string>
+    <string name="enviar_verification_code">Enviar Código</string>
+    <string name="number_verification_send_sms_fail">Fallo el Envió del Mensaje SMS, Por Favor Verifica tu Conexión a Internet e Intenta Nuevamente</string>
+    <string name="tiempo_inactividad_selecciona_tiempo">Selecciona el Tiempo para el\nCierre de Sesión</string>
+    <string name="titulo_selecciona_pais">Selecciona tu País</string>
+    <string name="config_submenu_vincular_tarjeta">Vincular Lector MPos</string>
+    <string name="config_submenu_enciende_lector">Enciende tu Lector MPos Ya Ganaste</string>
+    <string name="config_submenu_mantenlo_presionado">Mantenlo Presionado Hasta que Leas\nen Pantalla \"Bienvenido\"</string>
+    <string name="config_submenu_dispositivos_encontrados">Dispositivos Encontrados</string>
+    <string name="config_submenu_enciende_bluetooth">Enciende tu Bluetooth</string>
+    <string name="config_submenu_vincular_lector">Para Vincular el Lector de Tarjetas\nDebes Tener Encendido tu Bluetooth</string>
+    <string name="buscar_dispositivos">Buscar Lector MPos</string>
+    <string name="menu_productos_mostrar_lista"><u>Mostrar Lista</u></string>
+    <string name="menu_productos_aumenta_tus_ingresos"><u>Aumenta Tus Ingresos</u></string>
+    <string name="mensaje_slide1_cuerpo">Paga, Cobra, Envía y Controla\n Tu Dinero ¡Desde Hoy!</string>
+
+    <!--Dongle Vinculado-->
+    <string name="config_submenu_dongle_vinculado">Lector de Tarjetas</string>
+    <string name="bateria_lector">Batería del Lector MPos</string>
+    <string name="cambio_lector">Cambiar Lector MPos</string>
+    <string name="reintentar">¿Reintentar Conexión?</string>
+    <string name="login_pci"><u>Login PCI</u></string>
+    <string name="connection_fail_bluetooth">No se Pudo Establecer Conexión</string>
+
+    <string name="dni">DNI</string>
+    <string name="dni_error">"Debe Contener 8 Caracteres"</string>
+    <string name="dongle_timeout">El Lector MPos no ha Contestado, por favor Intente de Nuevo</string>
+    <string name="im_here_to_help">Estoy Aquí\npara Ayudarte</string>
+    <string name="insert_code">Ingresa el Código\nque Recibiste</string>
+    <string name="recibe_pagos_tarjeta_aumenta_ventas">¡Acepta Pagos con Tarjeta \n y Cobra a Domicilio!</string>
+    <string name="si_quiero">Si Quiero</string>
+    <string name="acepta_tarjetas_desde_smartphone">Acepta Todas las Tarjetas Desde\ntu Smartphone</string>
+    <string name="sin_costo_mensual_datafono">Sin Costo Mensual de Datafono</string>
+    <string name="sin_comisiones_fijas_contratos_largo_plazo">Sin Comisiones Fijas, ni Contratos\na Largo Plazo</string>
+    <string name="en_otro_momento">En Otro Momento</string>
+    <string name="cuenta_ahorro">Cuenta Ahorro</string>
+    <string name="registro_agrega_cuenta_contenido">Ahí Podrás Reembolsar Todas las Ventas con Tarjeta de Débido y Crédito</string>
+    <string name="registro_agrega_cuenta_titulo">Agrega tu Cuenta Bancaria</string>
+    <string name="numero_de_cuenta">Número de Cuenta</string>
+    <string name="cuenta_corriente">Cuenta Corriente</string>
+    <string name="registro_agrega_cuenta_validacion">Para tu seguridad enviaremos una cantidad\n a tú cuenta bancaria para verificarla</string>
+
+    <!--Money In-->
+    <string name="rellena_saldo">Rellena tu Saldo</string>
+    <string name="rellena_saldo_efectivo">Rellena tu Saldo con Efectivo</string>
+    <string name="rellena_saldo_deposito_banco">Depósito en Banco</string>
+    <string name="rellena_saldo_tarjeta">Rellena tu Saldo con Tarjeta</string>
+    <string name="selecciona_monto_tarjeta">Monto Seleccionado</string>
+    <string name="selecciona_monto_efectivo">Selecciona un Monto</string>
+    <string name="saldo_disponible">Saldo Disponible</string>
+    <string name="otra_cantidad">Otra Cantidad</string>
+    <string name="btn_banca_enlinea">PSE</string>
+    <string name="btn_efectivo">Efectivo</string>
+    <string name="subtitulo_efectivo">Puedes Realizar Depósitos en Cualquiera de Estos Bancos o Comercios</string>
+    <string name="selecciona_banco">Selecciona una Opción</string>
+    <string name="deposito_ya_ganaste">Depósito en Comercio Ya Ganaste</string>
+    <string name="num_cuenta">Cuenta Corriente</string>
+    <string name="convenio">Código de Convenio</string>
+    <string name="deposito_fullcarga">Depósito a Nombre de \n Fullcarga Colombia S.A.S.</string>
+    <string name="rellena_saldo_efectivo_deposito_autom">El Depósito se Abona de Forma Automática</string>
+    <string name="btn_ver_mapa">Ver Mapa</string>
+    <string name="btn_guardar_imagen">Guardar Imagen</string>
+    <string name="money_in_screenshot_message">Se ha Guardado la Imagen en tu Dispositivo</string>
+    <string name="money_in_pse_subtitle">Pago Seguro Electrónico\n(PSE)</string>
+    <string name="money_in_pse_paragraph1">Al Terminar tu Pago, Regresa\n a tu Aplicación Dando\n Clic al Botón de Regresar</string>
+    <string name="money_in_imagen_guardada">Se ha Guardado la Imagen\nen tu Galería de Fotos"</string>
+    <string name="money_in_pse_paragraph2">Podrás Consultar el Estatus de la Última Transacción PSE en Micuenta -> Consulta Ultimo PSE</string>
+    <string name="consulta_ultimo_pse">Consulta Último PSE</string>
+    <string name="monto_recarga_pse">Monto de Recarga</string>
+    <string name="monto_recarga_saldo_pse">Recarga de Saldo</string>
+    <string name="aviso_consulta_pse">En un Lapso de 10 min. Máximo Verás Reflejada tu Operación en tu Bolsa de Cupo</string>
+    <string name="rellena_efectivo_saldo_titulo">Sigue Estos Pasos para Realizar tu Depósito:</string>
+    <string name="rellena_efectivo_saldo_detalle">1.- Menciona que Quieres Abonar a la cuenta Fullcarga\n2.- Muestra el Código de Barras Anexo\n3.- Menciona al Cajero el Monto a Depositar</string>
+    <string name="numeroAgente_rellena_saldo">"Código de Cliente"</string>
+    <string name="rellena_efectivo_saldo_paso1">1.- Menciona que Quieres Abonar a Fullcarga</string>
+    <string name="rellena_efectivo_saldo_paso2">2.- Muestra el Código de Barras Anexo</string>
+    <string name="rellena_efectivo_saldo_paso3">3.- Menciona al Cajero el Monto a Depositar</string>
+    <string name="monto_rellenado_tarjeta">Monto Rellenado</string>
+    <string name="resultado_relleno_tarjeta">Relleno de Saldo Exitoso</string>
+
+    <!-- Cuenta Bancaria -->
+    <string name="cta_bca_load">Cargando Datos Bancarios</string>
+    <string name="cta_bca_validating_count">Verificando</string>
+    <string name="cta_bca_title_validate_count">Verifica tu Cuenta</string>
+    <string name="cta_bca_body_validate_count">Ingresa el Monto que te Enviamos\na tu Cuenta Bancaria\nDeberás Revisar tu Estado de Cuenta</string>
+    <string name="cta_bca_title_no_validate">Verifica tu Cuenta Bancaria</string>
+    <string name="cta_bca_title_validate">Cuenta Bancaria Verificada</string>
+    <string name="cta_bca_title_success_validate">Cuenta Bancaria Verificada Exitosamente</string>
+    <string name="cta_bca_title_error_consult_data">No se Pudo Cargar el Dato</string>
+    <string name="cta_bca_title_error_consult_datanumber">000000000</string>
+    <string name="cta_bca_title_error_validate_count">No se Pudo Verificar la Cuenta Bancaria</string>
+    <string name="cta_bca_title_error_validate_result">Importe de Validación Introducido no Valido</string>
+    <string name="cta_bca_title_error_monto">El Monto a Verificar Debe ser Mayor a Cero</string>
+
+    <!-- Money Out -->
+    <string name="money_out_title_section_salida_dinero">Salida de Dinero</string>
+    <string name="money_out_title_cta">Cuenta</string>
+    <string name="money_out_title_footer">Recuerda que los Depósitos en Efectivo\n no Podrán Transferirse</string>
+    <string name="money_out_title_monto_retiro">Monto de Retiro</string>
+    <string name="money_out_trans_title">Operación Exitosa</string>
+    <string name="money_out_trans_monto_retirado">Monto Retirado</string>
+
+    <!--Kit-->
+    <string name="kit_title_solicitar">Comprar Lector MPos</string>
+    <string name="kit_title_datos_envio">Datos de Envío</string>
+    <string name="kit_title_direccion_envio">¿Deseas Cambiar la Dirección de Envío?</string>
+    <string name="kit_title_footer_pse">Serás Redirigido a un Portal Seguro\npara Realizar el Pago</string>
+    <string name="kit_title_body">Un Solo Pago y Sin Renta Mensual \npara Toda la Vida </string>
+    <string name="comprar">Comprar</string>
+    <string name="codigo_postal">Código Postal</string>
+    <string name="solicitar">Solicitar</string>
+    <string name="kit_title_envio">Envío Incluido</string>
+    <string name="kit_error_datos_negocio">No Existen Envíos En Esa Zona</string>
+    <string name="kit_error_codigo__postal">El Código Postal no es Correcto o esta Vacío</string>
+    <string name="kit_error_direccion">La Dirección no es Correcta o esta Vacía</string>
+    <string name="kit_pay_title">Realiza tu Compra</string>
+    <string name="kit_vincular_qr">El Qr de tu Kit se está Vinculado \n A tu Cuenta Ya Ganaste</string>
+    <string name="kit_vincular_qr_procesando">Procesando</string>
+    <string name="kit_vincular_qr_codigo">Vincular QR</string>
+    <string name="kit_vincular_qr_ingresar_codigo">Ingresar Codigo \n De Seguridad</string>
+    <string name="kit_vincular_qr_correcto">Vinculación Exitosa</string>
+    <string name="kit_vincular_qr_error">Error de Vinculación</string>
+    <string name="qr_title_default">Cobra y Paga con QR</string>
+
+
+    <!--ADQUIRIENCIA-->
+    <string name="ahorro">Ahorro</string>
+    <string name="corriente">Corriente</string>
+    <string name="credito">Crédito</string>
+    <string name="money_default">1000000</string>
+    <string name="cobrar">Cobrar</string>
+    <string name="iva">IVA</string>
+    <string name="impuestos">Impuestos</string>
+    <string name="propinas">Propinas</string>
+    <string name="devolución">Devolución</string>
+    <string name="title_frag_cobro_tarjeta">Cobro con Tarjeta</string>
+    <string name="monto_total">Monto Total</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="title_frag_venta_exitosa">Cobro Exitoso</string>
+    <string name="total_cobrado">Total</string>
+    <string name="email_example">ejemplo@yaganaste.com</string>
+    <string name="title_frag_ajustes">Configuración MPos</string>
+    <string name="percentage_default">100%</string>
+    <string name="valor_seleccionado">Valor Seccionado</string>
+    <string name="choose_fee">Elige una Cuota</string>
+    <string name="insert_label">Inserta o Desliza la\nTarjeta de tu Cliente</string>
+    <string name="dialog_linkage">Vincula tu Lector MPos</string>
+    <string name="dialog_label_no_linked">¿Ya Cuentas con tu Lector MPos?</string>
+    <string name="dialog_label_enviar_ticket">Se ha Enviado el Correo</string>
+    <string name="dialog_label_enviar_ticket_falla">Hubo un Problema \n al Enviar el Correo</string>
+    <string name="insert_card_title_1">Pide a tu Cliente que\nIngrese su NIP</string>
+    <string name="link_button_label">Vincular</string>
+
+    <!-- Devolución -->
+    <string name="ref_ya_ganaste">Ingrese Número de Recibo </string>
+    <string name="devolucion_title">Devolución</string>
+    <!-- Notificaciones -->
+
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <!--
+        This is the name that users will see when interacting with this channel.
+        It should describe the category of notifications that will be sent through this channel
+     -->
+    <string name="default_notification_channel_name" translatable="true">Weather</string>
+    <string name="msg_subscribe_failed">Failed to subscribe to weather topic</string>
+    <string name="fcm_message">FCM Message</string>
+
+    <string name="Default_Notification">"Notificacion Wallet"</string>
+    <string name="ToastToken">"Token de Aplicacion"</string>
+    <string name="bienvenido_a_ya_ganaste">Bienvenido a\nYa Ganaste</string>
+    <string name="terms_conditions">Términos y Condiciones Generales</string>
+    <string name="aviso_de_privacidad">Aviso de Privacidad</string>
+    <string name="contratos_ayuda">Contratos</string>
+    <string name="Default_terminos_condiciones">Administradora de Corresponsales, S.A.P.I. de C.V.
+
+Términos y Condiciones
+
+1. USO Y RESTRICCIONES.
+
+La utilización del Portal de Internet (“Portal”) expresa la adhesión plena y sin reservas del usuario a los presentes Términos y Condiciones. A través del Portal, el usuario tendrá acceso y/o utilizará diversos servicios (en lo sucesivo, los “Servicios”), puestos a disposición de los usuarios por Administradora de Corresponsales, S.A.P.I. de C.V. y/o sus subsidiarias y afiliadas (en lo sucesivo “PagaTodo”), y/o por terceros proveedores de Servicios. PagaTodo tendrá el derecho a negar, restringir o condicionar al usuario el acceso al Portal, total o parcialmente, a su entera discreción, así como a modificar los Servicios del Portal, en cualquier momento y sin necesidad de previo aviso. El usuario reconoce que no todos los Servicios están disponibles en todas las áreas geográficas y que algunos Servicios pueden ser utilizados solamente con posterioridad a la inscripción o registro previo del usuario y/o el pago de una comisión. PagaTodo no garantiza la disponibilidad y continuidad de la operación del Portal y de los Servicios, ni la utilidad del Portal o los Servicios en relación con ninguna actividad específica. PagaTodo no será responsable por ningún daño o pérdida de cualquier naturaleza que pueda ser causado debido a la falta de disponibilidad o continuidad de operación del Portal y/o de los Servicios.
+
+2. PROPIEDAD INTELECTUAL.
+
+Los derechos de propiedad intelectual respecto de los Servicios, así como los signos distintivos y dominios del Portal, los derechos de uso y explotación de los mismos, incluyendo su divulgación, publicación, reproducción, distribución y transformación, son propiedad exclusiva de PagaTodo. El usuario no adquiere ningún derecho de propiedad intelectual por el simple uso de los Servicios del Portal y en ningún momento dicho uso será considerado como una autorización ni licencia para utilizar los Servicios con fines distintos a los que se contemplan en los presentes Términos y Condiciones.
+
+3. PROPIEDAD INTELECTUAL DE TERCEROS
+
+El Usuario acuerda que las disposiciones que se establecen en el inciso 2 anterior respecto de la titularidad de los derechos de PagaTodo también son aplicables a los derechos de terceros respecto de los Servicios de las páginas enlazadas al Portal.
+
+4. USOS PERMITIDOS.
+
+El aprovechamiento de los Servicios del Portal es exclusiva responsabilidad del usuario, quien en todo caso deberá servirse de ellos acorde a las funcionalidades permitidas en el propio Portal y a los usos autorizados en los presentes Términos y Condiciones, por lo que el usuario se obliga a utilizarlos de modo tal que no atenten contra las normas de uso y convivencia en Internet, las leyes de los Estados Unidos Mexicanos y la legislación vigente en el país en que el usuario se encuentre al usarlos, las buenas costumbres, la dignidad de la persona y los derechos de terceros. El Portal es para el uso personal o comercial del usuario y en el supuesto que sea uso personal este no podrá comercializar de manera alguna los Servicios.
+
+5. PROHIBICIONES.
+
+El usuario no tiene el derecho de colocar hiperligas de y al Portal, ni el derecho de colocar o utilizar los Servicios del Portal en sitios o páginas propias o de terceros sin autorización previa y por escrito de PagaTodo. Asimismo, el usuario no tendrá el derecho de limitar o impedir a cualquier otro usuario el uso del Portal.
+
+6. CALIDAD DE LOS SERVICIOS Y CONTENIDOS.
+
+Ni PagaTodo, ni sus proveedores o socios comerciales serán responsables de cualquier daño o perjuicio que sufra el usuario a consecuencia de inexactitudes, errores tipográficos y cambios o mejoras que se realicen periódicamente a los Servicios. Las recomendaciones y consejos obtenidos a través del Portal son de naturaleza general, por lo que no deben tomarse en cuenta en la adopción de decisiones personales. Para ello se debe consultar a un profesional apropiado que pueda asesorar al usuario de acuerdo con sus necesidades específicas.
+
+7. BIENES Y SERVICIOS DE TERCEROS ENLAZADOS.
+
+Respecto de los Servicios que prestan terceros dentro o mediante enlaces al Portal (tales como ligas, banners y botones), PagaTodo se limita exclusivamente, para conveniencia del usuario, a: (i) informar al usuario sobre los mismos, y (ii) a proporcionar un medio para poner en contacto al usuario con proveedores o vendedores. Los productos y/o servicios que se comercializan dentro del Portal y/o en los sitios de terceros enlazados son suministrados por comerciantes independientes a PagaTodo. PagaTodo no es ni podrá ser considerado como proveedor de los bienes y/o servicios que se ofrecen en dichas páginas y/o sitios. La inclusión de dichas páginas y/o enlaces no implica la aprobación, respaldo, patrocinio, recomendación o garantía, por parte
+
+de PagaTodo, de los servicios y bienes que se comercializan en los mismos ni del contenido de dichas páginas. No existe ningún tipo de relación laboral, asociación o sociedad, entre PagaTodo y dichos terceros. Toda asesoría, consejo, declaración, información y contenido de las páginas de terceros enlazadas o dentro del Portal representan las opiniones y juicios de dicho tercero, consecuentemente, PagaTodo no será responsable de ningún daño o perjuicio que sufra el usuario a consecuencia de los mismos, incluyendo, de manera enunciativa mas no limitativa, daños causados por la pérdida de datos o programas.
+
+8. CONFIDENCIALIDAD.
+
+PagaTodo se obliga a mantener confidencial la información que reciba del usuario que tenga dicho carácter conforme a las disposiciones legales aplicables, en los Estados Unidos Mexicanos. PagaTodo no asume ninguna obligación de mantener confidencial cualquier otra información que el usuario le proporcione, ya sea al inscribirse al Portal o en cualquier otro momento posterior, incluyendo aquella información que el usuario proporcione a través de boletines, pizarras o plática en línea (chats), así como la información que obtenga PagaTodo a través de las Cookies que se describen en el inciso 11.
+
+9. PROGRAMA DE PRIVACIDAD.
+
+En virtud de que la seguridad de la información personal del usuario es una prioridad para PagaTodo, se tiene un especial cuidado en proteger el manejo de la información mediante el establecimiento de distintos controles, así como la capacitación a los empleados en el manejo adecuado de esta información. Asimismo, al utilizar otras compañías para que nos presten servicios, PagaTodo les exige proteger la confidencialidad de la información personal que ellos reciban.
+
+10. USO DE LA INFORMACIÓN NO CONFIDENCIAL.
+
+Mediante el uso del Portal, el usuario autoriza a PagaTodo a utilizar, publicar, reproducir, divulgar, comunicar públicamente y transmitir la información no confidencial, en términos de lo establecido en el artículo 109 de la Ley Federal de los Derechos de Autor y de la fracción I, del artículo 76 bis de la Ley Federal de Protección al Consumidor.
+
+11. COOKIES.
+
+El usuario que tenga acceso al Portal, acuerda recibir las cookies que les transmitan los servidores de PagaTodo. “Cookie” significa un archivo de datos que se almacena en el disco duro de la computadora del usuario cuando éste tiene acceso al Portal. Las Cookies pueden contener información tal como la identificación proporcionada por el usuario o información para rastrear las páginas que el usuario ha visitado. Una Cookie no puede leer los datos o información del disco duro del usuario ni leer las Cookies creadas por otros sitios o páginas.
+
+12. CLAVES DE ACCESO Y NÚMEROS CONFIDENCIALES.
+
+En todo momento, el usuario es el responsable único y final de mantener en secreto el número de sus cuentas, contraseñas personales, claves de acceso y números confidenciales con los cuales tenga acceso a los Servicios y Contenidos del Portal, así como a las páginas de terceros.
+
+13. MODIFICACIONES.
+
+PagaTodo tendrá el derecho de modificar en cualquier momento los Términos y Condiciones. En consecuencia, el usuario debe leer atentamente los Términos y Condiciones cada vez que pretenda utilizar el Portal. Ciertos Servicios ofrecidos a los usuarios en y/o a través del Portal están sujetos a condiciones particulares propias que sustituyen, completan y/o modifican los Términos y Condiciones. Consiguientemente, el usuario también debe leer atentamente las correspondientes Condiciones Particulares antes de acceder a cualesquiera Servicios y Contenidos.
+
+14. LEYES APLICABLES Y JURISDICCIÓN.
+
+Las Partes se someten de manera expresa a las leyes aplicables y a la jurisdicción de los tribunales competentes de la Ciudad de México, que serán los únicos competentes para conocer de todo lo relativo a la interpretación, cumplimiento, incumplimiento, rescisión así como cualquier controversia relacionada con el mismo, y expresa e irrevocablemente renuncian en este acto a cualquiera otra jurisdicción que pudiese corresponderles en razón de su domicilio presente o futuro o por cualquier otro motivo.
+
+Términos y Condiciones de Uso de la Plataforma PagaTodo
+
+1. INTRODUCCIÓN
+
+Bienvenido a la Plataforma PagaTodo. PagaTodo es una Plataforma operada por Administradora de Corresponsales, S.A.P.I. de C.V. (“nuestro", “nosotros”, “nos” o “PagaTodo”). Además de los presentes Términos y Condiciones, el uso de esta Plataforma está también sujeto a:
+
+1. Los Términos y Condiciones de los diferentes servicios que se ofrecen dentro de la plataforma PagaTodo; y
+
+2. Aviso de Privacidad.
+
+Los cuales en conjunto serán en lo sucesivo, las “Condiciones de Uso”, mismos que se aplican y rigen nuestra relación contractual con respecto al acceso y uso de esta Plataforma, incluyendo cualquier y todo tipo de contenidos, comunicaciones, herramientas, características, así como la funcionalidad y los servicios disponibles en, o a través, de esta Plataforma, independientemente de que se requiera que inicie sesión o no, para acceder a ellos (colectivamente, el “Sitio” o “Plataforma”).
+
+2. DESCRIPCIÓN DE LA PLATAFORMA Y DISPONIBILIDAD
+
+La Plataforma PagaTodo es una plataforma virtual multiservicios, no financiera, que permite acceder, entre otros servicios, a un crédito revolvente, a un crédito simple y contar con una tarjeta física y/o una tarjeta virtual (en lo sucesivo, indistintamente, la “Tarjeta”).
+
+El registro en esta Plataforma puede requerir credenciales o autorizaciones de plataformas digitales de terceros (por ejemplo, LinkedIn, Facebook, Twitter u otras), para tal efecto por este medio podemos llevar a cabo la recolección de datos en posesión de terceros con la autorización del usuario.
+
+Se requiere registro para poder escribir/postear, enviar, subir, transmitir o poner a disposición cualquier comentario, pregunta, respuesta, opinión, contenido, enlaces, información (incluyendo la información de perfil), comunicación y/o cualquier otro material.
+
+Para servicio al cliente, el Tarjetahabiente debe llamar al teléfono cuyo número aparece en la parte de atrás de su tarjeta física. En caso de contar con tarjeta virtual debe llamar al teléfono que se encuentra en la sección de ayuda de la Plataforma.
+
+Para el uso de esta Plataforma, el usuario declara bajo protesta de decir verdad que cuenta con mayoría de edad con pleno de derechos y con plenas facultades para obligarse.
+
+Al acceder, utilizar o participar en la Plataforma, por la presente el usuario afirma haber revisado y entendido estos Términos y Condiciones de Uso, y acepta que por el simple hecho de (i) hacer uso de la Plataforma, (ii) registrarse en la Plataforma, (iii) visitar los sitios web y la aplicación en los que vive la Plataforma, (iv) instalar la Plataforma o (v) interactuar en la Plataforma, queda vinculado por los presentes Términos y Condiciones de Uso.
+
+El usuario sólo podrá imprimir y/o copiar cualquier información contenida o publicada en la plataforma, exclusivamente para uso personal, no comercial.
+
+La reimpresión, publicación, distribución, asignación, sublicencia, venta, reproducción electrónica o por cualquier otro medio de cualquier información, documento o gráfico de la Plataforma, en todo o en parte, para cualquier uso distinto al personal no comercial le está expresamente prohibido al Usuario, a menos que se le haya otorgado autorización previamente por escrito por PagaTodo.
+
+PagaTodo se reserva el derecho de bloquear el acceso o remover en forma parcial o total, toda información, comunicación o material que a su exclusivo juicio pueda resultar: (i) abusivo, difamatorio u obsceno, (ii) fraudulento, artificioso o engañoso, (iii) violatorio de derechos de autor, marcas o cualquier derecho de propiedad intelectual de un tercero, (iv) ofensivo o (v) de cualquier forma contravenga lo establecido en estos Términos y Condiciones de Uso.
+
+PagaTodo, como Plataforma, así como todo su contenido, son propiedad de PagaTodo, y se encuentran protegidos por los tratados internacionales y leyes aplicables en la materia.
+
+Se prohíbe expresamente al usuario modificar, alterar o suprimir, ya sea en forma total o parcial, los contenidos antes mencionados.
+
+3. REGISTRO Y CREACIÓN DEL PERFIL; SEGURIDAD DEL SITIO
+
+Con el fin de que el usuario pueda acceder a ciertas características de la Plataforma, se le solicitará registro para ser miembro de la misma y proporcionará la información de perfil y de contacto. Asimismo, deberá proporcionar información veraz, precisa y actual, bajo pena de incurrir en responsabilidad penal o criminal. Es importante recordar que hacerse pasar por otra persona o entidad o falsear la identidad o afiliación con cualquier persona o entidad, incluyendo el uso de nombre de usuario de otra persona, contraseña u otra información de la cuenta o el nombre, imagen, voz, o fotografía de otra persona, puede significar la comisión de un delito. En
+
+caso de existir razones suficientes para sospechar que la información proporcionada no es propia, correcta, actual o completa, es posible que, entre otras acciones, denegamos el acceso a la Plataforma o de cualquiera de sus recursos sin previo aviso.
+
+El registro en la Plataforma implica de manera expresa autorización del usuario para que Administradora de Corresponsales, S.A.P.I. de C.V. lleve a cabo investigaciones del comportamiento crediticio que en su caso aplique. El usuario está de acuerdo con el uso que se le dará a la información proporcionada y con que se realicen consultas periódicas de su historial crediticio. Como Usuario, también está consciente que la autorización tendrá vigencia de tres años contados a partir de la fecha de aceptación expresa o mientras subsista la relación comercial con PagaTodo.
+
+El usuario será el único responsable de adquirir todas las autorizaciones/aprobaciones necesarias relacionadas con su actividad en la Plataforma. Dicha actividad no podrá contener representación no autorizada de marcas de cualquier tercero, nombres comerciales, o material con derechos de autor, o cualquier otro material, propiedad de terceros.
+
+Aviso Importante Sobre Seguridad de la Plataforma. La seguridad de la Plataforma depende en gran medida de la seguridad de las credenciales de autenticación utilizadas, así como de los programas mediante los cuales se accede a la misma, sus versiones y configuración. El acceso a esta Plataforma puede requerir credenciales de autenticación de alguna plataforma de terceros. PagaTodo no está involucrado ni es responsable de la creación o la gestión de estas credenciales, por lo que:
+
+• No podemos confirmar que los individuos en esta Plataforma son realmente quienes dicen ser; y
+
+• No podemos aconsejar o recomendar el envío de información confidencial o personal distinta a la solicitada a través de la Plataforma.
+
+4. TÉRMINOS Y CONDICIONES DE USO DE LA TARJETA
+
+4.1 Aceptación
+
+El Tarjetahabiente en este acto se adhiere y obliga a todos y cada uno de los términos y condiciones aquí consignados, sin excepción alguna, respecto del servicio prestado por Banco PagaTodo, S.A. I.B.M. (en adelante “Banco PagaTodo”) al Tarjetahabiente (en adelante el “Tarjetahabiente”) en relación con la tarjeta física y/o virtual (en adelante indistintamente, la “Tarjeta”).
+
+4.2 Activación y Uso
+
+Para el uso de la Tarjeta será necesario activarla o solicitarla en la Plataforma. La Tarjeta será Nivel 2. La tarjeta física no será válida sin la firma del Tarjetahabiente.
+
+4.3 Servicio al Tarjetahabiente y Consulta de saldo
+
+Banco PagaTodo pone a disposición del Tarjetahabiente, un servicio de call center las 24 horas del día los 365 días del año, a la línea telefónica que se establece en la página web para la consulta de saldos y movimientos de las Tarjetas y la página web www.bancopagatodo.com para la atención de cualquier aclaración o queja relacionada con el servicio y utilización de las mismas.
+
+4.4 Uso de la Tarjeta
+
+Banco PagaTodo no será responsable del mal uso de la Tarjeta por parte del Tarjetahabiente o de terceros, incluso si se ha hecho un mal uso con anterioridad al reporte de pérdida de la Tarjeta. Adicionalmente, en ningún caso Banco PagaTodo será responsable de los daños y perjuicios que se le causen al Tarjetahabiente, salvo que dichos daños y perjuicios sean consecuencia del dolo, la mala fe o la negligencia inexcusable de Banco PagaTodo.
+
+4.7 Comisiones
+
+Las comisiones aplicables a la Tarjeta se encontrarán disponibles para su consulta en la Plataforma y/o en www.yaganaste.com.
+
+4.8 Cargos a la Tarjeta Banco PagaTodo
+
+El usuario autoriza que PagaTodo realice de manera automática los cargos correspondientes a los pagos por los productos que compre o consuma y servicios que contrate, así como las transacciones que se realice con la Tarjeta Banco PagaTodo.
+
+4.9 Cancelación de la Tarjeta
+
+Banco PagaTodo se reserva el derecho de cancelar la Tarjeta en caso que el Tarjetahabiente: (I) incurra en incumplimiento de alguno de los términos y condiciones aquí pactados; y/o (II) use la Tarjeta de una manera contraria a las leyes vigentes.
+
+4.10 Protección de datos personales
+
+Toda la información que PagaTodo o Banco PagaTodo recaben es tratada con absoluta confidencialidad conforme a las disposiciones legales aplicables. Para obtener información
+
+acerca de la obtención, protección y uso de sus datos personales, visite nuestros avisos de privacidad en https://www.bancopagatodo.com y/o http://www.yaganaste.com.
+
+4.11 Notificación de terminación
+
+En caso de terminación de la relación jurídica en virtud de la cual se entregó la Tarjeta no habrá obligación de Banco PagaTodo o de PagaTodo de notificar la cancelación de la Tarjeta al Tarjetahabiente.
+
+5. NEGACIÓN DE GARANTÍAS.
+
+El usuario está de acuerdo que el uso de la Plataforma se realiza bajo su propio riesgo y que los servicios y productos se prestan a través de la Plataforma conforme se encuentran disponibles dentro de la misma. Serán responsabilidad del usuario las condiciones de los medios de acceso a la misma.
+
+PagaTodo no garantiza que la Plataforma satisfaga los requerimientos del usuario, o que los servicios se mantengan siempre ininterrumpidos, en tiempo, seguros o libres de errores fuera de nuestro control.
+
+La información contenida y/o publicada a través de nuestra Plataforma sirve para fines exclusivamente de información general sobre los productos y servicios ofrecidos por PagaTodo y sus Afiliados o Proveedores, así como la debida operación de la misma.
+
+6. MODIFICACIONES O ACTUALIZACIONES A LA PLATAFORMA.
+
+PagaTodo podrá en cualquier momento y cuando lo considere conveniente, sin necesidad de aviso al usuario, realizar correcciones, adiciones, mejoras o modificaciones al contenido, presentación, información, servicios, áreas, bases de datos y demás elementos de la plataforma sin que ello dé lugar ni derecho a ninguna reclamación o indemnización, ni que esto implique reconocimiento de responsabilidad alguna a favor del usuario.
+
+7. CONTRATO DE PRESTACIÓN DE SERVICIOS.
+
+PagaTodo y/o Banco PagaTodo pone a disposición de los usuarios de los servicios financieros ofrecidos a través de nuestra Plataforma, en cumplimiento estricto de la legislación aplicable, nuestro contrato prestación de servicio dentro de la misma, el cual deberá ser debidamente leído y firmado en su momento para poder prestarle los distintos servicios.
+
+Al momento de manifestar su voluntad de contar con una Tarjeta y autenticarse con el código de verificación que recibió en su teléfono celular, se entiende que manifiesta su consentimiento a los términos y condiciones de uso de la Tarjeta.
+
+8. MODIFICACIONES A TÉRMINOS Y CONDICIONES.
+
+PagaTodo se reserva el derecho de hacer modificaciones a los Términos y Condiciones de Uso, las cuales serán publicadas a través de esta Plataforma sin necesidad de que medie aviso al usuario.
+
+9. TERMINACIÓN.
+
+PagaTodo podrá en cualquier momento sin necesidad de aviso o notificación al usuario dar de baja la Plataforma.
+
+Asimismo, Banco PagaTodo podrá, en caso de inactividad y falta de fondos en alguna o en todas las Tarjetas del usuario, dar de baja la(s) Tarjeta(s) y cuenta(s) relacionada(s) a la(s) misma(s) sin necesidad de aviso o notificación al usuario respectivo.
+
+</string>
+    <string name="Aviso_Privacidad">
+         AVISO DE PRIVACIDAD.
+
+Administradora de Corresponsales, S.A.P.I. de C.V. en cumplimiento de lo dispuesto por la Ley Federal de Protección de Datos Personales en Posesión de los Particulares, su reglamento y demás disposiciones aplicables, pone a disposición del usuario su aviso de privacidad en la siguiente dirección: www.pagatodo.com.
+    </string>
+
+    <string name="Contratos_Ayuda">
+
+         CONTRATO DE PRESTACIÓN DE SERVICIOS.
+
+PagaTodo y/o Banco PagaTodo pone a disposición de los usuarios de los servicios financieros ofrecidos a través de nuestra Plataforma, en cumplimiento estricto de la legislación aplicable, nuestro contrato prestación de servicio dentro de la misma, el cual deberá ser debidamente leído y firmado en su momento para poder prestarle los distintos servicios.
+
+
+    </string>
+
+    <!-- Different styles for input box. -->
+    <string name="style_square">square_box</string>
+    <string name="style_rounded">rounded_box</string>
+    <string name="style_underline">underline</string>
+    <string name="style_rounded_underline">rounded_underline</string>
+    <string name="mask_character">\u2022</string>
+    <string name="write_code_tittle">Código</string>
+    <string name="write_code">Escribe el código que te fue enviado a tu correo</string>
+    <string name="new_password_title">Nueva Contraseña</string>
+    <string name="new_password_length">La contraseña debe contener 6 caracteres</string>
+    <string name="new_password_confirm_tittle">Confirmar Contraseña</string>
+    <string name="new_password_confirm">No haz confirmado correctamente tu contraseña</string>
+    <string name="password_confirm_error_tittle">Contraseñas</string>
+    <string name="password_confirm_error">Las contraseñas no coinciden</string>
+    <string name="email">Email</string>
+    <string name="email_sale">Correo Electrónico de Cliente (opcional)</string>
+    <string name="cambio_cta_msg_warning">Estas a Punto de Cambiar tu Cuenta te Recordamos que Deberas Validarla para Poder Retirar tu Dinero de las Ventas que Realices con Tarjeta de Débito y Crédito</string>
+    <string name="texto_cta_cambio_exito">Tus cambios se han guardado con éxito</string>
+
+    <string name="calendario_pagos">Calendario de Pagos</string>
+    <string name="buscar_nombre">Buscar por nombre</string>
+    <string name="todos_servicios_categoria">Ver Todos los Servicios en esta Categoría</string>
+    <string name="ver_todas">Ver Todas</string>
+    <string name="No_se_encuentra">No hay resultados</string>
+    <string name="salir_text">Salir</string>
+    <string name="upss_text">¡Upsss!</string>
+
+    <string name="alias_dialog_txt">Alias</string>
+    <string name="dia_dialog_txt">Día</string>
+    <string name="repetir_cada_dialog_txt">Repetir Cada</string>
+    <string name="saldo_insuficiente_txt">No Tienes Saldo Suficiente\npero no te Preocupes</string>
+    <string name="problema_comunicacion_servicio">Al Parecer hay un Problema de Comunicación con el Servicio</string>
+    <string name="intenta_de_nuevo">Intenta de Nuevo</string>
+    <string name="recargas_pines">Recargas y Pines</string>
+    <string name="recargas">Recargas</string>
+    <string name="paquetes">Paquetes</string>
+    <string name="pines">Pines</string>
+    <string name="numero_telefonico">Número Telefónico</string>
+    <string name="seguro_pagar_paquete">¿Estás Seguro que Deseas\nPagar este Paquete?</string>
+    <string name="paga_todos_tus_servicios">Paga Todos tus Recibos \nDesde Aquí</string>
+    <string name="registra_tu_tarjeta">Registra tu Tarjeta Bancaria \npara Rellenar tu Saldo y así \nRealizar Pagos de Servicios y Recargas</string>
+    <string name="registra_tarjeta_btn">Registra tu Tarjeta</string>
+    <string name="no_tengo_tarjeta">No Tengo Tarjeta ni Cuenta Bancaria</string>
+
+    <string name="card_header">NFN CARD</string>
+    <string name="card_number_sample">···· ···· ···· ····</string>
+    <string name="card_validity_label"></string>
+    <string name="card_validity_sample">MM/AA</string>
+    <string name="card_name_sample">NOMBRE APELLIDO</string>
+
+    <string name="card_holders_name">Nombre y Apellido</string>
+    <string name="card_number">Número de Tarjeta</string>
+    <string name="card_validity">Fecha de Vencimiento</string>
+    <string name="card_cvv">Código de Seguridad CVV </string>
+    <string name="agrega_datos_tarjeta">Ingresa los datos tal cual aparecen en tu tarjeta</string>
+    <string name="cof_ups">¡Upsss!</string>
+    <string name="cof_register_error">Hubo un Problema con tu Tarjeta, \nAsegúrate de que los Datos son Correctos o\n Intenta con Otra Tarjeta</string>
+    <string name="cof_reintentar_despues">Intentar en Otro Momento</string>
+    <string name="cof_reintentar">Intentar de Nuevo</string>
+    <string name="cof_success_tittle">¡Felicidades!</string>
+    <string name="cof_success_message">Tu Tarjeta Quedó Registrada con Éxito</string>
+    <string name="cof_success_message_sub">Ya Puedes Rellenar tu Saldo y \nHacer Pagos Desde esta App </string>
+    <string name="cof_success_continue">Continuar</string>
+    <string name="cof_success_kit">Compra Exitosa</string>
+    <string name="pse_success_kit">Pago Exitoso</string>
+    <string name="processing_validate_card">Estamos Validando tu Tarjeta</string>
+    <string name="processing_thanks">Gracias por Registrar tu Tarjeta</string>
+    <string name="processing_validate_data">Validaremos los Datos Haciendo \nun Deposito de xx.xx</string>
+    <string name="add_carrd">Añadir</string>
+    <string name="add_carrd_text">Aún no Tienes Dada de Alta una \nTarjeta para Realizar tu Compra</string>
+    <string name="compra_kit_trans_title">Transacción Exitosa</string>
+    <string name="total_compra_kit">Total Cobrado</string>
+    <string name="tarjeta">Tarjeta</string>
+    <string name="other_way">PSE</string>
+
+    <!-- PaySucessfullPDSFragment-->
+    <string name="txt_recharge">Recargar</string>
+    <string name="txt_back">Regresar</string>
+    <string name="txt_phone_number">Número Telefónico</string>
+    <string name="txt_referencia_unica">Referencia Única</string>
+    <string name="txt_finish">Terminar</string>
+    <string name="txt_folio_ya_ganaste">Referencia Ya Ganaste</string>
+    <string name="txt_autorizaci_emisor">Autorización Emisor</string>
+    <string name="txt_referencia_nica">Referencia Única</string>
+    <string name="txt_monto_pagado">Monto Pagado</string>
+    <string name="txt_pago_exitoso">Pago Exitoso</string>
+    <string name="txt_close">Cerrar</string>
+
+    <string name="enviar_ticket_email">Enviar por Correo Electrónico</string>
+    <string name="hint_correo">usuario@gmail.com</string>
+    <string name="relleno_saldo_pse_exitoso">Relleno de Saldo Exitoso</string>
+
+    <string name="mi_perfil">Mi Perfil</string>
+    <string name="completa_perfil">Completa tu Perfil</string>
+    <string name="actividad_sesion">Actividad de Sesión</string>
+    <string name="tarjetas_yaganaste">Mis Tarjetas Ya Ganaste</string>
+    <string name="enciende_lector_tarjetas">Enciende tu Lector MPos</string>
+    <string name="turn_on_bluetooth_dialog_body_text">Para Vincular el Lector MPos\nDebes Tener Encendido tu Bluetooth</string>
+    <string name="lector_tarjetas_conectado_exitosamente">Tu Lector MPos ha sido\nVinculado Exitosamente</string>
+    <string name="hubo_error">Hubo un Error</string>
+    <string name="no_es_posible_vincular">No es Posible Vincular tu Lector MPos\nComunícate al:</string>
+    <string name="atencion">Atención</string>
+    <string name="estas_apunto_desvincular">Estás a Punto de Desvincular\ntu Lector MPos Actual</string>
+    <string name="contrasenia_actual">Contraseña Actual</string>
+    <string name="confirmar_contrasenia">Confirmar Nueva Contraseña</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="contrasenia_actualizada">Contraseña Actualizada</string>
+    <string name="has_actualizado_pass">Haz Actualizado tu Contraseña\npero Deberás Iniciar Sesión de Nuevo</string>
+
+    <string name="cta_prevalidada">¡Gracias!\nTu Cuenta está Pre-Validada y ya Puedes Realizar Cobros</string>
+    <string name="cta_por_validar">Tu Documentación Será Validada en un Máximo de 72hrs y Recibirás un Email con la Confirmación</string>
+    <string name="habilita_tajeta">Habilita tus Tarjetas para Rellenar o Sacar Dinero</string>
+    <string name="habilita_cuenta">Habilita tus Cuentas para Rellenar o Sacar Dinero</string>
+
+    <string name="menu_config_cambia_cuenta_success">Edición Terminada</string>
+    <string name="menu_config_cambia_cuenta_success_message">Tu Cuenta ha Sido \nActualizada con Éxito</string>
+    <string name="menu_config_elimina_cuenta_title">¡Espera!</string>
+    <string name="menu_config_elimina_cuenta_content">¿Estás Seguro que Deseas\n Eliminar esta Cuenta?</string>
+    <string name="menu_config_elimina_tarjeta_content">¿Estás Seguro que Deseas\n Eliminar esta Tarjeta?</string>
+
+    <string name="seguro_cerrar_sesion">¿Estás Seguro que Deseas Cerrar Sesión? </string>
+    <string name="telefono_contcto">Teléfono de Contacto</string>
+    <string name="legales">Legales</string>
+    <string name="valora_aplicacion">Valora Nuestra Aplicación</string>
+    <string name="que_incluye_kit">¿Qué Incluye mi Lector MPos?</string>
+    <string name="cuanto_tiempo_entrega_kit">¿En Cuánto Tiempo me Entregan mi Lector MPos?</string>
+    <string name="como_realizo_cobro">¿Cómo Realizo un Cobro?</string>
+    <string name="como_realizo_un_pago">¿Cómo Realizo un Pago de Servicio?</string>
+    <string name="como_realizo_recarga">¿Cómo Realizo una Recarga de Celular?</string>
+    <string name="que_incluye_kit_answer">1.- Lector MPos de Banda y Chip\n2.- Cable de Carga\n3.- Material de Señalización\n4.- Porta Tarjetas para Celular</string>
+    <string name="compra_desde_bogota">1.- Si lo Compraste desde “la Capital“ lo Recibirás en no más de 24 Horas Hábiles\n2.- Si lo Compraste en Otra Ciudad lo Recibirás en un Máximo de 6 Días Hábiles</string>
+    <string name="descarga_app_activate">1.-Descarga tu App y Actívate Ya\n\n2.-Compra tu Lector MPos desde tu App\n\n3.-Enciende el Bluetooth de tu Celular y Vincula tu Micro Datáfono</string>
+    <string name="registro_question">¿Cómo Realizo mi Registro?</string>
+    <string name="datafono_question">¿Cómo Vinculo mi Lector MPos?</string>
+    <string name="devolucion_question">¿Cómo Realizo una Devolución?</string>
+    <string name="registro_answer">1.- Descarga tu App y Actívate Ya\n2.- Compra tu Lector MPos desde tu App\n3.- Enciende el Bluetooth de tu Celular y Vincula tu Lector MPos</string>
+    <string name="datafono_answer">1.- En tu App Entra a la Opción “Mi Cuenta”\n2.- Selecciona “Configuración” y Elige la Opción “Vincular”\n3.- Enciende tu Lector MPos como se Muestra en Pantalla\n4.- Presiona por 3 Segundos el Botón de Encendido de tu Lector MPos hasta que Leas en Pantalla “Bienvenido”\n5.- Desde tu App Selecciona el Dispositivo Encontrado y Dale Clic. ¡Listo! Ya está Vinculado, Comienza a Cobrar Ya</string>
+    <string name="devolucion_answer">1.- Desde la Sección Cobrar Selecciona “Herramientas”\n2.- En la Opción Devolución Ingresa el Folio Ya Ganaste del Ticket\n3.- Inserta o Desliza la Tarjeta de tu Cliente y Recibirás una Confirmación de la Operación</string>
+    <string name="charge_answer">1.- En tu App Entra en la Opción “Cobrar” o “Venta Rápida“\n2.- Inserta la Tarjeta de tu Cliente en la Ranura Lateral con el Chip al Frente\n3.- Realiza el Cobro. Ingresa el PIN (Si lo Solicita) o Pide la Firma a tu Cliente</string>
+    <string name="pay_service_answer">1.- En tu App Entra en la Opción “Pago de Servicios”\n2.- Selecciona el Servicio que se Quiere Pagar\n3.- Ingresa el Número de Referencia del Recibo\n4.- Realiza el Pago. Recibirás un Correo de Confirmación</string>
+    <string name="recharge_answer">1.- En tu App Entra a la Opción “Recargas”\n2.- Selecciona la Compañía de Telefonía y Paquete a Contratar\n3.- Ingresa el Número Celular que Desea Recargar\n4.- Realiza la Recarga. Recibirás un Correo con el Comprobante</string>
+    <string name="contact_body_text">Si Tienes Alguna Consulta\no Aclaración, no Dudes en Ponerte\nen Contacto con Nosotros</string>
+    <string name="colombia_contact_phone">(1) 745 4252</string>
+    <string name="selecciona_tiempo">Selecciona el Tiempo en Minutos\npara el Cierre de Sesión Automático</string>
+    <string name="compra_dispositivo">Compra de Lector MPos</string>
+    <string name="soon_text">Próximamente</string>
+    <string name="mi_tarjeta_ya">Mi Tarjeta Ya Ganaste</string>
+    <string name="tiempo_sesion">Tiempo de Sesión</string>
+    <string name="info">Informativo</string>
+
+    <string name="empty_account">El Número de Cuenta \nno Puede ir Vacío</string>
+    <string name="btn_empty_account">Intentar de Nuevo</string>
+    <string name="confirmar_datos">Confirmar Datos</string>
+    <string name="error_direccion_nivel_empty">Por Favor Selecciona %s </string>
+    <string name="cvv_to_autorice">Ingresa tu CVV para \nrealizar el relleno de saldo</string>
+    <string name="negocio_name">Este Nombre Aparecerá en el Estado de Cuenta de tus Clientes que Paguen con Tarjeta</string>
+    <string name="contrasenia_2">Contraseña</string>
+    <string name="ingresa_contrasenia">Ingresa tu Contraseña</string>
+
+    <string name="delete_card">Tarjeta Eliminada</string>
+    <string name="we_have_deleted_your_card">Hemos Eliminado\ntu Tarjeta de la Lista</string>
+    <string name="bank_account_deleted">Cuenta Bancaria Eliminada</string>
+    <string name="we_have_deleted_your_bank_account">Hemos Eliminado\ntu Cuenta Bancaria de la Lista</string>
+    <string name="add_new_card">Agrega una Nueva Tarjeta</string>
+    <string name="link_card_reader">Vincular Lector de Tarjetas</string>
+    <string name="folio_ya_ganaste">Referencia Ya Ganaste</string>
+
+    <string name="peru_contact_phone">(1) 6113560</string>
+    <string name="moneyin_loading_map">Cargando Mapa</string>
+</resources>
+

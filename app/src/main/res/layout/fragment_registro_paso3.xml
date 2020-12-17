@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_app"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:paddingTop="@dimen/espacio_xxxlargo"
+            android:background="@color/background_app"
+            android:overScrollMode="ifContentScrolls"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:context="com.pagatodoholdings.posandroid.secciones.registro.externo.RegistroCliente"
+                android:background="@color/background_app"
+                android:paddingStart="@dimen/espacio_largo"
+                android:paddingEnd="@dimen/espacio_largo">
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.50121653" />
+
+                <RadioGroup
+                    android:id="@+id/rg_container"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/espacio_xxlargo"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/rb_masculino"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_weight=".5"
+                        android:background="?android:selectableItemBackground"
+                        android:button="@null"
+                        android:drawableStart="?android:attr/listChoiceIndicatorSingle"
+                        android:text="@string/registro_rb_masculino"
+                        android:textAlignment="textStart"
+                        android:textSize="@dimen/gen_dimen_txt_16"
+                        android:fontFamily="sans-serif"
+                        android:textColor="@color/colorGreyFormulario" />
+
+                    <RadioButton
+                        android:id="@+id/rb_femenino"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight=".5"
+                        android:background="?android:selectableItemBackground"
+                        android:button="@null"
+                        android:drawableStart="?android:attr/listChoiceIndicatorSingle"
+                        android:text="@string/registro_rb_femenino"
+                        android:textAlignment="textStart"
+                        android:textSize="@dimen/gen_dimen_txt_16"
+                        android:fontFamily="sans-serif"
+                        android:textColor="@color/colorGreyFormulario" />
+                </RadioGroup>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/et_nombre"
+                    style="@style/EditTextInputLayoutStyle"
+                    android:layout_width="@dimen/ancho_campos_registro"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textColorHint="@color/colorGreyFormulario"
+                    android:hint="@string/registro_et_nombre"
+                    app:errorEnabled="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rg_container" >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textCapWords"
+                        android:textColor="@color/colorGreyFormulario"
+                        android:fontFamily="sans-serif"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/et_primer_apellido"
+                    style="@style/EditTextInputLayoutStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight=".5"
+                    android:textColorHint="@color/colorGreyFormulario"
+                    android:hint="@string/registro_et_apellido_paterno"
+                    app:errorEnabled="true"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/et_nombre" >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textCapWords"
+                        android:textColor="@color/colorGreyFormulario"
+                        android:fontFamily="sans-serif"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/et_segundo_apellido"
+                    style="@style/EditTextInputLayoutStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_weight=".5"
+                    android:textColorHint="@color/colorGreyFormulario"
+                    android:hint="@string/registro_et_apellido_materno"
+                    app:errorEnabled="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guideline4"
+                    app:layout_constraintTop_toTopOf="@+id/et_primer_apellido" >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textCapWords"
+                        android:textColor="@color/colorGreyFormulario"
+                       android:fontFamily="sans-serif"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/et_fecha_nacimiento"
+                    style="@style/EditTextInputLayoutStyle"
+                    android:layout_width="@dimen/ancho_campos_registro"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textColorHint="@color/colorGreyFormulario"
+                    android:hint="@string/registro_et_fecha_nacimiento"
+                    app:errorEnabled="true"
+                    android:inputType="none"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/et_primer_apellido" >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorGreyFormulario"
+                        android:fontFamily="sans-serif"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.SpinnerConTitulo
+                    android:id="@+id/tipo_documento"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:cabecera="Tipo de Documento"
+                    tools:visibility="visible"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/et_fecha_nacimiento"
+                    />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/et_dni"
+                    style="@style/EditTextInputLayoutStyle"
+                    android:layout_width="@dimen/ancho_campos_registro"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textColorHint="@color/colorGreyFormulario"
+                    app:errorEnabled="true"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="10"
+                    android:inputType="number"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tipo_documento"  >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edit_DNI"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/gen_dimen_txt_16"
+                        android:textColor="@color/colorGreyFormulario"
+                        android:fontFamily="sans-serif"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:maxLength="10"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/et_cp"
+                    style="@style/EditTextInputLayoutStyle"
+                    android:layout_width="@dimen/ancho_campos_registro"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:inputType="number"
+                    android:textColorHint="@color/colorGreyFormulario"
+                    android:hint="@string/registro_et_codigo_postal"
+                    app:errorEnabled="true"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="6"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/et_dni"  >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/gen_dimen_txt_16"
+                        android:inputType="number"
+                        android:textColor="@color/colorGreyFormulario"
+                        android:fontFamily="sans-serif"
+                        android:maxLines="1"
+                        android:maxLength="6"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+                <CheckBox
+                    android:id="@+id/cb_terminos_condiciones"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:drawablePadding="12dp"
+                    android:layout_marginBottom="16dp"
+                    android:drawableStart="@color/colorPrimaryDark"
+                    android:text="@string/registro_cb_t_c_aviso"
+                    android:textColor="@color/colorGreyFormulario"
+                    android:textSize="@dimen/gen_dimen_txt_12"
+                    app:layout_constraintBottom_toTopOf="@id/btn_validar"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/et_cp" />
+
+
+
+                <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.BotonClickUnico
+                    android:id="@+id/btn_validar"
+                    style="@style/ButtonContinueStyle"
+                    android:enabled="true"
+                    android:text="@string/continuar_registro"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/cb_terminos_condiciones" />
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+
+</layout>

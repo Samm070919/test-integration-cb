@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:id="@+id/fragment_datos_personal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/transparent"
+        tools:context="com.pagatodoholdings.posandroid.secciones.menuconfiguraciones.menu_mis_datos.ConfigMenuMisDatosPersonalFragment">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="ifContentScrolls"
+            android:background="@color/transparent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/espacio_pequeño"
+                android:layout_marginRight="@dimen/espacio_pequeño"
+                android:paddingStart="@dimen/espacio_pequeño"
+                android:paddingTop="16dp"
+                android:paddingEnd="@dimen/espacio_pequeño"
+                android:paddingBottom="@dimen/espacio_largo"
+                android:gravity="center_horizontal"
+                android:background="@color/transparent">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    style="@style/CardViewStyle"
+                    app:cardCornerRadius="40dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/ -auto"
+                        android:id="@+id/profile_image_personal"
+                        android:layout_width="76dp"
+                        android:layout_height="76dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_agregar_foto"
+                        />
+                </androidx.cardview.widget.CardView>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/ll_nombres"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/textHintField"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:boxBackgroundColor="@color/transparent">
+
+                    <EditText
+                        android:id="@+id/etd_nombre1"
+                        android:theme="@style/EditTextPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/gen_dimen_txt_16"
+                        android:fontFamily="@font/roboto"
+                        android:textColor="@color/coloproducttext"
+                        android:textColorHint="@color/texto_simple_modal"
+                        android:hint="Nombre(s)"
+                        android:inputType="textCapWords"
+                        android:background="@color/transparent"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_apellidos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ll_nombres"
+                    android:background="@color/transparent">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColorHint="@color/textHintField"
+                        app:boxBackgroundColor="@color/transparent">
+
+                        <EditText
+                            android:id="@+id/etd_primer_apellido"
+                            android:theme="@style/EditTextPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/gen_dimen_txt_16"
+                            android:fontFamily="@font/roboto"
+                            android:textColor="@color/coloproducttext"
+                            android:textColorHint="@color/texto_simple_modal"
+                            android:hint="Primer Apellido"
+                            android:inputType="textCapWords"
+                            android:background="@color/transparent"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/espacio_largo"
+                        android:layout_weight="1"
+                        android:textColorHint="@color/textHintField"
+                        app:boxBackgroundColor="@color/transparent">
+
+                        <EditText
+                            android:id="@+id/etd_segundo_apellido"
+                            android:theme="@style/EditTextPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/gen_dimen_txt_16"
+                            android:fontFamily="@font/roboto"
+                            android:textColor="@color/coloproducttext"
+                            android:textColorHint="@color/texto_simple_modal"
+                            android:hint="Segundo Apellido"
+                            android:inputType="textCapWords"
+                            android:background="@color/transparent"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtInpHint4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/textHintField"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ll_apellidos"
+                    app:boxBackgroundColor="@color/transparent">
+
+                    <EditText
+                        android:id="@+id/etd_celular"
+                        android:theme="@style/EditTextPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/gen_dimen_txt_16"
+                        android:fontFamily="@font/roboto"
+                        android:textColor="@color/coloproducttext"
+                        android:textColorHint="@color/texto_simple_modal"
+                        android:hint="@string/title_mi_cuenta_telefono"
+                        android:inputType="phone"
+                        android:background="@color/transparent"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtInpHint5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/textHintField"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtInpHint4"
+                    app:boxBackgroundColor="@color/transparent">
+
+                    <EditText
+                        android:id="@+id/etd_correo"
+                        android:theme="@style/EditTextPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/gen_dimen_txt_16"
+                        android:fontFamily="@font/roboto"
+                        android:textColor="@color/coloproducttext"
+                        android:textColorHint="@color/texto_simple_modal"
+                        android:hint="Correo"
+                        android:inputType="textCapWords"
+                        android:background="@color/transparent"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+    </FrameLayout>
+</layout>

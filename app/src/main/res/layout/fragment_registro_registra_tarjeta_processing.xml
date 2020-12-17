@@ -1,0 +1,93 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_dialog"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.pagatodoholdings.posandroid.secciones.registro.registro4l.RegistroRegistraTarjetaProcessing">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/processing_validate_card"
+                style="@style/TextProgressDialog"
+                android:gravity="center_horizontal"
+                android:textStyle="bold"
+                android:textSize="@dimen/nav_header_text"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:id="@+id/tvtitle"/>
+
+            <FrameLayout
+                android:id="@+id/flImage"
+                android:layout_width="104dp"
+                android:layout_height="104dp"
+                android:layout_marginTop="@dimen/espacio_mediano"
+                android:layout_gravity="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvtitle">
+
+                <ProgressBar
+                    android:id="@+id/progress_circular_bar"
+                    android:layout_width="104dp"
+                    android:layout_height="104dp"
+                    android:indeterminateDrawable="@drawable/progress"/>
+
+                <ImageView
+                    android:id="@+id/iv_icono_status"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="86dp"
+                    android:layout_height="86dp"
+                    android:contentDescription="@string/gen_desc"
+                    android:background="@drawable/ic_logo_azul_xml" />
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/processing_thanks"
+                style="@style/TextProgressDialog"
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/gen_dimen_txt_16"
+                android:paddingTop="@dimen/espacio_mediano"
+                app:layout_constraintTop_toBottomOf="@id/flImage"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:id="@+id/tvSubtitle"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/processing_validate_data"
+                style="@style/TextProgressDialog"
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/gen_dimen_txt_16"
+                app:layout_constraintTop_toBottomOf="@id/tvSubtitle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:id="@+id/tvDescription"
+                android:paddingTop="@dimen/espacio_largo"
+                android:visibility="gone"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

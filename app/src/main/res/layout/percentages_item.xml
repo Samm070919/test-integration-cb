@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="settingsBtn"
+            type="com.pagatodoholdings.posandroid.secciones.acquiring.binding.settings.SettingsBtn" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/const_root"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#fbfbfb"
+        android:visibility="visible">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_h"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:cardCornerRadius="5dp"
+            app:contentPadding="15dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="@{settingsBtn.listener}"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="true"
+            android:stateListAnimator="@animator/lift_on_touch"
+            app:layout_constraintBottom_toBottomOf="@+id/card_l"
+            app:layout_constraintEnd_toStartOf="@+id/card_l"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/text_h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/colorWhite"
+                android:fontFamily="@font/roboto"
+                android:text="@{settingsBtn.switchBtnData.perHigh}"
+                android:textColor="@color/colorPrimary"
+                android:textSize="30sp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_m"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:cardCornerRadius="5dp"
+            app:contentPadding="10dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="true"
+            android:stateListAnimator="@animator/lift_on_touch"
+            android:onClick="@{settingsBtn.listener}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/card_h"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/text_m"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:text="@{settingsBtn.switchBtnData.perMiddle}"
+                android:textColor="@color/colorPrimary" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_l"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="8dp"
+            app:cardCornerRadius="5dp"
+            app:contentPadding="10dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="true"
+            android:stateListAnimator="@animator/lift_on_touch"
+            android:onClick="@{settingsBtn.listener}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/card_m"
+            app:layout_constraintStart_toStartOf="@+id/card_m"
+            app:layout_constraintTop_toBottomOf="@+id/card_m">
+
+            <TextView
+                android:id="@+id/text_l"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:text="@{settingsBtn.switchBtnData.perLow}"
+                android:textColor="@color/colorPrimary" />
+
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

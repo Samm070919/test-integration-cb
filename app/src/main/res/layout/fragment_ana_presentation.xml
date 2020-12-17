@@ -1,0 +1,50 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_app"
+        android:padding="16dp"
+        tools:context="com.pagatodoholdings.posandroid.secciones.registro.registro4l.RegistroAnaPresentationFragment">
+
+
+        <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.BotonClickUnico
+            android:id="@+id/buttonContinue"
+            style="@style/ButtonContinueStyle"
+            android:layout_marginBottom="24dp"
+            android:padding="16dp"
+            android:text="@string/continuar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageViewAna"
+            android:layout_width="288dp"
+            android:layout_height="204dp"
+            android:layout_marginEnd="40dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ilustracion_bienvenida"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewHereToHelp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/im_here_to_help"
+            android:textColor="@color/colorSaldoAzul"
+            android:textSize="33sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/buttonContinue"
+            app:layout_constraintTop_toBottomOf="@id/imageViewAna"
+            app:layout_constraintVertical_bias="0.35"
+            tools:layout_editor_absoluteX="16dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

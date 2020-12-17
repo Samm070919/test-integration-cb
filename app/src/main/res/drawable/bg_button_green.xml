@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape android:shape="rectangle">
+            <corners
+                android:radius="@dimen/curvatura_standar" />
+            <size
+                android:width="@dimen/tamaño_ancho_boton_standar"
+                android:height="@dimen/altura_boton"/>
+            <gradient
+                android:angle="90"
+                android:endColor="#00b140"
+                android:startColor="#00842f"
+                android:type="linear" />
+        </shape>
+    </item>
+
+    <item
+        android:left="155dp">
+        <shape android:shape="rectangle">
+            <solid
+                android:color="#00842f"/>
+            <corners
+                android:topRightRadius="@dimen/curvatura_standar"
+                android:bottomRightRadius="@dimen/curvatura_standar"/>
+        </shape>
+    </item>
+
+    <item
+        android:left="163dp"
+        android:top="14dp"
+        android:bottom="14dp"
+        android:right="9dp"
+        android:drawable="@drawable/ic_flecha_derecha"/>
+
+</layer-list>

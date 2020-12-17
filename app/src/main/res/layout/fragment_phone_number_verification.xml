@@ -1,0 +1,136 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minWidth="400dp"
+        android:orientation="vertical"
+        android:background="#fafafc">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="24dp"
+            android:lines="2"
+            android:text="Ingresa el Código que Recibiste"
+            style="@style/TitulosRegistro"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_phone_number_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Código enviado al"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+        <TextView
+            android:id="@+id/tv_phone_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="+55 2445 2456"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_phone_number_label" />
+
+        <EditText
+            android:id="@+id/ed_input_box_0"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/phone_verification_input"
+            android:digits="0123456789"
+            android:elevation="2dp"
+            android:theme="@style/phone_verification_input"
+            app:layout_constraintEnd_toStartOf="@+id/ed_input_box_1"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_phone_number" />
+
+        <EditText
+            android:id="@+id/ed_input_box_1"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/phone_verification_input"
+            android:digits="0123456789"
+            android:elevation="2dp"
+            android:theme="@style/phone_verification_input"
+            app:layout_constraintEnd_toStartOf="@+id/ed_input_box_2"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toEndOf="@+id/ed_input_box_0"
+            app:layout_constraintTop_toTopOf="@+id/ed_input_box_0" />
+
+        <EditText
+            android:id="@+id/ed_input_box_2"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/phone_verification_input"
+            android:digits="0123456789"
+            android:elevation="2dp"
+            android:theme="@style/phone_verification_input"
+            app:layout_constraintEnd_toStartOf="@+id/ed_input_box_3"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toEndOf="@+id/ed_input_box_1"
+            app:layout_constraintTop_toTopOf="@+id/ed_input_box_0" />
+
+        <EditText
+            android:id="@+id/ed_input_box_3"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/phone_verification_input"
+            android:digits="0123456789"
+            android:elevation="2dp"
+            android:theme="@style/phone_verification_input"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toEndOf="@+id/ed_input_box_2"
+            app:layout_constraintTop_toTopOf="@+id/ed_input_box_0" />
+
+        <TextView
+            android:id="@+id/tv_resend_verification_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="24dp"
+            android:text="No recibí ningún código"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintBottom_toTopOf="@+id/bcu_continue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.BotonClickUnico
+            android:id="@+id/bcu_continue"
+            style="@style/ButtonStyle"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="62dp"
+            android:text="@string/continuar_registro"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:enabled="false"
+            android:alpha="0.5"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

@@ -1,0 +1,62 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        tools:context="com.pagatodoholdings.posandroid.secciones.registro.registro4l.cardfragment.CCNumberFragment">
+
+        <androidx.cardview.widget.CardView
+            style="@style/CardStyle"
+            android:elevation="0dp"
+            android:background="@color/transparent"
+            card_view:cardCornerRadius="0dp"
+            card_view:cardBackgroundColor="@color/transparent"
+            card_view:cardElevation="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:layout_marginTop="25dp"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/CardLabel"
+                    android:text="@string/card_number"
+                    android:visibility="gone"/>
+
+                <com.pagatodoholdings.posandroid.utils.cardutils.CreditCardEditText
+                    android:id="@+id/et_number"
+                    android:visibility="gone"
+                    style="@style/CardInput"
+                    android:hint="Número de Tarjeta"
+                    android:inputType="number"
+                    android:maxLength="19" />
+
+                <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.InputCardNumber
+                    android:id="@+id/input_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:labelHintInput="@string/card_number"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:background="@color/transparent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:backgroundTint="@android:color/white"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView10">
+
+                </com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.InputCardNumber>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorWhite"/>
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </FrameLayout>
+</layout>

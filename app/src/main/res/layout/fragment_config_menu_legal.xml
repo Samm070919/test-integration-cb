@@ -1,0 +1,89 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/fragment_configuracion"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_app"
+        tools:context="com.pagatodoholdings.posandroid.secciones.menuconfiguraciones.menu_legal.ConfigMenuLegalFragment">
+
+        <RelativeLayout
+            android:id="@+id/rlToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/espacio_mediano"
+            android:layout_marginEnd="@dimen/espacio_mediano"
+            android:layout_marginTop="@dimen/espacio_xlargo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/ivClose"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:src="@drawable/cross_draw" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                style="@style/TextStyleDialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/menu_item_legal"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/tam_txt_grande"/>
+
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="@dimen/espacio_xxlargo"
+            android:layout_marginStart="@dimen/espacio_mediano"
+            android:layout_marginEnd="@dimen/espacio_mediano"
+            android:paddingBottom="@dimen/espacio_pequeño"
+            app:cardCornerRadius="@dimen/curvatura_mediana_cv"
+            app:cardElevation="@dimen/elevacion_pequeña_cv"
+            android:layout_below="@+id/rlToolbar">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/espacio_pequeño"
+                android:paddingStart="@dimen/espacio_largo"
+                android:paddingEnd="@dimen/espacio_largo"
+                android:layout_marginBottom="@dimen/espacio_xxlargo">
+
+
+                <Button
+                    android:id="@+id/btn_terminos_y_condiciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:drawableEnd="@drawable/flecha_azul_derecha"
+                    android:drawablePadding="30dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/config_menu_legal_terminos_y_condiciones"
+                    android:textAllCaps="false"
+                    android:textColor="#46606a"
+                    android:textSize="17sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.4dp"
+                    android:background="#90909090" />
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+</layout>

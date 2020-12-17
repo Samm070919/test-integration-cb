@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/fl_bank_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/background_app"
+        tools:context=".secciones.money_in.MoneyInMenuFragment">
+
+
+        <RelativeLayout
+            android:id="@+id/rlToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/espacio_mediano"
+            android:layout_marginTop="@dimen/espacio_xlargo"
+            android:layout_marginEnd="@dimen/espacio_mediano"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/ivOnBack"
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/ic_icono_back" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                style="@style/TextStyleDialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/rellena_saldo_tarjeta"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/tam_txt_grande" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rlToolbar"
+            android:id="@+id/llcontainerScroll">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rlToolbar"
+            android:layout_marginTop="0dp"
+            android:fillViewport="true"
+            android:overScrollMode="ifContentScrolls">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/espacio_largo">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_card"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/card_height"
+                        android:background="@drawable/ic_bg_card_step1"
+                        android:paddingLeft="@dimen/activity_horizontal_margin"
+                        android:paddingTop="@dimen/activity_horizontal_margin"
+                        android:paddingRight="@dimen/activity_horizontal_margin">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="top|center"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:paddingLeft="@dimen/activity_horizontal_margin">
+
+
+                                <ImageView
+                                    android:layout_width="@dimen/chip_width"
+                                    android:layout_height="@dimen/chip_height"
+                                    android:layout_marginTop="30dp"
+                                    android:layout_marginBottom="@dimen/items_inbetween" />
+
+                                <TextView
+                                    android:id="@+id/tv_card_number"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                                    android:text="@string/card_number_sample"
+                                    android:textColor="@color/card_text_color"
+                                    android:textSize="@dimen/header_text" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="@dimen/items_inbetween_small"
+                                        android:text="@string/card_validity_label"
+                                        android:textColor="@color/card_text_color"
+                                        android:textSize="@dimen/xsmall_text" />
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.MontoViewCustom
+                    android:id="@+id/et_monto_servicio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorGreyFormulario"
+                    app:fontSize="large"
+                    app:textoInferior="@string/selecciona_monto_tarjeta" />
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+        </LinearLayout>
+
+        <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.BotonClickUnico
+            android:id="@+id/btnMoneyInCard"
+            style="@style/ButtonCobrarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="@string/rellena_saldo"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/gen_dimen_txt_16"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

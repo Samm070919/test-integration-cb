@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.pagatodoholdings.posandroid.secciones.registro.externo.RegistroCliente"
+            android:background="@android:color/white"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/tv_guia_datos"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/registro_externo_item_margin_start"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="@dimen/registro_externo_item_margin_end"
+                android:layout_marginBottom="@dimen/registro_externo_item_margin_start"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:lines="2"
+                android:text="@string/registro_header_datos_contacto"
+                android:textColor="@color/colorGreyFormulario"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.EditTextDatosUsuarios
+                android:id="@+id/etd_celular"
+                android:layout_width="@dimen/ancho_campos_registro"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/registro_externo_item_margin_start"
+                android:layout_marginTop="@dimen/registro_externo_item_margin_start"
+                android:layout_marginEnd="@dimen/registro_externo_item_margin_end"
+                android:inputType="number"
+                app:hint="@string/celular"
+                app:maximo_caracteres_datos_usuario="10"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_guia_datos"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.EditTextDatosUsuarios
+                android:id="@+id/etd_telefono_alternativo"
+                android:layout_width="@dimen/ancho_campos_registro"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/registro_externo_item_margin_start"
+                android:layout_marginTop="@dimen/registro_externo_item_margin_start"
+                android:layout_marginEnd="@dimen/registro_externo_item_margin_end"
+                android:inputType="number"
+                app:maximo_caracteres_datos_usuario="10"
+                app:hint="@string/telefono_alternativo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_guia_datos"
+                app:layout_constraintVertical_chainStyle="packed"
+                app:opcional="true" />
+
+            <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.EditTextDatosUsuarios
+                android:id="@+id/etd_correo"
+                android:layout_width="@dimen/ancho_campos_registro"
+                android:layout_height="wrap_content"
+                app:hint="@string/correo_electr_nico"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_guia_datos"
+                app:layout_constraintVertical_chainStyle="packed"
+                android:layout_marginStart="@dimen/registro_externo_item_margin_start"
+                android:layout_marginTop="@dimen/registro_externo_item_margin_start"
+                android:layout_marginBottom="@dimen/registro_externo_item_margin_start"
+                android:layout_marginEnd="@dimen/registro_externo_item_margin_end"/>
+
+            <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.BotonClickUnico
+                android:id="@+id/btn_validar"
+                style="@style/ButtonStyle"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                android:text="@string/continuar_registro"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    <!--</ScrollView>-->
+</layout>

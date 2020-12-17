@@ -1,0 +1,422 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pagatodoholdings.posandroid.secciones.menuconfiguraciones.help.FAQsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline55"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="16dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline56"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="16dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline57"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="16dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline58"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_end="16dp" />
+
+        <ImageButton
+            style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+            android:id="@+id/btn_return"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_icono_back"
+            app:layout_constraintBottom_toBottomOf="@+id/textView31"
+            app:layout_constraintEnd_toStartOf="@+id/textView31"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline55"
+            app:layout_constraintTop_toTopOf="@+id/guideline57" />
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ayuda_title"
+            app:layout_constraintEnd_toStartOf="@+id/guideline56"
+            app:layout_constraintStart_toStartOf="@+id/guideline55"
+            app:layout_constraintTop_toTopOf="@+id/guideline57"
+            android:textColor="@color/blue_ya_ganaste"
+            android:textSize="20sp"
+            android:fontFamily="@font/roboto_medium"/>
+
+        <ScrollView
+            android:id="@+id/scrollViewProfile"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="28dp"
+            android:fillViewport="true"
+            android:overScrollMode="ifContentScrolls"
+            app:layout_constraintBottom_toTopOf="@+id/guideline58"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView31"
+            app:layout_constraintVertical_bias="0.0">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btn_kit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhiteBackground"
+                    android:drawableEnd="@drawable/ic_down_arrow"
+                    android:drawablePadding="20dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="start|center_vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="16dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="16dp"
+                    android:text="@string/que_incluye_kit"
+                    android:textAllCaps="false"
+                    android:textColor="#46606a"
+                    android:textSize="17sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.4dp"
+                    android:background="#90909090" />
+
+                <TextView
+                    android:id="@+id/tv_kit_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/que_incluye_kit_answer"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@color/gray_slate"
+                    android:background="@color/answer_color"
+                    android:visibility="gone"
+                    android:padding="8dp"/>
+
+                <Button
+                    android:id="@+id/btn_delivery_question"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhiteBackground"
+                    android:drawableEnd="@drawable/ic_down_arrow"
+                    android:drawablePadding="13dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="start|center_vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="@string/cuanto_tiempo_entrega_kit"
+                    android:textAllCaps="false"
+                    android:textColor="#46606a"
+                    android:textSize="17sp"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.4dp"
+                    android:background="#90909090" />
+
+                <TextView
+                    android:id="@+id/tv_time_delivery_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/compra_desde_bogota"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@color/gray_slate"
+                    android:background="@color/answer_color"
+                    android:visibility="gone"
+                    android:padding="8dp"/>
+
+                <Button
+                    android:id="@+id/btn_registro_question"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhiteBackground"
+                    android:drawableEnd="@drawable/ic_down_arrow"
+                    android:drawablePadding="22dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="start|center_vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="@string/registro_question"
+                    android:textAllCaps="false"
+                    android:textColor="#46606a"
+                    android:textSize="17sp"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.4dp"
+                    android:background="#90909090" />
+
+                <TextView
+                    android:id="@+id/tv_registro_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/registro_answer"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@color/gray_slate"
+                    android:background="@color/answer_color"
+                    android:visibility="gone"
+                    android:padding="8dp"/>
+
+                <Button
+                    android:id="@+id/btn_micro_datafono_question"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhiteBackground"
+                    android:drawableEnd="@drawable/ic_down_arrow"
+                    android:drawablePadding="22dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="start|center_vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="@string/datafono_question"
+                    android:textAllCaps="false"
+                    android:textColor="#46606a"
+                    android:textSize="17sp"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.4dp"
+                    android:background="#90909090" />
+
+                <TextView
+                    android:id="@+id/tv_micro_datafono_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/datafono_answer"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@color/gray_slate"
+                    android:background="@color/answer_color"
+                    android:visibility="gone"
+                    android:padding="8dp"/>
+
+                <Button
+                    android:id="@+id/btn_charge_question"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhiteBackground"
+                    android:drawableEnd="@drawable/ic_down_arrow"
+                    android:drawablePadding="22dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="start|center_vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="@string/como_realizo_cobro"
+                    android:textAllCaps="false"
+                    android:textColor="#46606a"
+                    android:textSize="17sp"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.4dp"
+                    android:background="#90909090" />
+
+                <TextView
+                    android:id="@+id/tv_charge_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/charge_answer"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@color/gray_slate"
+                    android:background="@color/answer_color"
+                    android:visibility="gone"
+                    android:padding="8dp"/>
+
+                <Button
+                    android:id="@+id/btn_service_pay_question"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhiteBackground"
+                    android:drawableEnd="@drawable/ic_down_arrow"
+                    android:drawablePadding="20dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="start|center_vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="@string/como_realizo_un_pago"
+                    android:textAllCaps="false"
+                    android:textColor="#46606a"
+                    android:textSize="17sp"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp"/>
+
+                <View
+                    android:id="@+id/view_comprar"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.4dp"
+                    android:background="#90909090" />
+
+                <TextView
+                    android:id="@+id/tv_payment_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pay_service_answer"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@color/gray_slate"
+                    android:background="@color/answer_color"
+                    android:visibility="gone"
+                    android:padding="8dp"/>
+
+                <!--<Button
+                    android:id="@+id/btn_comprar_dispositivo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhiteBackground"
+                    android:drawableStart="@drawable/icono_compar"
+                    android:drawableEnd="@drawable/ic_right_arrow"
+                    android:drawablePadding="20dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="start|center_vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="@string/kit_title_solicitar"
+                    android:textAllCaps="false"
+                    android:textColor="#46606a"
+                    android:textSize="17sp"
+                    android:visibility="gone"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.4dp"
+                    android:background="#90909090" />-->
+
+                <Button
+                    android:id="@+id/btn_recharge_question"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhiteBackground"
+                    android:drawableEnd="@drawable/ic_down_arrow"
+                    android:drawablePadding="15dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="start|center_vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="@string/como_realizo_recarga"
+                    android:textAllCaps="false"
+                    android:textColor="#46606a"
+                    android:textSize="17sp"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.4dp"
+                    android:background="#90909090" />
+
+                <TextView
+                    android:id="@+id/tv_recharge_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/recharge_answer"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@color/gray_slate"
+                    android:background="@color/answer_color"
+                    android:visibility="gone"
+                    android:padding="8dp"/>
+
+                <Button
+                    android:id="@+id/btn_devolucion_question"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhiteBackground"
+                    android:drawableEnd="@drawable/ic_down_arrow"
+                    android:drawablePadding="22dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="start|center_vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="@string/devolucion_question"
+                    android:textAllCaps="false"
+                    android:textColor="#46606a"
+                    android:textSize="17sp"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.4dp"
+                    android:background="#90909090" />
+
+                <TextView
+                    android:id="@+id/tv_devolucion_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/devolucion_answer"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@color/gray_slate"
+                    android:background="@color/answer_color"
+                    android:visibility="gone"
+                    android:padding="8dp"/>
+
+
+                <!--<TextView
+                    android:id="@+id/tv_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="bottom"
+                    android:layout_marginTop="@dimen/espacio_mediano"
+                    android:layout_marginBottom="@dimen/espacio_pequeño"
+                    android:text="Versión V0.0.0"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/gen_dimen_txt_14"
+                    android:fontFamily="sans-serif"/>-->
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

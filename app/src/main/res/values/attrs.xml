@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="EditTextDatosUsuarios">
+        <attr name="hint" format="string"/>
+        <attr name="icono" format="reference"/>
+        <attr name="opcional" format="boolean"/>
+        <attr name="centrado" format="boolean"/>
+        <attr name="habilitado" format="boolean"/>
+        <attr name="tamano_hint" format="integer"/>
+        <attr name="tamano_letra_sp" format="reference"/>
+        <attr name="maximo_caracteres_datos_usuario" format="integer"/>
+        <attr name="imeOption" format="string"/>
+        <attr name="android:inputType"/>
+        <attr name="android:gravity"/>
+        <attr name="android:maxLength"/>
+        <attr name="iscontrasena" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="EditTextPassword">
+        <attr name="hint_psd" format="string" />
+        <attr name="ime_psd" format="string"/>
+        <attr name="maximoCaracteres" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="EditTextSeparateChar">
+        <attr name="hint_char" format="string" />
+        <attr name="iscontrasenach" format="boolean"/>
+        <attr name="is_enabled_char" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="SpinnerConTitulo">
+        <attr name="cabecera" format="string"/>
+    </declare-styleable>
+    <declare-styleable name="EditTextEspecial">
+        <attr name="hint_s" format="string"/>
+        <attr name="icono_s" format="reference"/>
+        <attr name="ime_s" format="string"/>
+    </declare-styleable>
+    <declare-styleable name="BotonClickUnico">
+        <attr name="delay" format="integer"/>
+    </declare-styleable>
+    <declare-styleable name="IndicadorEstado">
+        <attr name="number_states" format="integer" />
+        <attr name="slider_title" format="string" />
+    </declare-styleable>
+
+    <attr name="primary" format="reference" />
+    <attr name="primaryDark" format="reference" />
+    <attr name="blueDark" format="reference" />
+    <attr name="accent" format="reference" />
+    <attr name="defaultButtonBackGround" format="reference" />
+    <attr name="defaultButtonBackGroundPress" format="reference" />
+
+    <attr name="wifi_gift" format="reference" />
+
+    <attr name="totem_not_found_gif" format="reference" />
+    <attr name="totem_connecting_gif" format="reference" />
+    <attr name="conectar_totem_gif" format="reference" />
+
+    <attr name="fullcarga_flat" format="reference" />
+    <attr name="fullcarga" format="reference" />
+    <attr name="ic_logo" format="reference" />
+    <attr name="menu_button_background" format="reference" />
+
+    <declare-styleable name="IndicadorEtapa">
+        <attr name="lineColor" format="color"/>
+        <attr name="steps" format="integer"/>
+        <attr name="srcDone" format="reference"/>
+        <attr name="src1" format="reference"/>
+        <attr name="src2" format="reference"/>
+        <attr name="showLine" format="boolean" />
+        <attr name="showSteps" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomFields">
+        <attr name="field_label" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="MontoViewController">
+        <attr name="colorTexto" format="color"/>
+        <attr name="showLineOver" format="boolean"/>
+        <attr name="mostrarTextoInferior" format="boolean"/>
+        <attr name="TextoInferior" format="string"/>
+        <attr name="Importe" format="string"/>
+        <attr name="size" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="medium" value="1" />
+            <enum name="large" value="2" />
+            <enum name="minimal" value="3" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="InputPhoneCode">
+        <attr name="android:textSize" format="dimension"/>
+        <attr name="android:textColor" format="color"/>
+    </declare-styleable>
+    
+    <declare-styleable name="MontoViewCustom">
+        <attr name="textoInferior" format="string" />
+        <attr name="android:textColor" format="color"/>
+        <attr name="maxLenght" format="integer" />
+        <attr name="fontSize" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="medium" value="1" />
+            <enum name="large" value="2" />
+        </attr>
+        <attr name="imeMvcc" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="InputNumberFormat">
+        <attr name="android:textSize" format="dimension"/>
+        <attr name="android:textColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="CodeScannerView">
+        <attr format="color" name="maskColor"/>
+        <attr format="color" name="frameColor"/>
+        <attr format="color" name="autoFocusButtonColor"/>
+        <attr format="color" name="flashButtonColor"/>
+        <attr format="boolean" name="autoFocusButtonVisible"/>
+        <attr format="boolean" name="flashButtonVisible"/>
+        <attr format="dimension" name="frameThickness"/>
+        <attr format="dimension" name="frameCornersSize"/>
+        <attr format="dimension" name="frameCornersRadius"/>
+        <attr format="float" name="frameAspectRatioWidth"/>
+        <attr format="float" name="frameAspectRatioHeight"/>
+        <attr format="float" name="frameSize"/>
+    </declare-styleable>
+
+    <declare-styleable name="MoneyInputSimple">
+        <attr name="symbol" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="MontoVerificacionEditText">
+        <attr name="oev_length" format="integer"/>
+        <attr name="oev_primary_color" format="color" />
+        <attr name="oev_secondary_color" format="color" />
+        <attr name="oev_text_color" format="color" />
+        <attr name="oev_box_style" format="string" />
+        <attr name="oev_mask_input" format="boolean" />
+        <attr name="oev_mask_character" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="InputCardNumber">
+        <attr name="labelHintInput" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="TextViewMoneda">
+        <attr name="txtMoneda" format="string" />
+        <attr name="txtMonto" format="string" />
+        <attr name="txtCentavos" format="string" />
+
+        <attr name="mndSize" format="dimension" />
+        <attr name="mntSize" format="dimension" />
+        <attr name="cntSize" format="dimension" />
+        <attr name="ivOver" format="boolean" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,176 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutCuentaBancaria"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:padding="8dp"
+        tools:context="com.pagatodoholdings.posandroid.secciones.registro.registro4l.RegistroAgregaCuentaActivity">
+
+        <ImageView
+            android:id="@+id/imageViewAna"
+            android:layout_width="0dp"
+            android:layout_height="183dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ilustracion_terminar"
+            app:layout_constraintBottom_toTopOf="@+id/guideline38"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineVerticalRight"
+            app:layout_constraintStart_toStartOf="@+id/guidelineVerticalLeft"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewCuentaBancaria"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espacio_xlargo"
+            android:text="@string/registro_agrega_cuenta_titulo"
+            android:textAlignment="center"
+            android:textColor="@color/colorSaldoAzul"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineVerticalRight"
+            app:layout_constraintStart_toStartOf="@+id/guidelineVerticalLeft"
+            app:layout_constraintTop_toTopOf="@+id/guideline38" />
+
+        <TextView
+            android:id="@+id/textViewContenido"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espacio_mediano"
+            android:gravity="center"
+            android:text="@string/registro_agrega_cuenta_contenido"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineVerticalRight"
+            app:layout_constraintStart_toStartOf="@+id/guidelineVerticalLeft"
+            app:layout_constraintTop_toBottomOf="@id/textViewCuentaBancaria" />
+
+        <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.SpinnerConTitulo
+            android:id="@+id/tipo_documento"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:cabecera="Banco"
+            tools:visibility="visible"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineVerticalRight"
+            app:layout_constraintStart_toStartOf="@+id/guidelineVerticalLeft"
+            app:layout_constraintTop_toBottomOf="@+id/textViewContenido" />
+
+
+        <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.SpinnerConTitulo
+            android:id="@+id/tipo_cta"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:cabecera="Tipo de Cuenta"
+            tools:visibility="visible"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineVerticalRight"
+            app:layout_constraintStart_toStartOf="@+id/guidelineVerticalLeft"
+            app:layout_constraintTop_toBottomOf="@+id/tipo_documento" />
+
+        <TextView
+            tools:visibility="visible"
+            android:id="@+id/tv_no_cta"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/numero_de_cuenta"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorGreyLigth"
+            android:textSize="@dimen/tamano_texto_standar"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineVerticalRight"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guidelineVerticalLeft"
+            app:layout_constraintTop_toBottomOf="@+id/tipo_cta"
+            tools:ignore="RtlCompat" />
+
+        <com.santalu.maskedittext.MaskEditText
+            tools:visibility="visible"
+            android:id="@+id/et_numero_cuenta"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            app:imeOption="actionDone"
+            android:layout_marginTop="5dp"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineVerticalRight"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/guidelineVerticalLeft"
+            app:layout_constraintTop_toBottomOf="@+id/tv_no_cta"
+            app:met_mask="# | # | # | # | # | # | # | # | # | # | # | # | # | # | # | # | # | # | # | #" />
+
+        <TextView
+            tools:visibility="visible"
+            android:id="@+id/tv_aviso"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/registro_agrega_cuenta_validacion"
+            android:textAlignment="center"
+            android:textColor="@color/colorGreySolid"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toTopOf="@+id/horizontalFooter"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineVerticalRight"
+            app:layout_constraintStart_toStartOf="@+id/guidelineVerticalLeft"
+            app:layout_constraintTop_toBottomOf="@+id/et_numero_cuenta" />
+
+        <TextView
+            android:id="@+id/tv_otro_momento"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/en_otro_momento"
+            android:textAlignment="center"
+            android:textColor="@color/colorSaldoAzul"
+            app:layout_constraintBottom_toTopOf="@id/botonUnicoContinuar"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineVerticalRight"
+            app:layout_constraintStart_toStartOf="@+id/guidelineVerticalLeft"
+            app:layout_constraintTop_toTopOf="@+id/horizontalFooter" />
+
+        <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.BotonClickUnico
+            android:id="@+id/botonUnicoContinuar"
+            style="@style/ButtonContinueStyle"
+            android:layout_marginBottom="2dp"
+            android:text="@string/guardar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineVerticalRight"
+            app:layout_constraintStart_toStartOf="@+id/guidelineVerticalLeft" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline38"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".25" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline39"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".25" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/horizontalFooter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".85" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineVerticalLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".05" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineVerticalRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".95" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

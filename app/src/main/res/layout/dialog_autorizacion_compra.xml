@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_rounded_bg">
+
+    <ImageView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_lock_autoriza"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Autoriza"
+        android:layout_gravity="center"
+        android:textColor="#00a0e0"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingresa tu Contraseña para\nValidar la Compra"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textColor="#46606a"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contraseña"
+        android:layout_marginStart="10dp"
+        android:textColor="#46606a"
+        android:layout_marginTop="15dp"
+        android:textSize="12sp"/>
+
+    <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.EditTextPassword
+        android:id="@+id/et_pass_autorizacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hint_psd=""
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:iscontrasena="true"
+        app:ime_psd="actionDone"/>
+
+    <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.BotonClickUnico
+        android:id="@+id/btn_continuar_autorizacion"
+        android:layout_width="@dimen/tamaño_ancho_boton_standar"
+        android:layout_height="@dimen/altura_boton"
+        style="@style/ButtonStyle"
+        android:text="Continuar"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:paddingEnd="30dp"
+        android:layout_marginBottom="20dp"/>
+</LinearLayout>

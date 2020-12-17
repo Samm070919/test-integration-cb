@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:background="@color/colorWhiteBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+
+        <TextView
+            android:id="@+id/ediTextNumberFormat0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:layout_marginStart="@dimen/text_phone_code_number_side_margin"
+            android:layout_marginEnd="@dimen/text_phone_code_number_side_margin"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:text=" "
+            tools:text="0"/>
+
+        <View
+            android:id="@+id/view0"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:visibility="gone"
+            android:layout_marginBottom="2dp"
+            android:background="@color/grey_lines" />
+
+        <TextView
+            android:id="@+id/ediTextNumberFormat1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:layout_marginStart="@dimen/text_phone_code_number_side_margin"
+            android:layout_marginEnd="@dimen/text_phone_code_number_side_margin"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:text=" "
+            tools:text="0"/>
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:visibility="gone"
+            android:layout_marginBottom="2dp"
+            android:background="@color/grey_lines" />
+
+        <TextView
+            android:id="@+id/ediTextNumberFormat2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:layout_marginStart="@dimen/text_phone_code_number_side_margin"
+            android:layout_marginEnd="@dimen/text_phone_code_number_side_margin"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:text=" "
+            tools:text="0"/>
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="1dp"
+            android:visibility="gone"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@color/grey_lines" />
+
+        <TextView
+            android:id="@+id/ediTextNumberFormat3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:layout_marginStart="@dimen/text_phone_code_number_side_margin"
+            android:layout_marginEnd="@dimen/text_phone_code_number_side_margin"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:text=" "
+            tools:text="0"/>
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:visibility="gone"
+            android:layout_marginBottom="2dp"
+            android:background="@color/grey_lines" />
+
+        <TextView
+            android:id="@+id/ediTextNumberFormat4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:layout_marginStart="@dimen/text_phone_code_number_side_margin"
+            android:layout_marginEnd="@dimen/text_phone_code_number_side_margin"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:text=" "
+            tools:text="0"/>
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="1dp"
+            android:visibility="gone"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@color/grey_lines" />
+
+        <TextView
+            android:id="@+id/ediTextNumberFormat5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/text_phone_code_number_side_margin"
+            android:layout_marginEnd="@dimen/text_phone_code_number_side_margin"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:text=" "
+            tools:text="0"/>
+
+        <View
+            android:id="@+id/view5"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@color/grey_lines" />
+
+        <TextView
+            android:id="@+id/ediTextNumberFormat6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/text_phone_code_number_side_margin"
+            android:layout_marginEnd="@dimen/text_phone_code_number_side_margin"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:text=" "
+            tools:text="0"/>
+
+        <View
+            android:id="@+id/view6"
+            android:layout_width="1dp"
+            android:visibility="gone"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@color/grey_lines" />
+
+        <TextView
+            android:id="@+id/ediTextNumberFormat7"
+            android:layout_width="0dp"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/text_phone_code_number_side_margin"
+            android:layout_marginEnd="@dimen/text_phone_code_number_side_margin"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:text=" "
+            tools:text="0"/>
+
+        <View
+            android:id="@+id/view7"
+            android:layout_width="1dp"
+            android:visibility="gone"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@color/grey_lines" />
+
+        <TextView
+            android:id="@+id/ediTextNumberFormat8"
+            android:layout_width="0dp"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/text_phone_code_number_side_margin"
+            android:layout_marginEnd="@dimen/text_phone_code_number_side_margin"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:text=" "
+            tools:text="0"/>
+
+
+        <View
+            android:id="@+id/view8"
+            android:layout_width="1dp"
+            android:visibility="gone"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@color/grey_lines" />
+
+
+        <TextView
+            android:id="@+id/ediTextNumberFormat9"
+            android:layout_width="0dp"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/text_phone_code_number_side_margin"
+            android:layout_marginEnd="@dimen/text_phone_code_number_side_margin"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:text=" "
+            tools:text="0"/>
+
+        <View
+            android:id="@+id/view9"
+            android:layout_width="1dp"
+            android:visibility="gone"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@color/grey_lines" />
+
+        <TextView
+            android:id="@+id/ediTextNumberFormat10"
+            android:layout_width="0dp"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/text_phone_code_number_side_margin"
+            android:layout_marginEnd="@dimen/text_phone_code_number_side_margin"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:text=" "
+            tools:text="0"/>
+
+        <View
+            android:id="@+id/view10"
+            android:layout_width="1dp"
+            android:visibility="gone"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@color/grey_lines" />
+
+
+        <TextView
+            android:id="@+id/ediTextNumberFormat11"
+            android:layout_width="0dp"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/text_phone_code_number_side_margin"
+            android:layout_marginEnd="@dimen/text_phone_code_number_side_margin"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:text=" "
+            tools:text="0"/>
+
+
+        <View
+            android:id="@+id/view11"
+            android:layout_width="1dp"
+            android:visibility="gone"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@color/grey_lines" />
+
+
+        <TextView
+            android:id="@+id/ediTextNumberFormat12"
+            android:layout_width="0dp"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/text_phone_code_number_side_margin"
+            android:layout_marginEnd="@dimen/text_phone_code_number_side_margin"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:text=" "
+            tools:text="0"/>
+
+
+        <View
+            android:id="@+id/view12"
+            android:layout_width="1dp"
+            android:visibility="gone"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@color/grey_lines" />
+
+
+        <TextView
+            android:id="@+id/ediTextNumberFormat13"
+            android:layout_width="0dp"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/text_phone_code_number_side_margin"
+            android:layout_marginEnd="@dimen/text_phone_code_number_side_margin"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:text=" "
+            tools:text="0"/>
+
+
+        <View
+            android:id="@+id/view13"
+            android:layout_width="1dp"
+            android:visibility="gone"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@color/grey_lines" />
+
+
+        <TextView
+            android:id="@+id/ediTextNumberFormat14"
+            android:layout_width="0dp"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/text_phone_code_number_side_margin"
+            android:layout_marginEnd="@dimen/text_phone_code_number_side_margin"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:text=" "
+            tools:text="0"/>
+
+        <View
+            android:id="@+id/view14"
+            android:layout_width="1dp"
+            android:visibility="gone"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@color/grey_lines" />
+
+
+        <TextView
+            android:id="@+id/ediTextNumberFormat15"
+            android:layout_width="0dp"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/text_phone_code_number_side_margin"
+            android:layout_marginEnd="@dimen/text_phone_code_number_side_margin"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:text=" "
+            tools:text="0"/>
+
+
+        <View
+            android:id="@+id/view15"
+            android:layout_width="1dp"
+            android:visibility="gone"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@color/grey_lines" />
+
+
+        <TextView
+            android:id="@+id/ediTextNumberFormat16"
+            android:layout_width="0dp"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/text_phone_code_number_side_margin"
+            android:layout_marginEnd="@dimen/text_phone_code_number_side_margin"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:text=" "
+            tools:text="0"/>
+
+        <View
+            android:id="@+id/view16"
+            android:layout_width="1dp"
+            android:visibility="gone"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@color/grey_lines" />
+
+
+        <TextView
+            android:id="@+id/ediTextNumberFormat17"
+            android:layout_width="0dp"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/text_phone_code_number_side_margin"
+            android:layout_marginEnd="@dimen/text_phone_code_number_side_margin"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:text=" "
+            tools:text="0"/>
+
+
+        <View
+            android:id="@+id/view17"
+            android:layout_width="1dp"
+            android:visibility="gone"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@color/grey_lines" />
+
+
+        <TextView
+            android:id="@+id/ediTextNumberFormat18"
+            android:layout_width="0dp"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/text_phone_code_number_side_margin"
+            android:layout_marginEnd="@dimen/text_phone_code_number_side_margin"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:text=" "
+            tools:text="0"/>
+
+
+        <View
+            android:id="@+id/view18"
+            android:layout_width="1dp"
+            android:visibility="gone"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@color/grey_lines" />
+
+
+        <TextView
+            android:id="@+id/ediTextNumberFormat19"
+            android:layout_width="0dp"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/text_phone_code_number_side_margin"
+            android:layout_marginEnd="@dimen/text_phone_code_number_side_margin"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:text=" "
+            tools:text="0"/>
+
+        <View
+            android:id="@+id/view19"
+            android:layout_width="1dp"
+            android:visibility="gone"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@color/grey_lines" />
+
+
+        <TextView
+            android:id="@+id/ediTextNumberFormat20"
+            android:layout_width="0dp"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/text_phone_code_number_side_margin"
+            android:layout_marginEnd="@dimen/text_phone_code_number_side_margin"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:text=" "
+            tools:text="0"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_lines" />
+
+</LinearLayout>

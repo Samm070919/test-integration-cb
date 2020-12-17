@@ -1,0 +1,448 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clPSE"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <FrameLayout
+                android:id="@+id/fl_comprakit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@color/colorWhiteBackground"
+                tools:context=".secciones.money_out.MoneyOutTransactionFragment">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/rlToolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/espacio_mediano"
+                        android:layout_marginTop="@dimen/espacio_xlargo"
+                        android:layout_marginEnd="@dimen/espacio_mediano"
+                        android:gravity="right"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+
+                        <ImageView
+                            android:id="@+id/iv_compartir"
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
+                            android:layout_alignParentEnd="true"
+                            android:src="@drawable/ic_compartir" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rlToolbar"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingTop="@dimen/espacio_largo">
+
+                        <ImageView
+                            android:id="@+id/iv_icono"
+                            android:layout_width="33dp"
+                            android:layout_height="33dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/ic_successful" />
+
+                        <TextView
+                            android:id="@+id/tv_title"
+                            style="@style/TextStyleDialog"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/iv_icono"
+                            android:layout_centerHorizontal="true"
+                            android:text="@string/compra_kit_trans_title"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/tam_txt_grande" />
+
+                        <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.MontoViewController
+                            android:id="@+id/l_importe"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            app:mostrarTextoInferior="false"
+                            android:layout_marginTop="30dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="@dimen/espacio_largo"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tv_destinatario_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Concepto"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/gen_dimen_txt_16" />
+
+
+                            <TextView
+                                android:id="@+id/tv_concepto"
+                                android:layout_width="220dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:text="Resultado"
+                                android:textAlignment="textEnd"
+                                android:textColor="@color/colorGreyFormulario"
+                                android:textSize="@dimen/gen_dimen_txt_16" />
+
+                        </RelativeLayout>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.4dp"
+                            android:layout_marginTop="9dp"
+                            android:background="#90909090" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="9dp">
+
+
+                            <TextView
+                                android:id="@+id/tv_cta_corriente_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Referencia"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/gen_dimen_txt_16" />
+
+
+                            <TextView
+                                android:id="@+id/tv_referencia"
+                                android:layout_width="220dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:text="*5809"
+                                android:textAlignment="textEnd"
+                                android:textColor="@color/colorGreyFormulario"
+                                android:textSize="@dimen/gen_dimen_txt_16" />
+
+                        </RelativeLayout>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.4dp"
+                            android:layout_marginTop="9dp"
+                            android:background="#90909090" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="9dp">
+
+
+                            <TextView
+                                android:id="@+id/tv_fecha_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Fecha"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/gen_dimen_txt_16" />
+
+
+                            <TextView
+                                android:id="@+id/tv_fecha_result"
+                                android:layout_width="220dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:text="24 Oct 2019"
+                                android:textAlignment="textEnd"
+                                android:textColor="@color/colorGreyFormulario"
+                                android:textSize="@dimen/gen_dimen_txt_16" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.BotonClickUnico
+                android:id="@+id/btn_aceptar"
+                style="@style/ButtonContinueStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="@dimen/espacio_largo"
+                android:text="@string/aceptar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clCard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_logo"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_successful"
+                app:layout_constraintLeft_toRightOf="parent"
+                app:layout_constraintRight_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/iv_share"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_margin="20dp"
+                android:src="@drawable/ic_share_ticket"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_fecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/cof_success_kit"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                app:layout_constraintLeft_toRightOf="parent"
+                app:layout_constraintRight_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iv_logo" />
+
+            <LinearLayout
+                android:id="@+id/ll_monto_servicio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@id/tv_fecha">
+
+                <ImageView
+                    android:id="@+id/icono_pago_exitoso"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/chip_pin_v"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:orientation="vertical">
+
+                    <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.MontoViewController
+                        android:id="@+id/tv_monto_pagado"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.00"
+                        app:mostrarTextoInferior="false"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Monto Pagado"
+                        android:textColor="#00a1e1"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_fecha_pago"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="27 Mar 2020" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llcontainer_auth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/espacio_xxlargo"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@id/ll_monto_servicio">
+
+                <LinearLayout
+                    android:id="@+id/ll_referencia_unica"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Referencia Única"
+                        android:textColor="#00a1e1"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_referencia_unica"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1234 5884 9595 55"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:layout_margin="20dp"
+                    android:background="@color/grey_lines" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Autorizacion Emisor"
+                        android:textColor="#00a1e1"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_autorization"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="9595 55"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/folio_ya_ganaste"
+                        android:textColor="#00a1e1"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:textAlignment="textEnd"
+                        android:id="@+id/tv_folio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" 9595 55"
+                        android:paddingLeft="@dimen/espacio_xlargo"
+                        android:maxLines="2"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/v_line2"
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:layout_margin="20dp"
+                android:background="@color/grey_lines"
+                app:layout_constraintTop_toBottomOf="@id/llcontainer_auth"/>
+
+            <LinearLayout
+                android:layout_marginLeft="@dimen/espacio_largo"
+                android:layout_marginRight="@dimen/espacio_largo"
+                android:layout_marginTop="@dimen/espacio_largo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/v_line2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dirección de Envío"
+                    android:textColor="#00a1e1"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_marginTop="@dimen/espacio_pequeño"
+                    android:id="@+id/tv_direccion_envio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1234 5884 9595 55"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_botones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="parent"
+                app:layout_constraintRight_toLeftOf="parent">
+
+                <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.BotonClickUnico
+                    android:id="@+id/btn_terminar"
+                    style="@style/ButtonStyle"
+                    android:layout_width="@dimen/tamaño_ancho_boton_standar"
+                    android:layout_height="@dimen/altura_boton"
+                    android:layout_marginEnd="20dp"
+                    android:paddingRight="30dp"
+                    android:text="Terminar"
+                    android:textAllCaps="false"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

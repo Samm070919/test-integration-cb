@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        android:weightSum="6"
+        tools:context="com.pagatodoholdings.posandroid.secciones.inicio.UpgradeMerchantActivity">
+
+        <LinearLayout
+            android:layout_weight=".2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/upgrade_merchant" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".9">
+
+            <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.AutoResizeTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ellipsize="none"
+                android:fontFamily="Roboto-Medium"
+                android:gravity="center"
+                android:maxLines="3"
+                android:text="@string/text_upgrade_felicidades"
+                android:textAlignment="center"
+                android:textColor="@color/colorSaldoAzul"
+                android:textSize="@dimen/gen_dimen_txt_28" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_weight="0.6">
+
+            <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:ellipsize="none"
+                android:fontFamily="Roboto-Medium"
+                android:gravity="top|center"
+                android:maxLines="5"
+                android:text="@string/text_parrafo_upgrade_merchant"
+                android:textAlignment="center"
+                android:textColor="@color/colorSaldoAzul"
+                android:textSize="@dimen/gen_dimen_txt_20" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".3"
+            android:gravity="top|center"
+            android:orientation="vertical">
+
+
+            <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.BotonClickUnico
+                android:id="@+id/btn_aceptar_profesionista"
+                style="@style/Aceptar_ButtonStyle"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_exit_fragment"
+                android:layout_marginBottom="@dimen/margin_exit_fragment"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="@string/aceptar"
+                android:textSize="@dimen/gen_dimen_txt_16"
+                tools:visibility="visible" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</layout>
+
+

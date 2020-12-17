@@ -1,0 +1,578 @@
+import java.util.regex.Matcher
+import java.util.regex.Pattern
+
+apply plugin: 'com.android.application'
+//apply plugin: 'com.google.firebase.crashlytics'
+apply plugin: 'io.fabric'
+apply plugin: 'pmd'
+apply plugin: "findbugs"
+apply plugin: 'realm-android'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'addonjavaanttasks'
+
+def INTEGER = "Integer"
+def STRING = "String"
+def BOOLEAN = "Boolean"
+def TIPO_REGISTRO = "TIPO_REGISTRO"
+def CAMBIO_SERIAL = "CAMBIO_SERIAL"
+def HABILITA_IMPRESORA = "HABILITA_IMPRESORA"
+def IP_SERVER = "IP_SERVER"
+def PUERTO = "PUERTO"
+def URL_REGISTRO = "URL_REGISTRO"
+def SERIAL_KEY = "SERIAL_KEY"
+def POS_KEY = "POS_KEY"
+def TIPO_LOG = "TIPO_LOG"
+def TIME_OUT_CONNNECTION = "TIME_OUT_CONNNECTION"
+def TIME_OUT_RESPONSE = "TIME_OUT_RESPONSE"
+def NAME_RSA = "NAME_RSA"
+def NAME_RSA_PCI = "NAME_RSA_PCI"
+def IGNORAR_CERTIFICADOS_SSL = "IGNORAR_CERTIFICADOS_SSL"
+def URL_SYN = "URL_SYN"
+def TIME_SYN = "TIME_SYN"
+def TEXT_SIZE_SMALL = "TEXT_SIZE_SMALL"
+def TEXT_SIZE_NORMAL = "TEXT_SIZE_NORMAL"
+def TEXT_SIZE_MEDIUM = "TEXT_SIZE_MEDIUM"
+def TEXT_SIZE_LARGE = "TEXT_SIZE_LARGE"
+def DECIMALES_PAISES = "DECIMALES_PAISES"
+def QPOS_VERSION = "QPOS_VERSION"
+def VERSION_BD_APP = "VERSION_BD_APP"
+def TEXT_SIZE_VIEW_SMALL = "TEXT_SIZE_VIEW_SMALL"
+def TEXT_SIZE_VIEW_NORMAL = "TEXT_SIZE_VIEW_NORMAL"
+def TEXT_SIZE_VIEW_MEDIUM = "TEXT_SIZE_VIEW_MEDIUM"
+def TEXT_SIZE_VIEW_LARGE = "TEXT_SIZE_VIEW_LARGE"
+def LEGALES_URL = "LEGALES_URL"
+def APP_TOKEN_ADJUST = "APP_TOKEN_ADJUST"
+
+
+def getCurrentFlavor() {
+    String taskReqStr = getGradle().getStartParameter().getTaskRequests().toString()
+    Pattern pattern
+    if (taskReqStr.contains("assemble")) {
+        pattern = Pattern.compile("assemble(\\w+)(Release|Debug|Qa)")
+    } else {
+        pattern = Pattern.compile("generate(\\w+)(Release|Debug|Qa)")
+    }
+    Matcher matcher = pattern.matcher(taskReqStr)
+    if (matcher.find()) {
+        String flavor = matcher.group(1)
+        // This makes first character to lowercase.
+        //char[] c = flavor.toCharArray()
+        //c[0] = Character.toLowerCase(c[0])
+        //flavor = new String(c)
+        return flavor
+    } else {
+        println "getCurrentFlavor:cannot_find_current_flavor"
+        return "Empty"
+    }
+}
+
+def getCurrentBuildType() {
+    String taskReqStr = getGradle().getStartParameter().getTaskRequests().toString()
+    if (taskReqStr.contains("Release")) {
+        return "Release"
+    } else if (taskReqStr.contains("Debug")) {
+        return "Debug"
+    } else if (taskReqStr.contains("Qa")) {
+        return "Qa"
+    }
+}
+
+def getIcon() {
+    def Registro = project.hasProperty("colorTema") ? '"' + project.colorTema + '"' : configFieldDefaultTemaColor
+    if (Registro.contains("AZUL")) {
+        return "@drawable/logo"
+    } else if (Registro.contains("ROJO")) {
+        return "@drawable/ic_logo_negro"
+    }
+}
+
+def getTheme() {
+    def Registro = project.hasProperty("colorTema") ? '"' + project.colorTema + '"' : configFieldDefaultTemaColor
+    if (Registro.contains("AZUL")) {
+        return "@style/AppThemeBlue"
+    } else if (Registro.contains("ROJO")) {
+        return "@style/AppThemeRed"
+    }
+}
+
+def getVersionName = { ->
+    def versionName = project.hasProperty('versionName') ? project.versionName : "2.0.0"
+    return versionName
+}
+
+def getVersionCode = { ->
+    def versionCode = project.hasProperty('versionCode') ? project.versionCode.toInteger() : 1
+    return versionCode
+}
+def getAppName = { ->
+    def flavorCorto = getCurrentFlavor().toUpperCase().substring(0, 2)
+    def appName = project.hasProperty('appName') ? project.appName : "Super Wallet"
+    return appName
+}
+def getKeyAlias = { ->
+    def keyAlias = project.hasProperty('keyAlias') ? project.keyAlias : defaultKeyAlias
+    return keyAlias
+}
+def getKeyPassword = { ->
+    def keyPassword = project.hasProperty('keyPassword') ? project.keyPassword : defaultKeyPassword
+    return keyPassword
+}
+def getStoreFile = { ->
+    def storeFile = project.hasProperty('storeFile') ? project.storeFile : defaultStoreFile
+    return storeFile
+}
+def getStorePassword = { ->
+    def storePassword = project.hasProperty('storePassword') ? project.storePassword : defaultStorePassword
+    return storePassword
+}
+def getV1SigningEnabled = { ->
+    def v1SigningEnabled = project.hasProperty('v1SigningEnabled') ? project.v1SigningEnabled.toBoolean() : defaultV1SigningEnabled.toBoolean()
+    return v1SigningEnabled
+}
+def getV2SigningEnabled = { ->
+    def v2SigningEnabled = project.hasProperty('v2SigningEnabled') ? project.v2SigningEnabled.toBoolean() : defaultV2SigningEnabled.toBoolean()
+    return v2SigningEnabled
+}
+def getTipoRegistro = { ->
+    def tipoRegistro = project.hasProperty("tipoRegistro") ? '"' + project.tipoRegistro + '"' : configFieldDefaultTipoRegistro
+    return tipoRegistro
+}
+def getHabilitaImpresora = { ->
+    def habilitaImpresora = project.hasProperty("habilitaImpresora") ? project.habilitaImpresora : configFieldDefaultHabilitaImpresora
+    return habilitaImpresora
+}
+def getCambioSerial = { ->
+    def cambioSerial = project.hasProperty("cambioSerial") ? project.cambioSerial : configFieldDefaultCambioSerial
+    return cambioSerial
+}
+def getTipoLog = { ->
+    def tipoLog = project.hasProperty("tipoLog") ? '"' + project.tipoLog + '"' : configFieldDefaultTipoLog
+    return tipoLog
+}
+def getNameRsaPci = { ->
+    def nameRsaPci = project.hasProperty("nameRsaPci") ? '"' + project.nameRsaPci + '"' : configFieldDefaultNameRsaPci
+    return nameRsaPci
+}
+def getNameRsa = { ->
+    def nameRsa = project.hasProperty("nameRsa") ? '"' + project.nameRsa + '"' : '"LOCALHOST.PEM"'
+    return nameRsa
+}
+def getUrlRegistro = { ->
+    def url = project.hasProperty("urlRegistro") ? '"' + project.urlRegistro + '"' : '"https://190.145.60.204:8473/"'
+    return url
+}
+
+def getIpServer = { ->
+    def server = project.hasProperty("ipServer") ? '"' + project.ipServer + '"' : '""'
+    return server
+}
+def getPuerto = { ->
+    def puerto = project.hasProperty("puerto") ? project.puerto : '0'
+    return puerto
+}
+
+def getBuildNumber = { ->
+    def buildNumber = project.hasProperty("buildNumber") ? project.buildNumber : 'P1'
+    return buildNumber
+}
+
+def getPathNextCloud = { ->
+    def pathNextCloud = project.hasProperty("pathNextCloud") ? project.pathNextCloud : '"https://nextcloud.fullcarga.net:9543/nextcloud/remote.php/webdav/WALLET/APK"'
+    return pathNextCloud
+}
+
+def getPathTmpApk = { ->
+    def pathTmpApk = project.hasProperty("pathTmpApk") ? project.pathTmpApk : '"/var/lib/jenkins/fFileAndConfigJobs/WS/FPTH/FPublish/AndPosMobileQA/Mobile/Wallet/tmp/"'
+    return pathTmpApk
+}
+
+
+
+def getSerialKey = {
+    return configFieldSerialKey
+}
+
+def getPosKey = {
+    return configFieldPosKey
+}
+
+
+android {
+    println getAppName()
+
+    lintOptions {
+        abortOnError false
+    }
+
+    signingConfigs {
+        norelease {
+            keyAlias getKeyAlias()
+            keyPassword getKeyPassword()
+            storeFile file(getStoreFile())
+            storePassword getStorePassword()
+        }
+        release {
+            keyAlias getKeyAlias()
+            keyPassword getKeyPassword()
+            storeFile file(getStoreFile())
+            storePassword getStorePassword()
+            v1SigningEnabled getV1SigningEnabled()
+            v2SigningEnabled getV2SigningEnabled()
+        }
+    }
+    compileSdkVersion 29
+    useLibrary 'org.apache.http.legacy'
+    defaultConfig {
+        applicationId "com.pagatodo.yawallet.AR"
+        minSdkVersion 21
+        targetSdkVersion 29
+        buildToolsVersion = '28.0.3'
+
+        versionCode getVersionCode()
+        versionName getVersionName()
+        resValue "string", "app_name", getAppName()
+        proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        // ndk.abiFilters 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64'
+
+        buildConfigField STRING, QPOS_VERSION, '"4.83.3.82"'
+        buildConfigField STRING, VERSION_BD_APP, '"2.0"'
+        buildConfigField BOOLEAN, IGNORAR_CERTIFICADOS_SSL, 'false'
+        buildConfigField STRING, SERIAL_KEY, '""'
+        buildConfigField STRING, POS_KEY, '""'
+        buildConfigField STRING, TIPO_REGISTRO, getTipoRegistro()
+        buildConfigField BOOLEAN, CAMBIO_SERIAL, getCambioSerial()
+        buildConfigField BOOLEAN, HABILITA_IMPRESORA, getHabilitaImpresora()
+        buildConfigField STRING, TIPO_LOG, getTipoLog()
+        buildConfigField STRING, NAME_RSA_PCI, getNameRsaPci()
+        buildConfigField STRING, NAME_RSA, getNameRsa()
+        buildConfigField STRING, IP_SERVER, getIpServer()
+        buildConfigField INTEGER, PUERTO, getPuerto()
+        buildConfigField STRING, URL_REGISTRO, getUrlRegistro()
+
+        buildConfigField INTEGER, TIME_OUT_CONNNECTION, '5000'
+        buildConfigField INTEGER, TIME_OUT_RESPONSE, '1200000'
+        buildConfigField INTEGER, TIME_OUT_CONNNECTION, '5000'
+        buildConfigField INTEGER, TIME_OUT_RESPONSE, '60000'
+        buildConfigField "String", "KEY_CORTEXSCAN", "\"f9ff4339-6514-493e-b4bf-e43495e588ce\""
+        buildConfigField STRING, URL_SYN, '"http://10.10.24.112:5002/"'
+        buildConfigField INTEGER, TIME_SYN, '60000'
+        manifestPlaceholders = [
+                API_KEY_CRASHLITYCS: "707d9578653be9f807bd8916ddc4507b3502d9c1",
+                APP_IC             : getIcon(),
+                APP_THEME          : getTheme()
+        ]
+
+        buildConfigField INTEGER, TEXT_SIZE_VIEW_SMALL, '8'
+        buildConfigField INTEGER, TEXT_SIZE_VIEW_NORMAL, '10'
+        buildConfigField INTEGER, TEXT_SIZE_VIEW_MEDIUM, '12'
+        buildConfigField INTEGER, TEXT_SIZE_VIEW_LARGE, '14'
+
+        buildConfigField INTEGER, TEXT_SIZE_SMALL, '17'
+        buildConfigField INTEGER, TEXT_SIZE_NORMAL, '18'
+        buildConfigField INTEGER, TEXT_SIZE_MEDIUM, '21'
+        buildConfigField INTEGER, TEXT_SIZE_LARGE, '24'
+        buildConfigField INTEGER, DECIMALES_PAISES, '2'
+        buildConfigField STRING, LEGALES_URL, '"https://developmobilepth.firebaseapp.com/legales/"'
+        buildConfigField STRING, APP_TOKEN_ADJUST, '"yfvta8bq3bb4"'
+
+
+        // Enabling multidex support.
+        multiDexEnabled true
+
+
+    }
+    buildTypes {
+        debug {
+            minifyEnabled false
+
+            debuggable true
+            buildConfigField BOOLEAN, IGNORAR_CERTIFICADOS_SSL, 'true'
+            buildConfigField STRING, SERIAL_KEY, getSerialKey()
+            //cada desarrollador debe tener el suyo
+            buildConfigField STRING, POS_KEY, getPosKey() //cada desarrollador debe tener el suyo
+            signingConfig signingConfigs.norelease
+            buildConfigField STRING, URL_REGISTRO, getUrlRegistro()
+
+        }
+        qa {
+            minifyEnabled false
+            debuggable true
+            buildConfigField BOOLEAN, IGNORAR_CERTIFICADOS_SSL, 'true'
+            signingConfig signingConfigs.norelease
+            buildConfigField STRING, URL_REGISTRO, getUrlRegistro()
+        }
+        release {
+
+            minifyEnabled false
+            debuggable false
+            signingConfig signingConfigs.release
+            //FIXME Agregar URL Prod
+            buildConfigField STRING, URL_REGISTRO, getUrlRegistro()
+        }
+    }
+
+    android.applicationVariants.all { variant ->
+        variant.outputs.all {
+//            variant.packageApplicationProvider.get().outputDirectory = new File(project.rootDir.absolutePath + "/app/build/outputs/apk/" + buildType.name)
+            variant.packageApplicationProvider.get().outputDirectory = new File(getPathTmpApk())
+            outputFileName = buildType.name + "-Wallet-" + getVersionName() + "-" + getVersionCode() + "(" + getBuildNumber() + ").apk"
+        }
+    }
+    flavorDimensions "pais"
+
+    dataBinding {
+        enabled = true
+
+    }
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+
+
+}
+
+ext {
+    supportLibrary = '28.0.0'
+    retrofitLibrary = '2.3.0'
+}
+
+
+buildscript {
+    repositories {
+        maven {
+            url 'https://maven.fabric.io/public'
+        }
+        maven {
+            url 'https://plugins.gradle.org/m2/'
+        }
+//        maven {
+//            url "$mavenInternalUrl"
+//        }
+//
+//        maven {
+//            url "$maven3rdpartyUrl"
+//        }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+        classpath "uk.co.firstzero:AddOnJavaAntTasks:2.8"
+    }
+}
+
+
+repositories {
+    flatDir {
+        dirs 'libs'
+
+    }
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'joda-time:joda-time:2.9.7'
+    implementation 'org.apache.commons:commons-lang3:3.4'
+    implementation 'commons-cli:commons-cli:1.2'
+    implementation 'org.jdom:jdom:1.1.3'
+    implementation('org.jpos:jpos:1.9.0') {
+        transitive = false
+    }
+
+    implementation('androidx.appcompat:appcompat:1.0.0')
+            {
+                exclude group: 'android.arch.lifecycle'
+            }
+
+    implementation 'androidx.legacy:legacy-support-v13:1.0.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'com.google.firebase:firebase-messaging:20.1.2'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.viewpager2:viewpager2:1.1.0-alpha01'
+    implementation "com.google.android.material:material:1.3.0-alpha01"
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
+    androidTestImplementation('androidx.test:rules:1.1.1') {
+        exclude module: 'support-annotations'
+    }
+    implementation 'com.readystatesoftware.sqliteasset:sqliteassethelper:+'
+    implementation 'org.sqldroid:sqldroid:1.0.3'
+    implementation 'com.github.Cutta:GifView:1.4'
+    implementation "com.squareup.retrofit2:retrofit:$retrofitLibrary"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofitLibrary"
+    implementation "com.squareup.retrofit2:converter-scalars:$retrofitLibrary"
+    implementation 'javax.annotation:javax.annotation-api:1.2'
+
+    implementation 'de.hdodenhof:circleimageview:3.0.0'
+    implementation 'com.jaredrummler:material-spinner:1.3.1'
+    //LIBS Dspread
+    implementation 'com.google.code.gson:gson:2.3'
+    implementation 'com.itextpdf:itextpdf:5.5.10'
+    //Reactive
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.2'
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.9'
+
+    //Ubicacion
+    implementation 'com.google.android.gms:play-services-location:16.0.0'
+    //implementation 'com.google.android.gms:play-services:7.8+'
+
+    //Maps
+    implementation 'com.google.android.gms:play-services-maps:16.1.0'
+
+    //Firebase
+    implementation 'com.google.firebase:firebase-analytics:17.2.3'
+//    implementation 'com.google.firebase:firebase-crashlytics:17.0.0-beta01'
+    implementation 'com.google.firebase:firebase-core:17.2.3'
+    implementation 'com.google.firebase:firebase-firestore:21.4.1'
+    implementation 'com.google.firebase:firebase-auth:19.2.0'
+    implementation 'com.google.android.exoplayer:exoplayer:2.8.0'
+    implementation('com.crashlytics.sdk.android:crashlytics:2.10.1') {
+        transitive = true
+    }
+
+    //Picasso
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+
+    //MaskEditText
+    implementation 'com.github.santalu:mask-edittext:1.1.1'
+
+//    implementation 'com.github.Mattencio:NotificacionesLib:1.11.36'
+    implementation 'com.github.IOREMAR:NotificacionesLib:1.11.57'
+//    implementation 'com.github.IOREMAR:SigmaLib:1.3.68'
+    //implementation 'com.pagatodo.android:notifications:1.1.+'
+    // implementation  'com.pagatodo.android:sigmaLib:1.1.11429'
+    implementation 'org.bouncycastle:bcprov-ext-jdk15on:1.54'
+    implementation 'com.github.IOREMAR:QposLib:2.4.15-beta'
+    implementation 'com.github.ittianyu:BottomNavigationViewEx:2.0.0'
+    implementation 'q.rorbin:badgeview:1.1.3'
+    implementation "com.airbnb.android:lottie:3.3.1"
+    implementation 'com.hbb20:ccp:2.2.9'
+
+    implementation 'com.google.zxing:core:3.2.0'
+    implementation 'org.jooq:jooq:3.6.4'
+    implementation(name: 'sigmaLib-1.1.2267', ext: 'aar')
+
+    //DatePicker
+    implementation 'com.wdullaer:materialdatetimepicker:2.3.0'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.13'
+
+    //Addjust
+    implementation 'com.adjust.sdk:adjust-android:4.18.3'
+    implementation 'com.android.installreferrer:installreferrer:1.0'
+
+    //calendar
+    implementation 'com.github.sundeepk:compact-calendar-view:3.0.0'
+
+    // multidex support.
+    implementation 'androidx.multidex:multidex:2.0.0'
+    implementation 'com.facebook.stetho:stetho:1.5.0' // Debuggin purposes
+
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.10.0'
+
+    //PDF Reader
+    implementation 'com.github.manishkummar21:AndroidPdfViewer:1.0'
+
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.72'
+    //implementation files('libs\\ApiAndroid-1.10.6156.jar')
+    //implementation files('libs\\ApiAndroid.jar')
+
+    implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
+
+    //Navigation
+    implementation "androidx.navigation:navigation-fragment-ktx:2.3.0"
+    implementation "androidx.navigation:navigation-ui-ktx:2.3.0"
+}
+
+//configurations.all {
+//    resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+//        def requested = details.requested
+//        if (requested.group == "com.android.support") {
+//            if (!requested.name.startsWith("multidex")) {
+//                details.useVersion "27.1.1"
+//            }
+//        }
+//    }
+//}
+
+configurations.all {
+    resolutionStrategy.eachDependency { details ->
+        if (details.requested.group == 'com.android.support:design'
+                && !details.requested.name.contains('multidex')) {
+            details.useVersion "26.1.0"
+        }
+        if (details.requested.group == 'com.android.support:appcompat-v7'
+                && details.requested.name.contains('play-services-base')) {
+            details.useVersion "28.0.0"
+        }
+
+    }
+}
+
+
+task pmd(type: Pmd) {
+
+    group 'verification'
+
+    ruleSetFiles = files("$project.rootDir/tools/pmd_custom.xml")
+    source = fileTree("$project.rootDir/app/src/main/java/com/pagatodoholdings")
+
+    consoleOutput = true
+
+    ignoreFailures = true
+
+    reports {
+        xml.enabled false
+        html.enabled true
+    }
+}
+
+task findbugs(type: FindBugs) {
+
+    group 'verification'
+
+    excludeFilter = file("$project.rootDir/tools/rules-findbugs.xml")
+    classes = fileTree("$project.buildDir/intermediates/classes/debug/com/pagatodoholdings")
+    source = fileTree("$project.rootDir/app/src/main/java")
+    classpath = files()
+
+    effort = 'max'
+
+    ignoreFailures = true
+
+    reports {
+        xml.enabled false
+        html.enabled true
+    }
+}
+
+
+tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+    kotlinOptions.suppressWarnings = true
+}
+
+
+    pushArgs{
+        user = 'jenkins'
+        password = '1234asdfG%'
+        url =  getPathNextCloud()
+        tree = fileTree(dir: getPathTmpApk(), include: '*.apk')
+        overwrite = true
+        createDirectoryStructure = false
+    }
+
+
+
+apply plugin: 'com.google.gms.google-services'

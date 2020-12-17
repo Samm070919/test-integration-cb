@@ -1,0 +1,10 @@
+<resources>
+    <declare-styleable name="SelectorDosOpciones">
+        <attr name="iconoIzquierdo" format="reference" />
+        <attr name="iconoDerecho" format="reference" />
+        <attr name="textoIzquierdo" format="string" />
+        <attr name="textoDerecho" format="string" />
+        <attr name="imageDefault" format="reference" />
+        <attr name="imagenSeleccionado" format="reference" />
+    </declare-styleable>
+</resources>

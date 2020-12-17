@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhiteBackground"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/espacio_mediano"
+        android:paddingTop="@dimen/margen_pequeño"
+        android:paddingEnd="@dimen/espacio_mediano"
+        android:paddingBottom="@dimen/espacio_pequeño">
+
+        <FrameLayout
+            android:id="@+id/daydate"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/bg_reporte_item"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/linea"
+            app:layout_constraintHorizontal_weight="0.15"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/txtDia"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="Roboto-Regular"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textColor="@color/coloproducttext"
+                android:textSize="@dimen/gen_dimen_txt_28"
+                android:textStyle="bold"
+                tools:text="99" />
+        </FrameLayout>
+
+        <View
+            android:id="@+id/linea"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="#a5a5a5"
+            app:layout_constraintBottom_toBottomOf="@id/daydate"
+            app:layout_constraintEnd_toStartOf="@id/datosline"
+            app:layout_constraintHorizontal_weight="0.02"
+            app:layout_constraintStart_toEndOf="@id/daydate"
+            app:layout_constraintTop_toTopOf="@id/daydate" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/datosline"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_reporte_item"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/espacio_mediano"
+            android:paddingTop="@dimen/espacio_pequeño"
+            android:paddingBottom="@dimen/espacio_pequeño"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/valueAmount"
+            app:layout_constraintHorizontal_weight="0.75"
+            app:layout_constraintStart_toEndOf="@id/linea"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/txtDescProducto"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:ellipsize="marquee"
+                android:fontFamily="Roboto-Regular"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textColor="@color/coloproducttext"
+                android:textSize="@dimen/gen_dimen_txt_14"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/txtReferencia"
+                app:layout_constraintEnd_toStartOf="@id/tv_saldo_movimientos"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Descripción del Producto" />
+
+            <TextView
+                android:id="@+id/txtReferencia"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:ellipsize="marquee"
+                android:fontFamily="Roboto-Regular"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textColor="@color/colorGreyMiddle"
+                android:textSize="@dimen/tam_txt_pequeno"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/tv_saldo_movimientos"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtDescProducto"
+                tools:text="Ref Local :" />
+
+            <com.pagatodoholdings.posandroid.componentesvista.controlespersonalizados.MontoViewController
+                android:id="@+id/tv_saldo_movimientos"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:colorTexto="@color/colorAzulImporte"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:mostrarTextoInferior="false"
+                tools:layout_width="128dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <FrameLayout
+            android:id="@+id/valueAmount"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="0.06"
+            app:layout_constraintStart_toEndOf="@id/datosline"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/viewColor"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_mov_ganancia" />
+        </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

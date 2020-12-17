@@ -1,0 +1,32 @@
+{"WEB_CARD":
+      {
+        "PRODUCTOS": [
+          {
+            "title-name": "LEALTAD",
+            "title-icon": "starbucks",
+            "Nivel": 1,
+              "PRE": [
+                {
+                  "Title_Menu": "Movimientos",
+                  "Icon": "123456",
+                  "Producto" : "Movimientos",
+                  "Nivel" : "2"
+                },
+                {
+                  "Title_Menu": "Rercompensas",
+                  "Icon": "123456",
+                  "Producto" : "recompensas",
+                  "Nivel" : "2"
+                },
+                {
+                  "Title_Menu": "Sucursales",
+                  "Icon": "123456",
+                  "Producto" : "sucursales",
+                  "Nivel" : "2"
+                }
+              ]
+
+              }
+          ]
+    }
+}
